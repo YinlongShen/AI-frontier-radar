@@ -61,6 +61,12 @@ def fetch_rss(cfg) -> tuple[list[Item], list[str]]:
                 body = e.content[0].get("value", body)
             import re as _re
             body = _re.sub(r"<[^>]+>", " ", body)
+            # 有些 feed（如 research.google）的 summary 字段放的是分类标签而不是正文，
+            # 例如 "Algorithms & Theory"。当成正文会把条目分到完全错误的领域。
+            extra = {}
+            if len(" ".join(body.split())) < 80:
+                extra["feed_tag"] = " ".join(body.split())
+                body = ""
             items.append(
                 Item(
                     uid=make_uid("rss", link),
@@ -72,6 +78,7 @@ def fetch_rss(cfg) -> tuple[list[Item], list[str]]:
                     venue=name,
                     lab=feed.get("lab", ""),
                     authors=[getattr(e, "author", "")] if getattr(e, "author", "") else [],
+                    extra=extra,
                 )
             )
             n += 1

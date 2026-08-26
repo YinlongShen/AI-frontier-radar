@@ -231,3 +231,26 @@ def test_select_caps_a_single_noisy_feed(cfg):
     picked, _ = _select(cfg, items, None)
     noisy = sum(1 for i in picked if i.venue == "Noisy Vendor Blog")
     assert noisy <= cfg.main["output"]["max_per_venue"]
+
+
+def test_rss_short_body_is_not_treated_as_abstract(monkeypatch, cfg):
+    """research.google 的 summary 字段放的是 "Algorithms & Theory" 这种分类标签，
+    当成正文会把条目分到「理论」领域。"""
+    import aidigest.sources.rss as R
+
+    feed_xml = """<?xml version="1.0"?><rss version="2.0"><channel>
+      <item><title>How mobility helps language models</title>
+      <link>https://research.google/blog/x/</link>
+      <description>Algorithms &amp; Theory</description>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate></item>
+    </channel></rss>"""
+    monkeypatch.setattr(R, "fetch", lambda *a, **k: feed_xml)
+    cfg2 = Config.load(".")
+    cfg2.sources["rss"] = {"enabled": True, "window_days": 3650,
+                           "feeds": [{"name": "T", "url": "http://x", "lab": "Google DeepMind"}]}
+    items, errors = R.fetch_rss(cfg2)
+    assert len(items) == 1
+    assert items[0].abstract == ""
+    assert items[0].extra["feed_tag"] == "Algorithms & Theory"
+    Classifier(cfg).classify(items[0])
+    assert items[0].primary_topic != "theory"

@@ -1,0 +1,186 @@
+# ===========================================================================
+# 权威研究者 / 顶级实验室 watchlist
+# ---------------------------------------------------------------------------
+# 命中这里的人 = 走「长窗口」（默认 180 天）+ 高权重，即使论文是几个月前发的，
+# 只要还没推送过就会出现在当日 digest 的「重点关注」里。
+#
+# affiliation 只用于展示和分组，可能过时；匹配完全按 name + aliases 做。
+# weight: 3.0 = 出手必看；2.0 = 高度关注；1.5 = 常规关注
+# arxiv_query: 可选，覆盖默认的 au:"<name>" 查询
+# ===========================================================================
+
+defaults:
+  weight: 2.0
+  window_days: 180
+
+authors:
+  # ---------------- RL / 持续学习 / 理论根基 ----------------
+  - {name: Richard S. Sutton,     aliases: [Richard Sutton, Rich Sutton], affiliation: U Alberta / Amii / Keen, tags: [rl, theory], weight: 3.0}
+  - {name: David Silver,          affiliation: Google DeepMind, tags: [rl], weight: 3.0}
+  - {name: Doina Precup,          affiliation: McGill / Mila / DeepMind, tags: [rl], weight: 2.5}
+  - {name: Satinder Singh,        affiliation: Google DeepMind, tags: [rl], weight: 2.0}
+  - {name: Michael Bowling,       affiliation: U Alberta, tags: [rl], weight: 2.0}
+  - {name: Martha White,          affiliation: U Alberta / Amii, tags: [rl, continual], weight: 2.0}
+  - {name: Adam White,            affiliation: U Alberta / Amii, tags: [rl, continual], weight: 2.0}
+  - {name: Csaba Szepesvari,      aliases: ["Csaba Szepesvári"], affiliation: U Alberta / DeepMind, tags: [rl, theory], weight: 2.0}
+  - {name: Marc G. Bellemare,     aliases: [Marc Bellemare], affiliation: Mila, tags: [rl], weight: 2.0}
+  - {name: Benjamin Van Roy,      affiliation: Stanford, tags: [rl, theory], weight: 2.0}
+  - {name: Emma Brunskill,        affiliation: Stanford, tags: [rl], weight: 1.5}
+
+  # ---------------- 深度学习奠基 / 大方向 ----------------
+  - {name: Yann LeCun,            affiliation: NYU, tags: [theory, world_model], weight: 3.0}
+  - {name: Geoffrey Hinton,       aliases: [Geoffrey E. Hinton], affiliation: U Toronto, tags: [theory], weight: 3.0}
+  - {name: Yoshua Bengio,         affiliation: Mila / U Montreal, tags: [theory, safety], weight: 3.0}
+  - {name: Jurgen Schmidhuber,    aliases: ["Jürgen Schmidhuber"], affiliation: KAUST / IDSIA, tags: [theory, world_model], weight: 2.5}
+  - {name: Ilya Sutskever,        affiliation: SSI, tags: [llm, theory], weight: 3.0}
+  - {name: Andrej Karpathy,       affiliation: Eureka Labs, tags: [llm], weight: 2.5}
+  - {name: Jeff Clune,            affiliation: UBC / DeepMind, tags: [open_ended, theory], weight: 2.5}
+  - {name: Kenneth O. Stanley,    aliases: [Kenneth Stanley], affiliation: "—", tags: [open_ended, theory], weight: 2.5}
+
+  # ---------------- LLM / 预训练 / 推理 ----------------
+  - {name: Oriol Vinyals,         affiliation: Google DeepMind, tags: [llm], weight: 2.5}
+  - {name: Quoc V. Le,            aliases: [Quoc Le], affiliation: Google DeepMind, tags: [llm], weight: 2.5}
+  - {name: Noam Shazeer,          affiliation: Google DeepMind, tags: [llm], weight: 2.5}
+  - {name: Jason Wei,             affiliation: OpenAI, tags: [llm], weight: 2.5}
+  - {name: Denny Zhou,            affiliation: Google DeepMind, tags: [llm, reasoning], weight: 2.5}
+  - {name: Noam Brown,            affiliation: OpenAI, tags: [reasoning, rl], weight: 2.5}
+  - {name: Jared Kaplan,          affiliation: Anthropic, tags: [llm], weight: 2.5}
+  - {name: Percy Liang,           affiliation: Stanford, tags: [llm, eval], weight: 2.5}
+  - {name: Christopher D. Manning, aliases: [Christopher Manning], affiliation: Stanford, tags: [llm], weight: 2.0}
+  - {name: Tatsunori Hashimoto,   affiliation: Stanford, tags: [llm, eval], weight: 2.0}
+  - {name: Danqi Chen,            affiliation: Princeton, tags: [llm], weight: 2.0}
+  - {name: Luke Zettlemoyer,      affiliation: UW / Meta, tags: [llm], weight: 2.0}
+  - {name: Hannaneh Hajishirzi,   affiliation: UW / AI2, tags: [llm], weight: 2.0}
+  - {name: Noah A. Smith,         affiliation: UW / AI2, tags: [llm], weight: 2.0}
+  - {name: Yejin Choi,            affiliation: Stanford / NVIDIA, tags: [llm, reasoning], weight: 2.0}
+  - {name: Graham Neubig,         affiliation: CMU / All Hands AI, tags: [agent, llm], weight: 2.5}
+  - {name: Colin Raffel,          affiliation: U Toronto / Vector, tags: [llm], weight: 2.0}
+  - {name: Alexander M. Rush,     aliases: [Sasha Rush, Alexander Rush], affiliation: Cornell / Cursor, tags: [llm], weight: 2.0}
+  - {name: Ludwig Schmidt,        affiliation: Stanford, tags: [llm, data], weight: 2.0}
+  - {name: Sebastian Ruder,       affiliation: "—", tags: [llm], weight: 1.5}
+  - {name: Junyang Lin,           affiliation: Alibaba Qwen, tags: [llm], weight: 2.0}
+  - {name: Jie Tang,              affiliation: Tsinghua / Zhipu, tags: [llm], weight: 2.0}
+  - {name: Zhiyuan Liu,           affiliation: Tsinghua, tags: [llm, agent], weight: 2.0}
+  - {name: Maosong Sun,           affiliation: Tsinghua, tags: [llm, agent], weight: 1.5}
+
+  # ---------------- Agent / Harness / 工具使用 ----------------
+  - {name: Shunyu Yao,            affiliation: Anthropic, tags: [agent], weight: 2.5}
+  - {name: Karthik Narasimhan,    affiliation: Princeton / Sierra, tags: [agent], weight: 2.0}
+  - {name: Ofir Press,            affiliation: "—", tags: [agent, eval], weight: 2.0}
+  - {name: Yu Su,                 affiliation: Ohio State, tags: [agent], weight: 2.0}
+  - {name: Tao Yu,                affiliation: HKU, tags: [agent], weight: 2.0}
+  - {name: Qingyun Wu,            affiliation: Penn State / AG2, tags: [agent], weight: 1.5}
+  - {name: Chi Wang,              affiliation: Google DeepMind, tags: [agent], weight: 1.5}
+  - {name: Ruslan Salakhutdinov,  affiliation: CMU, tags: [agent, multimodal], weight: 2.0}
+
+  # ---------------- 系统 / 效率 / 架构 ----------------
+  - {name: Tri Dao,               affiliation: Princeton / Together AI, tags: [systems, arch], weight: 2.5}
+  - {name: Albert Gu,             affiliation: CMU / Cartesia, tags: [arch], weight: 2.5}
+  - {name: Song Han,              affiliation: MIT / NVIDIA, tags: [systems], weight: 2.0}
+  - {name: Ion Stoica,            affiliation: UC Berkeley, tags: [systems], weight: 2.0}
+  - {name: Tianqi Chen,           affiliation: CMU, tags: [systems], weight: 2.0}
+  - {name: Beidi Chen,            affiliation: CMU, tags: [systems], weight: 1.5}
+
+  # ---------------- CV / 生成模型 ----------------
+  - {name: Kaiming He,            affiliation: MIT, tags: [cv], weight: 3.0}
+  - {name: Jitendra Malik,        affiliation: UC Berkeley, tags: [cv, embodied], weight: 2.5}
+  - {name: Fei-Fei Li,            aliases: [Li Fei-Fei], affiliation: Stanford / World Labs, tags: [cv, world_model], weight: 2.5}
+  - {name: Alexei A. Efros,       aliases: [Alexei Efros], affiliation: UC Berkeley, tags: [cv], weight: 2.5}
+  - {name: Trevor Darrell,        affiliation: UC Berkeley, tags: [cv], weight: 2.0}
+  - {name: Antonio Torralba,      affiliation: MIT, tags: [cv], weight: 2.0}
+  - {name: William T. Freeman,    aliases: [Bill Freeman], affiliation: MIT, tags: [cv], weight: 2.0}
+  - {name: Saining Xie,           affiliation: NYU, tags: [cv, multimodal], weight: 2.5}
+  - {name: Xinlei Chen,           affiliation: Meta FAIR, tags: [cv], weight: 2.0}
+  - {name: Ting Chen,             affiliation: Google DeepMind, tags: [cv], weight: 2.0}
+  - {name: Piotr Dollar,          aliases: ["Piotr Dollár"], affiliation: Meta FAIR, tags: [cv], weight: 2.0}
+  - {name: Ross Girshick,         affiliation: "—", tags: [cv], weight: 2.0}
+  - {name: Tero Karras,           affiliation: NVIDIA, tags: [cv, generative], weight: 2.0}
+  - {name: Bjorn Ommer,           aliases: ["Björn Ommer"], affiliation: LMU Munich, tags: [cv, generative], weight: 2.0}
+  - {name: Robin Rombach,         affiliation: Black Forest Labs, tags: [cv, generative], weight: 2.0}
+  - {name: Jonathan Ho,           affiliation: "—", tags: [cv, generative], weight: 2.0}
+  - {name: Yang Song,             affiliation: "—", tags: [cv, generative], weight: 2.0, arxiv_query: 'au:"Yang Song" AND (cat:cs.LG OR cat:cs.CV OR cat:stat.ML)'}
+  - {name: Dahua Lin,             affiliation: CUHK / Shanghai AI Lab, tags: [cv, multimodal], weight: 2.0}
+  - {name: Yu Qiao,               affiliation: Shanghai AI Lab, tags: [cv, multimodal], weight: 2.0}
+  - {name: Ziwei Liu,             affiliation: NTU, tags: [cv, generative], weight: 2.0}
+  - {name: Jifeng Dai,            affiliation: Tsinghua, tags: [cv, multimodal], weight: 2.0}
+  - {name: Jia Deng,              affiliation: Princeton, tags: [cv], weight: 1.5}
+
+  # ---------------- 多模态 / VLM ----------------
+  - {name: Alec Radford,          affiliation: "—", tags: [multimodal, llm], weight: 2.5}
+  - {name: Chunyuan Li,           affiliation: "—", tags: [multimodal], weight: 2.0}
+  - {name: Jianwei Yang,          affiliation: Microsoft Research, tags: [multimodal, agent], weight: 2.0}
+  - {name: Lijuan Wang,           affiliation: Microsoft Research, tags: [multimodal], weight: 1.5}
+  - {name: Zhe Gan,               affiliation: Apple, tags: [multimodal], weight: 1.5}
+  - {name: Yong Jae Lee,          affiliation: UW-Madison, tags: [multimodal], weight: 2.0}
+  - {name: Ping Luo,              affiliation: HKU, tags: [multimodal, vla], weight: 2.0}
+
+  # ---------------- VLA / 机器人 / 具身 ----------------
+  - {name: Sergey Levine,         affiliation: UC Berkeley / Physical Intelligence, tags: [rl, vla, embodied], weight: 3.0}
+  - {name: Chelsea Finn,          affiliation: Stanford / Physical Intelligence, tags: [vla, embodied], weight: 3.0}
+  - {name: Pieter Abbeel,         affiliation: UC Berkeley, tags: [rl, embodied], weight: 2.5}
+  - {name: Karol Hausman,         affiliation: Physical Intelligence, tags: [vla], weight: 2.5}
+  - {name: Danny Driess,          affiliation: Physical Intelligence, tags: [vla], weight: 2.0}
+  - {name: Brian Ichter,          affiliation: Physical Intelligence, tags: [vla], weight: 2.0}
+  - {name: Shuran Song,           affiliation: Stanford, tags: [vla, embodied], weight: 2.5}
+  - {name: Dieter Fox,            affiliation: UW / NVIDIA, tags: [embodied], weight: 2.5}
+  - {name: Deepak Pathak,         affiliation: CMU / Skild AI, tags: [embodied, rl], weight: 2.5}
+  - {name: Abhinav Gupta,         affiliation: CMU, tags: [embodied, cv], weight: 2.0}
+  - {name: Lerrel Pinto,          affiliation: NYU, tags: [embodied, vla], weight: 2.5}
+  - {name: Yuke Zhu,              affiliation: UT Austin / NVIDIA, tags: [embodied, vla], weight: 2.5}
+  - {name: Linxi Fan,             aliases: [Jim Fan, "Linxi \"Jim\" Fan"], affiliation: NVIDIA GEAR, tags: [embodied, world_model], weight: 2.5}
+  - {name: Russ Tedrake,          affiliation: MIT / TRI, tags: [embodied], weight: 2.5}
+  - {name: Pulkit Agrawal,        affiliation: MIT, tags: [embodied, rl], weight: 2.0}
+  - {name: Leslie Pack Kaelbling, affiliation: MIT, tags: [embodied, theory], weight: 2.0}
+  - {name: Ken Goldberg,          affiliation: UC Berkeley, tags: [embodied], weight: 2.0}
+  - {name: Xiaolong Wang,         affiliation: UCSD, tags: [embodied, cv], weight: 2.0}
+  - {name: Animesh Garg,          affiliation: Georgia Tech, tags: [embodied], weight: 1.5}
+  - {name: Huazhe Xu,             affiliation: Tsinghua, tags: [embodied, rl], weight: 2.0}
+  - {name: Yang Gao,              affiliation: Tsinghua, tags: [embodied, rl], weight: 2.0}
+  - {name: Cewu Lu,               affiliation: SJTU, tags: [embodied, cv], weight: 2.0}
+  - {name: He Wang,               affiliation: Peking University, tags: [embodied], weight: 2.0}
+  - {name: Hao Dong,              affiliation: Peking University, tags: [embodied], weight: 1.5}
+  - {name: Hang Zhao,             affiliation: Tsinghua, tags: [embodied], weight: 1.5}
+
+  # ---------------- World Models / 开放式学习 ----------------
+  - {name: Danijar Hafner,        affiliation: Google DeepMind, tags: [world_model, rl], weight: 3.0}
+  - {name: David Ha,              affiliation: Sakana AI, tags: [world_model], weight: 2.5}
+  - {name: Sherry Yang,           aliases: [Mengjiao Yang], affiliation: NYU / Google, tags: [world_model], weight: 2.0}
+  - {name: Tim Rocktaschel,       aliases: ["Tim Rocktäschel"], affiliation: Google DeepMind / UCL, tags: [open_ended, rl], weight: 2.5}
+  - {name: Edward Grefenstette,   affiliation: Google DeepMind / UCL, tags: [open_ended], weight: 2.0}
+  - {name: Jakob Foerster,        affiliation: Oxford, tags: [rl, multi_agent], weight: 2.0}
+  - {name: Vincent Sitzmann,      affiliation: MIT, tags: [world_model, cv], weight: 2.0}
+
+  # ---------------- 安全 / 对齐 / 可解释 ----------------
+  - {name: Chris Olah,            aliases: [Christopher Olah], affiliation: Anthropic, tags: [interp], weight: 2.5}
+  - {name: Neel Nanda,            affiliation: Google DeepMind, tags: [interp], weight: 2.5}
+  - {name: Jan Leike,             affiliation: Anthropic, tags: [safety], weight: 2.5}
+  - {name: Samuel R. Bowman,      aliases: [Sam Bowman], affiliation: Anthropic, tags: [safety, eval], weight: 2.5}
+  - {name: Ethan Perez,           affiliation: Anthropic, tags: [safety], weight: 2.0}
+  - {name: Jacob Steinhardt,      affiliation: UC Berkeley / Transluce, tags: [safety, interp], weight: 2.0}
+  - {name: Dan Hendrycks,         affiliation: CAIS, tags: [safety, eval], weight: 2.0}
+  - {name: David Bau,             affiliation: Northeastern, tags: [interp], weight: 2.0}
+
+# ===========================================================================
+# 机构级关注：用于（a）blog / pagewatch 抓取，（b）论文 comment 字段的弱信号匹配
+# ===========================================================================
+labs:
+  - {name: OpenAI,               patterns: [openai], weight: 2.0}
+  - {name: Google DeepMind,      patterns: [deepmind, "google research", "google brain"], weight: 2.0}
+  - {name: Anthropic,            patterns: [anthropic], weight: 2.0}
+  - {name: Meta FAIR,            patterns: [fair, "meta ai", "facebook ai research"], weight: 1.8}
+  - {name: Microsoft Research,   patterns: ["microsoft research", msra], weight: 1.5}
+  - {name: NVIDIA Research,      patterns: ["nvidia"], weight: 1.5}
+  - {name: Allen Institute for AI, patterns: [ai2, "allen institute"], weight: 1.5}
+  - {name: Physical Intelligence, patterns: ["physical intelligence", "pi zero", "π0"], weight: 2.0}
+  - {name: Shanghai AI Lab,      patterns: ["shanghai ai lab", "opengvlab", internlm], weight: 1.5}
+  - {name: DeepSeek,             patterns: [deepseek], weight: 2.0}
+  - {name: Qwen / Alibaba,       patterns: [qwen, "alibaba"], weight: 1.8}
+  - {name: Moonshot AI,          patterns: [moonshot, kimi], weight: 1.8}
+  - {name: Zhipu AI,             patterns: [zhipu, "glm-"], weight: 1.5}
+  - {name: ByteDance Seed,       patterns: ["bytedance", "seed team"], weight: 1.5}
+  - {name: Tencent Hunyuan,      patterns: [hunyuan], weight: 1.2}
+  - {name: Mistral AI,           patterns: [mistral], weight: 1.5}
+  - {name: xAI,                  patterns: ["x.ai", "grok"], weight: 1.5}
+  - {name: Sakana AI,            patterns: [sakana], weight: 1.5}
+  - {name: World Labs,           patterns: ["world labs"], weight: 1.5}
+  - {name: Apple ML,             patterns: ["apple machine learning", "apple inc"], weight: 1.2}

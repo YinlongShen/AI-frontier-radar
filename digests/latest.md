@@ -1,0 +1,343 @@
+# AI 前沿雷达 · 2026-08-26
+
+> 扫描 **1632** 条 → 入选 **60** 条 ｜ 关注名单命中 **55** 位研究者 ｜ 生成于 2026-08-26 06:01 UTC
+
+**今日分布**：🧠 大模型 / LLM (10) ｜ 🤖 智能体 / Agent (14) ｜ 🧰 Harness / 基建与评测 (1) ｜ 👁️ 计算机视觉 / CV (6) ｜ 🎨 多模态 / VLM (4) ｜ 🦾 VLA / 视觉-语言-动作 (10) ｜ 🚶 具身智能 / 机器人 (2) ｜ 🌍 世界模型 / World Models (1) ｜ 🎯 强化学习 / 持续学习 (10) ｜ 💡 理论 / 新范式 (2)
+
+
+## ⭐ 今日必读
+
+1. **[CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](https://arxiv.org/abs/2603.22435)**
+   "Code-as-Policy" considers how executable code can complement data-intensive Vision-Language-Action (VLA) methods, yet their effectiveness as autonomous controllers for embodied m…
+   <sub>👤 **Fei-Fei Li · Stanford / World Labs / Yuke Zhu · UT Austin / NVIDIA / Linxi Fan · NVIDIA GEAR +1** | arXiv · 03-23（155 天前）</sub>
+
+2. **[MEM: Multi-Scale Embodied Memory for Vision Language Action Models](https://arxiv.org/abs/2603.03596)**
+   Conventionally, memory in end-to-end robotic learning involves inputting a sequence of past observations into the learned policy. However, in complex multi-stage real-world tasks,…
+   <sub>👤 **Sergey Levine · UC Berkeley / Physical Intelligence / Chelsea Finn · Stanford / Physical Intelligence / Brian Ichter · Physical Intelligence +1** | arXiv · 03-04（175 天前）</sub>
+
+3. **[Contrastive Action-Image Pre-training for Visuomotor Control](https://arxiv.org/abs/2606.17256)**
+   Existing vision encoders for robotics face a fundamental bottleneck: robotic datasets lack the scale necessary for large-scale pre-training. Prior work circumvents this data scarc…
+   <sub>👤 **Yuke Zhu · UT Austin / NVIDIA / Linxi Fan · NVIDIA GEAR / Jitendra Malik · UC Berkeley +1** | arXiv · 06-15（71 天前）</sub>
+
+4. **[Beyond Language Modeling: An Exploration of Multimodal Pretraining](https://arxiv.org/abs/2603.03276)**
+   The visual world offers a critical axis for advancing foundation models beyond language. Despite growing interest in this direction, the design space for native multimodal models…
+   <sub>👤 **Yann LeCun · NYU / Saining Xie · NYU / Luke Zettlemoyer · UW / Meta** | 💡 想法型 | arXiv · 03-03（175 天前）</sub>
+
+5. **[RoboTTT: Context Scaling for Robot Policies](https://arxiv.org/abs/2607.15275)**
+   Recent robot foundation models operate with single-step or short-history visuomotor context. We introduce Test-Time-Training Robot Policies (RoboTTT), a robot model and training r…
+   <sub>👤 **Fei-Fei Li · Stanford / World Labs / Yuke Zhu · UT Austin / NVIDIA / Linxi Fan · NVIDIA GEAR** | arXiv · 07-16（40 天前）</sub>
+
+6. **[Humans are Missing from AI Coding Agent Research](https://arxiv.org/abs/2608.12355)**
+   Recent progress in AI coding agent research has led to rapid improvements in agents' ability to autonomously perform complex software engineering tasks, from editing large codebas…
+   <sub>👤 **Graham Neubig · CMU / All Hands AI / Karthik Narasimhan · Princeton / Sierra / Ludwig Schmidt · Stanford** | 💡 position paper | arXiv · 07-04（53 天前）</sub>
+
+7. **[Towards End-to-End Automation of AI Research](https://arxiv.org/abs/2606.15497)**
+   The automation of science is a long-standing ambition in the field of AI. While the community has made significant progress in automating individual components of the scientific p…
+   <sub>👤 **David Ha · Sakana AI / Jeff Clune · UBC / DeepMind / Jakob Foerster · Oxford** | 💡 towards | arXiv · 03-31（148 天前）</sub>
+
+8. **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)**
+   Training and evaluating robot policies in the real world is costly and difficult to scale. We introduce SimFoundry, a modular and automated system for zero-shot real-to-sim scene…
+   <sub>👤 **Fei-Fei Li · Stanford / World Labs / Linxi Fan · NVIDIA GEAR / Yuke Zhu · UT Austin / NVIDIA** | arXiv · 06-26（60 天前）</sub>
+
+9. **[CUBE: A Standard for Unifying Agent Benchmarks](https://arxiv.org/abs/2603.15798)**
+   The proliferation of agent benchmarks has created critical fragmentation that threatens research productivity. Each new benchmark requires substantial custom integration, creating…
+   <sub>👤 **Graham Neubig · CMU / All Hands AI / Tao Yu · HKU / Yu Su · Ohio State** | 💡 position paper | arXiv · 03-16（162 天前）</sub>
+
+10. **[GIANTS: Generative Insight Anticipation from Scientific Literature](https://arxiv.org/abs/2604.09793)**
+   Scientific breakthroughs often emerge from synthesizing prior ideas into novel contributions. While language models (LMs) show promise in scientific discovery, their ability to pe…
+   <sub>👤 **Chelsea Finn · Stanford / Physical Intelligence / Sherry Yang · NYU / Google / Emma Brunskill · Stanford** | arXiv · 04-10（137 天前）</sub>
+
+
+---
+
+
+## 🧠 大模型 / LLM
+
+- **[Beyond Language Modeling: An Exploration of Multimodal Pretraining](https://arxiv.org/abs/2603.03276)**
+  The visual world offers a critical axis for advancing foundation models beyond language. Despite growing interest in this direction, the design space for native multimodal models…
+  <sub>👤 **Yann LeCun · NYU / Saining Xie · NYU / Luke Zettlemoyer · UW / Meta** | 💡 想法型 | arXiv · 03-03（175 天前）</sub>
+
+- **[Data-efficient pre-training by scaling synthetic megadocs](https://arxiv.org/abs/2603.18534)**
+  Synthetic data augmentation has emerged as a promising solution when pre-training is constrained by data rather than compute. We study how to design synthetic data algorithms that…
+  <sub>👤 **Percy Liang · Stanford / Yejin Choi · Stanford / NVIDIA / Tatsunori Hashimoto · Stanford** | arXiv · 03-19（159 天前）</sub>
+
+- **[LLM-as-a-Verifier: A General-Purpose Verification Framework](https://arxiv.org/abs/2607.05391)**
+  Scaling pre-training, post-training, and test-time compute have become the central paradigms for improving the capabilities of LLMs. In this work, we identify verification, the ab…
+  <sub>👤 **Chelsea Finn · Stanford / Physical Intelligence / Ion Stoica · UC Berkeley** | arXiv · 07-06（50 天前）</sub>
+
+- **[Offline Materials Optimization with CliqueFlowmer](https://arxiv.org/abs/2603.06082)**
+  Recent advances in deep learning inspired neural network-based approaches to computational materials discovery (CMD). A plethora of problems in this field involve finding material…
+  <sub>👤 **Sergey Levine · UC Berkeley / Physical Intelligence / Pieter Abbeel · UC Berkeley** | arXiv · 03-06（172 天前）</sub>
+
+- **[Towards World Models in Biomedical Research](https://arxiv.org/abs/2606.05925)**
+  A central goal of biomedicine is to understand, predict and ultimately control the dynamic mechanisms by which biological systems respond to perturbations, disease progression and…
+  <sub>👤 **Ting Chen · Google DeepMind / Ziwei Liu · NTU** | 💡 towards | arXiv · 06-04（82 天前）</sub>
+
+- **[Mamba-3: Improved Sequence Modeling using State Space Principles](https://arxiv.org/abs/2603.15569)**
+  Scaling inference-time compute has emerged as an important driver of LLM performance, making inference efficiency a central focus of model design alongside model quality. While th…
+  <sub>👤 **Tri Dao · Princeton / Together AI / Albert Gu · CMU / Cartesia** | arXiv · 03-16（162 天前）</sub>
+
+- **[Cracks in the Foundation: Seemingly Minor Architectural Choices Impact Long Context Extension](https://arxiv.org/abs/2608.10296)**
+  One might imagine that architectural variations within the dense transformer paradigm have a limited effect on accuracy. However, we demonstrate that this is not the case in the l…
+  <sub>👤 **Graham Neubig · CMU / All Hands AI / Hannaneh Hajishirzi · UW / AI2** | arXiv · 15 天前</sub>
+
+- **[Beyond Correctness: Benchmarking and Aligning Response Behaviors in Hybrid-Thinking MLLMs](https://arxiv.org/abs/2608.12781)**
+  Hybrid-thinking multimodal large language models (MLLMs) allow a single model to alternate between deliberative thinking and latency-efficient non-thinking inference. Although the…
+  <sub>🔥 30 | 💡 想法型 | HF Papers · 9 天前</sub>
+
+- **[Let's Scale Step by Step: Compute-Efficient Hyperparameter Transfer for Large-Scale Mixture-of-Experts](https://arxiv.org/abs/2608.20061)**
+  Mixture-of-Experts (MoE) architectures significantly expand model capacity without a proportional increase in computational cost. However, optimizing their hyperparameters---parti…
+  <sub>🔥 42 | HF Papers · 5 天前</sub>
+
+- **[How NVIDIA Groq 3 LPX Unlocks Ultrafast Interactivity at Long Context on NVIDIA Vera Rubin](https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-unlocks-ultrafast-interactivity-at-long-context-on-nvidia-vera-rubin/)**
+  NVIDIA Groq 3 LPX is the interactive AI inference accelerator for the NVIDIA Vera Rubin platform. At the core of the platform is NVIDIA Vera Rubin NVL72, the most versatile machin…
+  <sub>🏛 NVIDIA Research | 💡 想法型 | Blog · 昨天</sub>
+
+
+## 🤖 智能体 / Agent
+
+- **[CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](https://arxiv.org/abs/2603.22435)**
+  "Code-as-Policy" considers how executable code can complement data-intensive Vision-Language-Action (VLA) methods, yet their effectiveness as autonomous controllers for embodied m…
+  <sub>👤 **Fei-Fei Li · Stanford / World Labs / Yuke Zhu · UT Austin / NVIDIA / Linxi Fan · NVIDIA GEAR +1** | arXiv · 03-23（155 天前）</sub>
+
+- **[Humans are Missing from AI Coding Agent Research](https://arxiv.org/abs/2608.12355)**
+  Recent progress in AI coding agent research has led to rapid improvements in agents' ability to autonomously perform complex software engineering tasks, from editing large codebas…
+  <sub>👤 **Graham Neubig · CMU / All Hands AI / Karthik Narasimhan · Princeton / Sierra / Ludwig Schmidt · Stanford** | 💡 position paper | arXiv · 07-04（53 天前）</sub>
+
+- **[Towards End-to-End Automation of AI Research](https://arxiv.org/abs/2606.15497)**
+  The automation of science is a long-standing ambition in the field of AI. While the community has made significant progress in automating individual components of the scientific p…
+  <sub>👤 **David Ha · Sakana AI / Jeff Clune · UBC / DeepMind / Jakob Foerster · Oxford** | 💡 towards | arXiv · 03-31（148 天前）</sub>
+
+- **[RAGEN-2: Reasoning Collapse in Agentic RL](https://arxiv.org/abs/2604.06268)**
+  RL training of multi-turn LLM agents is inherently unstable, and reasoning quality directly determines task performance. Entropy is widely used to track reasoning stability. Howev…
+  <sub>👤 **Fei-Fei Li · Stanford / World Labs / Yejin Choi · Stanford / NVIDIA / Lijuan Wang · Microsoft Research** | arXiv · 04-07（141 天前）</sub>
+
+- **[Playful Agentic Robot Learning](https://arxiv.org/abs/2606.19419)**
+  Current agentic robot systems can write executable Code-as-Policy programs, observe feedback, and revise behavior across multiple attempts, but they remain largely task-driven: re…
+  <sub>👤 **Ken Goldberg · UC Berkeley / Ion Stoica · UC Berkeley / Trevor Darrell · UC Berkeley** | arXiv · 06-17（69 天前）</sub>
+
+- **[Why AI systems don't learn and what to do about it: Lessons on autonomous learning from cognitive science](https://arxiv.org/abs/2603.15381)**
+  We critically examine the limitations of current AI models in achieving autonomous learning and propose a learning architecture inspired by human and animal cognition. The propose…
+  <sub>👤 **Yann LeCun · NYU / Jitendra Malik · UC Berkeley** | 💡 想法型 | arXiv · 03-16（162 天前）</sub>
+
+- **[DiG-bench: Discovery in Games](https://arxiv.org/abs/2608.12593)**
+  Discovery---formulating novel generalizations---is a central part of the scientific process. Despite its importance, there is a gap in the current AI benchmark landscape, with few…
+  <sub>👤 **Tri Dao · Princeton / Together AI / Jurgen Schmidhuber · KAUST / IDSIA** | arXiv · 13 天前</sub>
+
+- **[SPADE: Self-Play in Adaptive Synthetic Executable Environments](https://arxiv.org/abs/2608.19197)**
+  Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, sta…
+  <sub>👤 **Luke Zettlemoyer · UW / Meta / Yejin Choi · Stanford / NVIDIA** | arXiv · 6 天前</sub>
+
+- **[SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions](https://arxiv.org/abs/2607.15272)**
+  Editing the figures in a research paper is a routine and time-consuming part of everyday research practice: authors relabel components, rearrange panels, and restyle visuals as th…
+  <sub>👤 **Jurgen Schmidhuber · KAUST / IDSIA / Ziwei Liu · NTU** | arXiv · 07-16（40 天前）</sub>
+
+- **[CUA-Gym: Scaling Verifiable Training Environments and Tasks for Computer-Use Agents](https://arxiv.org/abs/2605.25624)**
+  Reinforcement learning with verifiable rewards (RLVR) has driven breakthroughs in domains such as math, tool-use, and software engineering, yet its extension to computer-use agent…
+  <sub>👤 **Junyang Lin · Alibaba Qwen / Tao Yu · HKU** | arXiv · 05-25（92 天前）</sub>
+
+- **[MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks](https://arxiv.org/abs/2608.23035)**
+  As on-device LLM agents evolve into personal copilots, the mobile operating system has become a key testbed for this paradigm, making rigorous capability evaluation essential. Yet…
+  <sub>🔥 36 | HF Papers · 2 天前</sub>
+
+- **[Prime Agent: A Self-Improving RLM Harness](https://arxiv.org/abs/2608.23552)**
+  Language models are sequential processors, but long-horizon agency requires external information and computation beyond model weights and active context. Prime Agent is an open-so…
+  <sub>🔥 34 | HF Papers · 2 天前</sub>
+
+- **[More than just code review](https://simonwillison.net/2026/Aug/22/more-than-just-code-review/)**
+  The key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes hav…
+  <sub>🏛 — | Blog · 3 天前</sub>
+
+- **[NVIDIA Vera Rubin and Blackwell Set a New Standard for Agentic AI Performance per Watt](https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt/)**
+  AI agents have expanded inference from single&#x2d;turn interactions into multi&#x2d;step workflows that reason, invoke tools, coordinate subagents, and carry growing context from…
+  <sub>🏛 NVIDIA Research | Blog · 昨天</sub>
+
+
+## 🧰 Harness / 基建与评测
+
+- **[CUBE: A Standard for Unifying Agent Benchmarks](https://arxiv.org/abs/2603.15798)**
+  The proliferation of agent benchmarks has created critical fragmentation that threatens research productivity. Each new benchmark requires substantial custom integration, creating…
+  <sub>👤 **Graham Neubig · CMU / All Hands AI / Tao Yu · HKU / Yu Su · Ohio State** | 💡 position paper | arXiv · 03-16（162 天前）</sub>
+
+
+## 👁️ 计算机视觉 / CV
+
+- **[Contrastive Action-Image Pre-training for Visuomotor Control](https://arxiv.org/abs/2606.17256)**
+  Existing vision encoders for robotics face a fundamental bottleneck: robotic datasets lack the scale necessary for large-scale pre-training. Prior work circumvents this data scarc…
+  <sub>👤 **Yuke Zhu · UT Austin / NVIDIA / Linxi Fan · NVIDIA GEAR / Jitendra Malik · UC Berkeley +1** | arXiv · 06-15（71 天前）</sub>
+
+- **[Image Generators are Generalist Vision Learners](https://arxiv.org/abs/2604.20329)**
+  Recent works show that image and video generators exhibit zero-shot visual understanding behaviors, in a way reminiscent of how LLMs develop emergent capabilities of language unde…
+  <sub>👤 **Kaiming He · MIT / Saining Xie · NYU** | arXiv · 04-22（125 天前）</sub>
+
+- **[Multi-Objective Learning for Diffusion Models: A Statistical Theory under Semi-Supervised Learning](https://arxiv.org/abs/2605.25210)**
+  Diffusion models are increasingly used as powerful conditional generators, yet real deployments often involve multiple target distributions arising from different tasks, e.g., div…
+  <sub>👤 **Jitendra Malik · UC Berkeley / Pieter Abbeel · UC Berkeley** | arXiv · 05-24（93 天前）</sub>
+
+- **[Self-Supervised Flow Matching for Scalable Multi-Modal Synthesis](https://arxiv.org/abs/2603.06507)**
+  Strong semantic representations improve the convergence and generation quality of diffusion and flow models. Existing approaches largely rely on external models, which require sep…
+  <sub>👤 **Antonio Torralba · MIT / Robin Rombach · Black Forest Labs** | 💡 we argue | arXiv · 03-06（172 天前）</sub>
+
+- **[Open Evaluation Agent: Efficient and Promptable Evaluation of Visual Generative Models](https://arxiv.org/abs/2608.09666)**
+  Recent advances in visual generative models have enabled high-quality image and video generation, but evaluating these models often demands sampling hundreds or thousands of image…
+  <sub>👤 **Yu Qiao · Shanghai AI Lab / Ziwei Liu · NTU** | arXiv · 15 天前</sub>
+
+- **[Sol Video Inference Engine: Agent-Native Full-Stack Acceleration Framework for Efficient Video Generation](https://arxiv.org/abs/2606.23743)**
+  Modern video diffusion models achieve higher generation quality through scaling, but this also increases inference cost. Although many acceleration methods have been proposed, a c…
+  <sub>👤 **Ping Luo · HKU / Song Han · MIT / NVIDIA** | arXiv · 06-21（65 天前）</sub>
+
+
+## 🎨 多模态 / VLM
+
+- **[Patch Policy: Efficient Embodied Control via Dense Visual Representations](https://arxiv.org/abs/2607.18236)**
+  Pretrained dense visual features from Vision Transformers (ViTs) are powerful yet have been underutilized in robot learning. Modern robot policies either compress each observation…
+  <sub>👤 **Yann LeCun · NYU / Lerrel Pinto · NYU** | arXiv · 07-20（36 天前）</sub>
+
+- **[Vision as Unified Multimodal Generation](https://arxiv.org/abs/2607.06560)**
+  We formulate computer vision as unified multimodal generation, where heterogeneous visual tasks are expressed in the native text and image generation spaces of a unified multimoda…
+  <sub>👤 **Ziwei Liu · NTU / Dahua Lin · CUHK / Shanghai AI Lab** | arXiv · 07-07（49 天前）</sub>
+
+- **[Reinforcing Dual-Path Reasoning in Spatial Vision Language Models](https://arxiv.org/abs/2606.17539)**
+  Spatial VLMs have made substantial progress in geometric perception, yet complex spatial reasoning requiring multi-step inference over depth, distance, and scene relations remains…
+  <sub>👤 **Song Han · MIT / NVIDIA / Ping Luo · HKU** | arXiv · 06-16（71 天前）</sub>
+
+- **[From Pixels to Words -- Towards Native One-Vision Models at Scale](https://arxiv.org/abs/2605.28820)**
+  Current vision-language models (VLMs) typically stitch together separate image encoders and language decoders via multi-stage alignment, a modular framework that inevitably fragme…
+  <sub>👤 **Dahua Lin · CUHK / Shanghai AI Lab / Ziwei Liu · NTU** | arXiv · 05-27（90 天前）</sub>
+
+
+## 🦾 VLA / 视觉-语言-动作
+
+- **[MEM: Multi-Scale Embodied Memory for Vision Language Action Models](https://arxiv.org/abs/2603.03596)**
+  Conventionally, memory in end-to-end robotic learning involves inputting a sequence of past observations into the learned policy. However, in complex multi-stage real-world tasks,…
+  <sub>👤 **Sergey Levine · UC Berkeley / Physical Intelligence / Chelsea Finn · Stanford / Physical Intelligence / Brian Ichter · Physical Intelligence +1** | arXiv · 03-04（175 天前）</sub>
+
+- **[RoboTTT: Context Scaling for Robot Policies](https://arxiv.org/abs/2607.15275)**
+  Recent robot foundation models operate with single-step or short-history visuomotor context. We introduce Test-Time-Training Robot Policies (RoboTTT), a robot model and training r…
+  <sub>👤 **Fei-Fei Li · Stanford / World Labs / Yuke Zhu · UT Austin / NVIDIA / Linxi Fan · NVIDIA GEAR** | arXiv · 07-16（40 天前）</sub>
+
+- **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)**
+  Training and evaluating robot policies in the real world is costly and difficult to scale. We introduce SimFoundry, a modular and automated system for zero-shot real-to-sim scene…
+  <sub>👤 **Fei-Fei Li · Stanford / World Labs / Linxi Fan · NVIDIA GEAR / Yuke Zhu · UT Austin / NVIDIA** | arXiv · 06-26（60 天前）</sub>
+
+- **[UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos](https://arxiv.org/abs/2603.22264)**
+  Dexterous manipulation remains challenging due to the cost of collecting real-robot teleoperation data, the heterogeneity of hand embodiments, and the high dimensionality of contr…
+  <sub>👤 **Yang Gao · Tsinghua / Huazhe Xu · Tsinghua / Hang Zhao · Tsinghua** | arXiv · 03-23（155 天前）</sub>
+
+- **[Dexora: Open-source VLA for High-DoF Bimanual Dexterity](https://arxiv.org/abs/2605.18722)**
+  Vision-Language-Action (VLA) models have recently become a central direction in embodied AI, but current systems are restricted to either dual-gripper control or single-arm dexter…
+  <sub>👤 **Huazhe Xu · Tsinghua / Hao Dong · Peking University / Hang Zhao · Tsinghua** | arXiv · 05-18（99 天前）</sub>
+
+- **[Scalable Behavior Cloning with Open Data, Training, and Evaluation](https://arxiv.org/abs/2606.27375)**
+  We introduce ABC, a fully open-source stack for manipulation with behavior cloning. At its core is ABC-130K: the largest open-source teleoperation dataset to date, featuring 3,500…
+  <sub>👤 **Pieter Abbeel · UC Berkeley / Jitendra Malik · UC Berkeley** | arXiv · 06-25（61 天前）</sub>
+
+- **[Cross-Hand Latent Representation for Vision-Language-Action Models](https://arxiv.org/abs/2603.10158)**
+  Dexterous manipulation is essential for real-world robot autonomy, mirroring the central role of human hand coordination in daily activity. Humans rely on rich multimodal percepti…
+  <sub>👤 **Pieter Abbeel · UC Berkeley / Xiaolong Wang · UCSD** | arXiv · 03-10（168 天前）</sub>
+
+- **[Data Pyramid for Embodied Manipulation: A Survey](https://arxiv.org/abs/2607.24744)**
+  Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents admit no such shortcut, since they require data that couple observations…
+  <sub>👤 **Ziwei Liu · NTU / Ping Luo · HKU** | 💡 想法型 | arXiv · 29 天前</sub>
+
+- **[Do as I Do: Dexterous Manipulation Data from Everyday Human Videos](https://arxiv.org/abs/2606.19333)**
+  How can we scalably generate data for robotic manipulation, especially on human-like platforms such as dexterous multi-fingered hands? Learning from human videos has recently emer…
+  <sub>👤 **Pieter Abbeel · UC Berkeley / Jitendra Malik · UC Berkeley** | arXiv · 06-17（69 天前）</sub>
+
+- **[ForceVLA2: Unleashing Hybrid Force-Position Control with Force Awareness for Contact-Rich Manipulation](https://arxiv.org/abs/2603.15169)**
+  Embodied intelligence for contact-rich manipulation has predominantly relied on position control, while explicit awareness and regulation of interaction forces remain under-explor…
+  <sub>👤 **Cewu Lu · SJTU / Yu Qiao · Shanghai AI Lab** | arXiv · 03-16（162 天前）</sub>
+
+
+## 🚶 具身智能 / 机器人
+
+- **[D-REX: Differentiable Real-to-Sim-to-Real Engine for Learning Dexterous Grasping](https://arxiv.org/abs/2603.01151)**
+  Simulation provides a cost-effective and flexible platform for data generation and policy learning to develop robotic systems. However, bridging the gap between simulation and rea…
+  <sub>👤 **Pieter Abbeel · UC Berkeley / Jitendra Malik · UC Berkeley** | arXiv · 03-01（177 天前）</sub>
+
+- **[Scaling Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2607.15163)**
+  Humanoid control requires natural whole-body coordination, precise real-time responses to control signals, and robust generalization across diverse environmental contexts, making…
+  <sub>👤 **He Wang · Peking University / Dahua Lin · CUHK / Shanghai AI Lab** | arXiv · 07-16（40 天前）</sub>
+
+
+## 🌍 世界模型 / World Models
+
+- **[World Model for Robot Learning: A Comprehensive Survey](https://arxiv.org/abs/2605.00080)**
+  World models, which are predictive representations of how environments evolve under actions, have become a central component of robot learning. They support policy learning, plann…
+  <sub>👤 **Pieter Abbeel · UC Berkeley / Jitendra Malik · UC Berkeley** | 💡 想法型 | arXiv · 04-30（117 天前）</sub>
+
+
+## 🎯 强化学习 / 持续学习
+
+- **[GIANTS: Generative Insight Anticipation from Scientific Literature](https://arxiv.org/abs/2604.09793)**
+  Scientific breakthroughs often emerge from synthesizing prior ideas into novel contributions. While language models (LMs) show promise in scientific discovery, their ability to pe…
+  <sub>👤 **Chelsea Finn · Stanford / Physical Intelligence / Sherry Yang · NYU / Google / Emma Brunskill · Stanford** | arXiv · 04-10（137 天前）</sub>
+
+- **[Improving Robotic Generalist Policies via Flow Reversal Steering](https://arxiv.org/abs/2606.13675)**
+  Generalist policies can learn a wide range of skills from diverse robot datasets. In order to solve or improve on challenging new tasks, we need a way to infer and invoke the appr…
+  <sub>👤 **Chelsea Finn · Stanford / Physical Intelligence / Sergey Levine · UC Berkeley / Physical Intelligence** | arXiv · 06-11（75 天前）</sub>
+
+- **[When Does Continual Learning Require Learning](https://arxiv.org/abs/2607.07847)**
+  As large language models (LLMs) become increasingly capable, the next question is how can we enable models to continually learn? Today, the field largely frames this as a problem…
+  <sub>👤 **Jitendra Malik · UC Berkeley / Trevor Darrell · UC Berkeley** | 💡 we argue | arXiv · 07-08（48 天前）</sub>
+
+- **[One Frozen Simulator Is Not Enough: Simulator Collapse in Multi-Agent RL](https://arxiv.org/abs/2608.12253)**
+  Multi-agent reinforcement learning for human-AI interaction typically relies on a single large language model to simulate user behavior. We show that this approach systematically…
+  <sub>👤 **Sergey Levine · UC Berkeley / Physical Intelligence / Christopher D. Manning · Stanford** | arXiv · 13 天前</sub>
+
+- **[SARM2: Multi-Task Stage Aware Reward Modeling for Self Improving Robotic Manipulation](https://arxiv.org/abs/2606.10305)**
+  Fine-tuning vision-language-action (VLA) policies for long-horizon manipulation still relies heavily on behavior cloning, which requires costly high-quality demonstrations and kee…
+  <sub>👤 **Pieter Abbeel · UC Berkeley / Ken Goldberg · UC Berkeley** | arXiv · 06-09（78 天前）</sub>
+
+- **[How to Peel with a Knife: Aligning Fine-Grained Manipulation with Human Preference](https://arxiv.org/abs/2603.03280)**
+  Many essential manipulation tasks - such as food preparation, surgery, and craftsmanship - remain intractable for autonomous robots. These tasks are characterized not only by cont…
+  <sub>👤 **Pieter Abbeel · UC Berkeley / Jitendra Malik · UC Berkeley** | 💡 想法型 | arXiv · 03-03（175 天前）</sub>
+
+- **[Odysseus: Scaling VLMs to 100+ Turn Decision-Making in Games via Reinforcement Learning](https://arxiv.org/abs/2605.00347)**
+  Given the rapidly growing capabilities of vision-language models (VLMs), extending them to interactive decision-making tasks such as video games has emerged as a promising frontie…
+  <sub>👤 **Danqi Chen · Princeton / Karthik Narasimhan · Princeton / Sierra** | arXiv · 05-01（117 天前）</sub>
+
+- **[Reinforcement Learning with Pairwise Preferences in Long-Term Decision Problems](https://arxiv.org/abs/2606.00367)**
+  Reinforcement learning with scalar rewards is widely used for aligning machine-learning systems with user preferences. But, pairwise preferences are often more natural for users t…
+  <sub>👤 **Doina Precup · McGill / Mila / DeepMind / Benjamin Van Roy · Stanford** | arXiv · 05-29（88 天前）</sub>
+
+- **[Beyond the Stability-Exploration Dilemma: Environmental Regularization for LLM Policy Optimization](https://arxiv.org/abs/2608.23311)**
+  Policy optimization (PO) for Large Language Models faces a stability--exploration trade-off, currently mediated by an action-side Policy-KL regularizer. This puts practitioners in…
+  <sub>🔥 15 | 💡 想法型 | HF Papers · 2 天前</sub>
+
+- **[Annotations as Rollouts: Efficient and Scalable Reinforcement Learning for Video MLLMs](https://arxiv.org/abs/2608.20492)**
+  Multimodal large language models (MLLMs) have become a prevailing paradigm for unified video perception. However, post-training on large multi-task datasets remains challenging, a…
+  <sub>🔥 47 | HF Papers · 6 天前</sub>
+
+
+## 💡 理论 / 新范式
+
+- **[AI+HW 2035: Shaping the Next Decade](https://arxiv.org/abs/2603.05225)**
+  Artificial intelligence (AI) and hardware (HW) are advancing at unprecedented rates, yet their trajectories have become inseparably intertwined. The global research community lack…
+  <sub>👤 **Yann LeCun · NYU / Tri Dao · Princeton / Together AI** | arXiv · 03-05（173 天前）</sub>
+
+- **[How mobility gives language models a deeper understanding of place](https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/)**
+  Algorithms & Theory
+  <sub>🏛 Google DeepMind | 💡 想法型 | Blog · 4 天前</sub>
+
+
+---
+
+<details>
+<summary>📡 源状态与运行信息</summary>
+
+
+**入选来源分布**：arXiv 50, HF Papers 6, Blog 4
+
+
+**本轮出问题的源**（不影响其他源）：
+
+- 使用了 --from-raw 缓存，本轮未联网抓取
+
+
+**积压 997 条**（超出本期容量，未标记为已推送，会出现在后续几期）。
+
+
+**模式**：daily　**LLM 摘要**：off
+
+</details>

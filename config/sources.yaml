@@ -1,0 +1,95 @@
+# 数据源配置。任何一个源挂掉不会影响其他源（失败会记录到 digest 末尾的「源状态」）。
+
+arxiv:
+  enabled: true
+  # 每日普通扫描的分类与时间窗
+  categories: [cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML]
+  window_days: 2
+  max_results_per_category: 120
+  # watchlist 作者的长时间窗（这是「Sutton 五月的论文八月才看到」的解药）
+  author_window_days: 180
+  authors_per_query: 6       # 多个作者 OR 成一条 query，减少请求数
+  # 作者扫描也限定在这些分类内。不加这条，BESIII / LHCb 那种 500 作者的
+  # 高能物理论文会靠姓名巧合霸占整个榜单。
+  author_scan_categories:
+    [cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, cs.SE, cs.HC, cs.IR,
+     stat.ML, eess.AS, eess.IV]
+  request_delay_sec: 3.0     # arXiv 官方建议 >=3s
+
+hf_papers:
+  enabled: true
+  # HuggingFace Daily Papers：社区票选，趋势信号
+  window_days: 3
+  min_upvotes: 0
+  # 旧论文票数涨过这个增量 -> 作为「迟到的热度」重新浮出
+  resurface_upvote_delta: 40
+
+rss:
+  enabled: true
+  window_days: 7
+  feeds:
+    - {name: OpenAI Blog,          url: "https://openai.com/news/rss.xml",                       lab: OpenAI}
+    - {name: Google DeepMind Blog, url: "https://deepmind.google/blog/rss.xml",                  lab: Google DeepMind}
+    - {name: Google Research Blog, url: "https://research.google/blog/rss/",                     lab: Google DeepMind}
+    - {name: Microsoft Research,   url: "https://www.microsoft.com/en-us/research/feed/",        lab: Microsoft Research}
+    # NVIDIA 开发者博客量大但偏产品/营销，不是研究想法的来源，默认关掉
+    # - {name: NVIDIA Dev Blog,    url: "https://developer.nvidia.com/blog/category/generative-ai/feed/", lab: NVIDIA Research}
+    # BAIR 的 feed 在部分网络下连不上（ConnectTimeout），需要就取消注释
+    # - {name: BAIR Blog,          url: "https://bair.berkeley.edu/blog/feed.xml",               lab: UC Berkeley}
+    - {name: Stanford AI Lab,      url: "https://ai.stanford.edu/blog/feed.xml",                 lab: Stanford}
+    - {name: CMU ML Blog,          url: "https://blog.ml.cmu.edu/feed/",                         lab: CMU}
+    - {name: MIT News - AI,        url: "https://news.mit.edu/rss/topic/artificial-intelligence2", lab: MIT}
+    - {name: HuggingFace Blog,     url: "https://huggingface.co/blog/feed.xml",                  lab: HuggingFace}
+    - {name: Lil'Log,              url: "https://lilianweng.github.io/index.xml",                lab: "—"}
+    - {name: Sebastian Raschka,    url: "https://magazine.sebastianraschka.com/feed",            lab: "—"}
+    - {name: Import AI,            url: "https://importai.substack.com/feed",                    lab: "—"}
+    - {name: Simon Willison,       url: "https://simonwillison.net/atom/everything/",            lab: "—"}
+    - {name: The Gradient,         url: "https://thegradient.pub/rss/",                          lab: "—"}
+    - {name: AI2 Blog,             url: "https://medium.com/feed/ai2-blog",                         lab: Allen Institute for AI}
+
+# 没有 RSS 的重要页面：抓页面上的链接，和上次的快照做 diff，出现新链接就报。
+# 这条通道专门用来盯 Sutton 这类「只在个人主页贴新想法」的人。
+pagewatch:
+  enabled: true
+  pages:
+    - name: "Meta AI Blog"        # 没有可用 RSS，改用页面差分
+      url: "https://ai.meta.com/blog/"
+      link_pattern: '/blog/[a-z0-9-]{6,}'
+      lab: Meta FAIR
+      weight: 1.8
+    - name: "Sutton - Incomplete Ideas"
+      url: "http://incompleteideas.net/"
+      link_pattern: '\.(html|pdf)$'
+      author: Richard S. Sutton
+      weight: 3.0
+    - name: "Anthropic News"
+      url: "https://www.anthropic.com/news"
+      link_pattern: '^/(news|research)/'
+      lab: Anthropic
+      weight: 2.0
+    - name: "Anthropic Research"
+      url: "https://www.anthropic.com/research"
+      link_pattern: '^/research/'
+      lab: Anthropic
+      weight: 2.0
+    - name: "Physical Intelligence Blog"
+      url: "https://www.physicalintelligence.company/blog"
+      link_pattern: '/blog/'
+      lab: Physical Intelligence
+      weight: 2.0
+    - name: "Sakana AI Blog"
+      url: "https://sakana.ai/blog/"
+      link_pattern: '/blog/'
+      lab: Sakana AI
+      weight: 1.5
+    - name: "World Labs Blog"
+      url: "https://www.worldlabs.ai/blog"
+      link_pattern: '/blog/'
+      lab: World Labs
+      weight: 1.5
+
+# 可选：Semantic Scholar 引用数增强（无 key 也能用，但限流严格）
+semantic_scholar:
+  enabled: false
+  api_key_env: S2_API_KEY
+  only_for_watchlist: true

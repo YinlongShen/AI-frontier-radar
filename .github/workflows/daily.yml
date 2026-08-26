@@ -1,0 +1,73 @@
+name: 每日 AI 前沿雷达
+
+on:
+  schedule:
+    - cron: "0 23 * * *"      # UTC 23:00 = 北京时间 07:00
+  workflow_dispatch:           # 也可以手动触发
+    inputs:
+      mode:
+        description: "运行模式"
+        type: choice
+        options: [run, backfill]
+        default: run
+      author_days:
+        description: "关注名单回溯天数"
+        default: "180"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 生成简报
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -o pipefail
+          if [ "${{ inputs.mode }}" = "backfill" ]; then
+            python -m aidigest backfill --days "${{ inputs.author_days || 180 }}"
+          else
+            python -m aidigest run
+          fi
+          echo "date=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: 提交结果
+        run: |
+          git config user.name  "ai-frontier-radar[bot]"
+          git config user.email "actions@github.com"
+          git add digests .state
+          if git diff --staged --quiet; then
+            echo "今天没有新内容，跳过提交"
+          else
+            git commit -m "digest: ${{ steps.gen.outputs.date }}"
+            git push
+          fi
+
+      # 开一个 Issue，这样 GitHub 会直接把简报推到你邮箱 / 手机通知
+      - name: 推送到 Issue
+        if: vars.CREATE_ISSUE != 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "AI 前沿雷达 · ${{ steps.gen.outputs.date }}" \
+            --body-file "digests/latest.md" \
+            --label digest || echo "创建 Issue 失败（可能是 digest 标签不存在），忽略"

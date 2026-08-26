@@ -1,0 +1,318 @@
+# 领域定义。每篇论文会按 title+abstract 命中的关键词打分，
+# 得分最高的领域作为主领域，其余超过 secondary_threshold 的作为次领域。
+#
+# strong: 权重 3.0（几乎可以单独定性）
+# weak:   权重 1.0（辅助证据）
+# 全部按「词边界 + 大小写不敏感」匹配，可以直接写正则。
+
+meta:
+  secondary_threshold: 3.0
+  min_score_to_classify: 1.0
+  fallback_topic: misc
+
+topics:
+  - id: llm
+    name_zh: 大模型 / LLM
+    name_en: Large Language Models
+    emoji: "🧠"
+    arxiv_categories: [cs.CL, cs.LG, cs.AI]
+    strong:
+      - large language model
+      - foundation model
+      - pretrain(ing|ed)? corpus
+      - mixture[- ]of[- ]experts
+      - next[- ]token prediction
+      - instruction tuning
+      - RLHF
+      - preference optimization
+      - DPO
+      - scaling law
+      - long[- ]context
+      - chain[- ]of[- ]thought
+      - test[- ]time (compute|scaling)
+      - reasoning model
+    weak:
+      - transformer
+      - LLM
+      - GPT
+      - decoder[- ]only
+      - tokenizer
+      - perplexity
+      - fine[- ]tun(e|ing)
+      - in[- ]context learning
+      - prompt(ing)?
+
+  - id: agent
+    name_zh: 智能体 / Agent
+    name_en: Agents
+    emoji: "🤖"
+    arxiv_categories: [cs.AI, cs.MA, cs.CL, cs.SE]
+    strong:
+      - (llm|language model|ai)[- ]agent
+      - agentic
+      - multi[- ]agent system
+      - tool[- ]use
+      - tool[- ]calling
+      - function calling
+      - computer[- ]use agent
+      - web agent
+      - gui agent
+      - coding agent
+      - agent(ic)? workflow
+      - ReAct framework
+      - self[- ]refl(ect|ection)
+    weak:
+      - agent
+      - planning
+      - tool
+      - orchestrat(e|ion)
+      - autonomous
+      - task decomposition
+
+  - id: harness
+    name_zh: Harness / 基建与评测
+    name_en: Harness, Infra & Evaluation
+    emoji: "🧰"
+    arxiv_categories: [cs.SE, cs.AI, cs.LG]
+    strong:
+      - agent harness
+      - scaffold(ing)?
+      - evaluation harness
+      - benchmark suite
+      - sandbox environment
+      - context (management|engineering|compaction)
+      - memory (system|architecture) for
+      - retrieval[- ]augmented generation
+      - RAG
+      - inference (engine|serving|system)
+      - kv[- ]cache
+      - speculative decoding
+      - model context protocol
+      - MCP
+    weak:
+      - benchmark
+      - evaluation
+      - harness
+      - infrastructure
+      - throughput
+      - latency
+      - serving
+      - quantization
+      - distillation
+
+  - id: cv
+    name_zh: 计算机视觉 / CV
+    name_en: Computer Vision
+    emoji: "👁️"
+    arxiv_categories: [cs.CV]
+    strong:
+      - object detection
+      - semantic segmentation
+      - instance segmentation
+      - image (generation|synthesis|restoration)
+      - diffusion model
+      - flow matching
+      - neural radiance field
+      - NeRF
+      - gaussian splatting
+      - video generation
+      - 3D reconstruction
+      - optical flow
+      - visual representation learning
+      - self[- ]supervised (visual|image)
+    weak:
+      - vision
+      - image
+      - video
+      - visual
+      - pixel
+      - ViT
+      - convolutional
+      - rendering
+      - point cloud
+
+  - id: multimodal
+    name_zh: 多模态 / VLM
+    name_en: Multimodal & Vision-Language
+    emoji: "🎨"
+    arxiv_categories: [cs.CV, cs.CL, cs.MM]
+    strong:
+      - vision[- ]language model
+      - VLM
+      - multi[- ]?modal (llm|model|reasoning|learning)
+      - MLLM
+      - image[- ]text (alignment|pretraining)
+      - visual instruction tuning
+      - audio[- ]language
+      - any[- ]to[- ]any
+      - unified (understanding and generation|multimodal)
+      - cross[- ]modal
+      - CLIP
+    weak:
+      - multimodal
+      - captioning
+      - visual question answering
+      - VQA
+      - grounding
+      - speech
+      - audio
+
+  - id: vla
+    name_zh: VLA / 视觉-语言-动作
+    name_en: Vision-Language-Action
+    emoji: "🦾"
+    arxiv_categories: [cs.RO, cs.LG, cs.CV]
+    strong:
+      - vision[- ]language[- ]action
+      - VLA
+      - robot(ic)? foundation model
+      - robot policy
+      - manipulation policy
+      - action (chunking|expert|tokeniz)
+      - imitation learning from demonstration
+      - diffusion policy
+      - teleoperation data
+      - cross[- ]embodiment
+    weak:
+      - manipulation
+      - grasping
+      - dexterous
+      - end[- ]effector
+      - robot arm
+      - behavior cloning
+
+  - id: embodied
+    name_zh: 具身智能 / 机器人
+    name_en: Embodied AI & Robotics
+    emoji: "🚶"
+    arxiv_categories: [cs.RO, cs.AI]
+    strong:
+      - embodied (ai|agent|intelligence)
+      - humanoid robot
+      - legged loco(motion)?
+      - sim[- ]to[- ]real
+      - navigation policy
+      - whole[- ]body control
+      - embodied reasoning
+      - physical (intelligence|interaction|common sense)
+    weak:
+      - robot
+      - locomotion
+      - navigation
+      - simulator
+      - embodiment
+      - sensorimotor
+
+  - id: world_model
+    name_zh: 世界模型 / World Models
+    name_en: World Models
+    emoji: "🌍"
+    arxiv_categories: [cs.LG, cs.AI, cs.CV, cs.RO]
+    strong:
+      - world model
+      - learned simulator
+      - neural (game engine|simulator)
+      - latent dynamics model
+      - model[- ]based (rl|reinforcement learning)
+      - video (prediction|world) model
+      - dreamer
+      - predictive (world )?representation
+      - interactive environment generation
+    weak:
+      - dynamics model
+      - rollout
+      - imagination
+      - forward model
+      - state prediction
+
+  - id: rl
+    name_zh: 强化学习 / 持续学习
+    name_en: RL & Continual Learning
+    emoji: "🎯"
+    arxiv_categories: [cs.LG, cs.AI]
+    strong:
+      - reinforcement learning
+      - continual learning
+      - lifelong learning
+      - plasticity loss
+      - catastrophic forgetting
+      - reward (model|hacking|shaping)
+      - policy gradient
+      - value function approximation
+      - temporal[- ]difference
+      - exploration bonus
+      - GRPO
+      - PPO
+      - self[- ]play
+      - experience replay
+      - stream(ing)? learning
+    weak:
+      - RL
+      - agent learning
+      - reward
+      - policy
+      - bandit
+      - off[- ]policy
+      - on[- ]policy
+
+  - id: theory
+    name_zh: 理论 / 新范式
+    name_en: Theory & New Paradigms
+    emoji: "💡"
+    arxiv_categories: [cs.LG, cs.AI, stat.ML]
+    strong:
+      - position paper
+      - we argue that
+      - a new paradigm
+      - rethinking
+      - manifesto
+      - enactiv(e|ism)
+      - the era of experience
+      - intelligence as
+      - first principles
+      - theoretical framework for
+      - alternative to (backprop|transformers|the transformer)
+      - open[- ]ended(ness)? (learning|discovery)
+      - artificial general intelligence
+    weak:
+      - theory
+      - paradigm
+      - perspective
+      - generalization bound
+      - emergence
+      - inductive bias
+
+  - id: safety
+    name_zh: 安全 / 对齐 / 可解释
+    name_en: Safety, Alignment & Interpretability
+    emoji: "🛡️"
+    arxiv_categories: [cs.AI, cs.CL, cs.CR, cs.LG]
+    strong:
+      - ai safety
+      - alignment (research|technique|faking)
+      - mechanistic interpretability
+      - sparse autoencoder
+      - jailbreak
+      - red[- ]team(ing)?
+      - deceptive alignment
+      - scalable oversight
+      - constitutional ai
+      - model welfare
+      - sandbagging
+      - eval(uation)? awareness
+    weak:
+      - safety
+      - alignment
+      - interpretability
+      - robustness
+      - adversarial
+      - hallucination
+      - refusal
+
+  - id: misc
+    name_zh: 其他值得一看
+    name_en: Miscellaneous
+    emoji: "📌"
+    arxiv_categories: []
+    strong: []
+    weak: []

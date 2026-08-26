@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.egg-info/
+build/
+dist/
+
+# 注意：.state/seen.sqlite3 是**故意**提交进仓库的 —— GitHub Actions 每次跑都是
+# 全新容器，不提交状态就没法去重，你会每天收到同样的内容。
+.state/last_raw.json

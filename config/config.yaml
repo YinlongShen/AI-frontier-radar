@@ -1,0 +1,56 @@
+# 主配置
+output:
+  dir: digests
+  language: zh            # zh | en  —— 影响 LLM 摘要与标题语言
+  top_n_highlights: 10    # 「今日必读」条数
+  max_items_per_topic: 8  # 每个领域最多几条
+  max_items_total: 60     # 每份简报总条数上限；超出的**不标记为已推送**，会排进明天
+  # 按来源预留名额。arXiv 上关注名单的论文分数天然最高，不预留的话
+  # 实验室博客和页面更新永远挤不进来 —— 而那恰恰是新想法的首发地。
+  reserve:
+    rss: 8
+    pagewatch: 5
+    hf: 6
+  # 同一个 feed / 页面最多占几个预留名额，防止高产的源刷屏
+  max_per_venue: 2
+  write_latest: true      # 同时写一份 digests/latest.md
+
+scoring:
+  # 最终分 = 各项加权和
+  weights:
+    watchlist_author: 6.0     # 每命中一位 watchlist 作者 * 其 weight
+    lab: 2.0
+    hf_upvotes: 1.2           # log1p(upvotes) * w
+    topic_confidence: 0.6
+    idea_signal: 2.5          # 「position paper」「rethinking」等大想法信号
+    recency: 1.5              # 越新越高，线性衰减
+    blog: 3.5                 # 实验室/个人博客文章（论文之外的想法首发地）
+    cross_topic: 0.8          # 跨领域论文加一点分
+  # 低于这个分的条目不进 digest（watchlist 命中的永远保留）
+  min_score: 9.0
+  # 姓名匹配的最低置信度。1.0 = 必须全名对上；0.7 会把 "K. He" 也算成
+  # "Kaiming He"，在有几百作者的合作组论文上误报极其严重，别调低。
+  min_name_confidence: 1.0
+  # 作者数超过这个值的论文（大型合作组）不参与关注名单加分
+  max_authors_for_author_match: 30
+  idea_signal_patterns:
+    - '^(towards|rethinking|on the|beyond|the case for|why|what|how)\b'
+    - 'position paper'
+    - 'we argue'
+    - 'a new (paradigm|framework|perspective|approach to)'
+    - 'manifesto'
+    - 'lessons? (from|learned)'
+    - 'survey|review of'
+    - 'first principles'
+
+llm:
+  enabled: true             # 没有 ANTHROPIC_API_KEY 时自动降级为「不调用 LLM」
+  model: claude-opus-5
+  effort: medium            # low | medium | high | xhigh | max
+  # 只对进入 digest 的条目做摘要，控制成本
+  max_items: 30
+  # 一次请求处理多少条（批处理，省 token）
+  batch_size: 10
+
+state:
+  db_path: .state/seen.sqlite3

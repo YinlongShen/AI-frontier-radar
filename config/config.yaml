@@ -47,8 +47,9 @@ llm:
   enabled: true             # 没有 ANTHROPIC_API_KEY 时自动降级为「不调用 LLM」
   model: claude-opus-5
   effort: medium            # low | medium | high | xhigh | max
-  # 只对进入 digest 的条目做摘要，控制成本
-  max_items: 30
+  # 只对进入 digest 的条目做摘要。设成和 output.max_items_total 一样，
+  # 简报里每条都有中文速览；调小可以省钱，超出的条目退化成截断的英文摘要。
+  max_items: 60
   # 一次请求处理多少条（批处理，省 token）
   batch_size: 10
 

@@ -80,8 +80,10 @@ export ANTHROPIC_API_KEY=sk-ant-...
 .venv/bin/python -m aidigest run
 ```
 
-默认 `claude-opus-5`、`effort: medium`、每批 10 条、每天最多 30 条 —— 每天大约几分钱到一两毛。
-想更省就在 `config/config.yaml` 里把 `llm.model` 换成 `claude-haiku-4-5`。
+默认 `claude-opus-5`、`effort: medium`、每批 10 条、每天最多 60 条（和简报容量一致，
+所以每条都有速览）。粗算每天 2–3 毛，一个月十块钱上下。想更省有三个旋钮：
+把 `llm.max_items` 调小（超出的退化成截断的英文摘要）、把 `llm.effort` 降到 `low`、
+或者把 `llm.model` 换成 `claude-haiku-4-5`。
 
 ---
 

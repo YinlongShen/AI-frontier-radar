@@ -1,76 +1,51 @@
-# AI 前沿雷达 · 2026-10-22
+# AI 前沿雷达 · 2026-10-23
 
-> 扫描 **1816** 条 → 入选 **40** 条 ｜ 关注名单命中 **15** 位研究者 ｜ 生成于 2026-10-22 01:23 UTC
+> 扫描 **620** 条 → 入选 **33** 条 ｜ 关注名单命中 **8** 位研究者 ｜ 生成于 2026-10-23 01:54 UTC
 
-**今日分布**：🧠 大模型 / LLM (6) ｜ 🤖 智能体 / Agent (8) ｜ 🧰 Harness / 基建与评测 (6) ｜ 👁️ 计算机视觉 / CV (9) ｜ 🦾 VLA / 视觉-语言-动作 (2) ｜ 🚶 具身智能 / 机器人 (3) ｜ 🌍 世界模型 / World Models (1) ｜ 🎯 强化学习 / 持续学习 (2) ｜ 💡 理论 / 新范式 (2) ｜ 🛡️ 安全 / 对齐 / 可解释 (1)
+**今日分布**：🧠 大模型 / LLM (2) ｜ 🤖 智能体 / Agent (8) ｜ 🧰 Harness / 基建与评测 (6) ｜ 👁️ 计算机视觉 / CV (7) ｜ 🎨 多模态 / VLM (3) ｜ 🦾 VLA / 视觉-语言-动作 (3) ｜ 🚶 具身智能 / 机器人 (1) ｜ 🎯 强化学习 / 持续学习 (3)
 
 
 ## ⭐ 今日必读
 
-1. **[COWBOY: A Scalable Sim-to-Real Framework for Learning Contextual Whole-Body Manipulation](https://arxiv.org/abs/2610.28948)**
-   Mobile manipulators must adapt not only to objects, but also to the spatial context in which they appear: where to position the base, how to manipulate, and where to look while na…
-   <sub>👤 **Deepak Pathak · CMU / Skild AI / Ruslan Salakhutdinov · CMU** | arXiv · 昨天</sub>
+1. **[Agentic World Action Models](https://arxiv.org/abs/2610.30136)**
+   Recent world action models provide visual foresight and future prediction for robot manipulation, but lack explicit mechanisms for compositional skill reuse. Agentic robotics comb…
+   <sub>👤 **Yuke Zhu · UT Austin / NVIDIA / Linxi Fan · NVIDIA GEAR / Ken Goldberg · UC Berkeley +1** | 🔥 11 | HF Papers · 2 天前</sub>
 
-2. **[Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience](https://arxiv.org/abs/2610.26855)**
-   World models enable embodied agents to anticipate action consequences, yet jointly modeling locomotion and manipulation across diverse embodiments remains challenging due to heter…
-   <sub>👤 **Ziwei Liu · NTU** | 🔥 178 | arXiv · 2 天前</sub>
+2. **[DONIC: Generalist Dexterous Bimanual Tracking Control from Human Demonstrations](https://arxiv.org/abs/2610.29997)**
+   Despite recent progress in dexterous reference tracking, existing models focus primarily on single-hand manipulation and a limited range of interactions, leaving the bimanual dext…
+   <sub>👤 **Ziwei Liu · NTU** | 🔥 129 | HF Papers · 2 天前</sub>
 
-3. **[S-Agent 2.0: Spatial Reasoning with a General Coding Agent](https://arxiv.org/abs/2610.28354)**
-   Spatial reasoning asks a model to work out where objects are in 3D space, how they relate to one another, and how they move. Agentic VLMs have recently brought large improvements…
-   <sub>👤 **Ziwei Liu · NTU** | 🔥 93 | arXiv · 昨天</sub>
+3. **[DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models](https://arxiv.org/abs/2610.30781)**
+   Before acting on an object, a robot needs to anticipate how its hand motion will change the physical world and what the resulting scene will look like. Existing approaches typical…
+   <sub>👤 **Ziwei Liu · NTU** | arXiv · 今天</sub>
 
-4. **[EgoXperience: Learning World-Grounded Egocentric Representations from Human Experience](https://arxiv.org/abs/2610.26625)**
-   Reconstructing human activity from egocentric video requires more than recovering individual 3D components: the observer's motion, surrounding geometry, and hand-object interactio…
-   <sub>👤 **Ziwei Liu · NTU** | 🔥 170 | arXiv · 2 天前</sub>
+4. **[LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation](https://arxiv.org/abs/2610.30876)**
+   Humanoid robots must coordinate locomotion and manipulation in everyday environments, yet progress is difficult to assess across differing policies, controllers, and task settings…
+   <sub>👤 **Ping Luo · HKU** | arXiv · 今天</sub>
 
-5. **[Learning the 4D World through Point Trajectory Forecasting](https://arxiv.org/abs/2610.28594)**
-   Reliable multi-view forecasting requires videos from different cameras to describe the same evolving 3D scene. To this end, we introduce Video-Point Model (VPM), a world model tha…
-   <sub>👤 **Saining Xie · NYU** | 🔥 41 | arXiv · 昨天</sub>
+5. **[UniFlowWAM: A Unified World-Action Model with Visual Semantics and 4D Geometry](https://arxiv.org/abs/2610.30991)**
+   Robot demonstrations record what the robot saw and what it did. They do not specify how the 3D world changed in between. Scene-level 3D flow describes it by tracking 3D scene poin…
+   <sub>👤 **Cewu Lu · SJTU** | arXiv · 今天</sub>
 
-6. **[Holi-World: Building Holistic World Intelligence from Human-Ego Experience](https://arxiv.org/abs/2610.26549)**
-   Human egocentric experience offers a rich foundation for learning how the world is organized and how it changes through interaction. Realizing this potential at scale requires tur…
-   <sub>👤 **Ziwei Liu · NTU** | 🔥 156 | arXiv · 2 天前</sub>
+6. **[Evolving with Open Worlds: Towards Recursive Self-Improvement for Future Forecasting](https://arxiv.org/abs/2610.29784)**
+   Most contemporary artificial intelligence (AI) systems are released with frozen parameters and improve through external updates, whereas an ideal system would keep improving from…
+   <sub>👤 **Jia Deng · Princeton** | 🔥 11 | HF Papers · 2 天前</sub>
 
-7. **[SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model](https://arxiv.org/abs/2610.28480)**
-   Tracking large human-motion datasets has become the dominant route to general, expressive humanoid whole-body control, but scaling across many motions is expensive. Current pipeli…
-   <sub>👤 **Pieter Abbeel · UC Berkeley** | arXiv · 昨天</sub>
+7. **[Cache Engineering for Agents](https://arxiv.org/abs/2610.28577)**
+   Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache…
+   <sub>🔥 113 | HF Papers · 3 天前</sub>
 
-8. **[T-DIG: Text-Conditioned Diversity for Image Generation](https://arxiv.org/abs/2610.29003)**
-   Text-to-image (T2I) platforms typically return several images per prompt so users can explore different visual interpretations and choose one that matches their intent. However, T…
-   <sub>👤 **Graham Neubig · CMU / All Hands AI** | arXiv · 昨天</sub>
+8. **[Can AI Co-Design Structures? An AI Agent for Early-Stage Structural Design](https://arxiv.org/abs/2610.31113)**
+   Recent advances in large language models and agentic workflows offer a new paradigm to early-stage structural design translating design intent into structural models. Although tex…
+   <sub>💡 a new paradigm | arXiv · 今天</sub>
 
-9. **[JUICE: Unified Multimodal Modeling in Pretrained Representation Spaces](https://arxiv.org/abs/2610.28801)**
-   Most unified multimodal models treat images and text asymmetrically: a pretrained language model generates text, an attached diffusion head generates images, and outputs that cont…
-   <sub>👤 **Sherry Yang · NYU / Google** | arXiv · 昨天</sub>
+9. **[Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828)**
+   Agent learning is shifting from learning from human data toward learning through interaction with the world. However, scaling such learning directly in real-world computer systems…
+   <sub>🔥 64 | HF Papers · 4 天前</sub>
 
-10. **[MoDDiT: Simple Token Routing in Diffusion Transformers](https://arxiv.org/abs/2610.28086)**
-   Real-time video generation, interactive world models, and on-device image synthesis are almost a reality. Diffusion Transformers (DiT) achieve excellent sample quality, shifting t…
-   <sub>👤 **Jakob Foerster · Oxford** | arXiv · 昨天</sub>
-
-
-## 🕰️ 迟到的热度
-
-*旧内容，但最近热度明显上涨 —— 之前可能被你错过。*
-
-- **[Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience](https://arxiv.org/abs/2610.26855)**
-  World models enable embodied agents to anticipate action consequences, yet jointly modeling locomotion and manipulation across diverse embodiments remains challenging due to heter…
-  <sub>👤 **Ziwei Liu · NTU** | 🔥 178 | arXiv · 2 天前</sub>
-
-- **[EgoXperience: Learning World-Grounded Egocentric Representations from Human Experience](https://arxiv.org/abs/2610.26625)**
-  Reconstructing human activity from egocentric video requires more than recovering individual 3D components: the observer's motion, surrounding geometry, and hand-object interactio…
-  <sub>👤 **Ziwei Liu · NTU** | 🔥 170 | arXiv · 2 天前</sub>
-
-- **[Holi-World: Building Holistic World Intelligence from Human-Ego Experience](https://arxiv.org/abs/2610.26549)**
-  Human egocentric experience offers a rich foundation for learning how the world is organized and how it changes through interaction. Realizing this potential at scale requires tur…
-  <sub>👤 **Ziwei Liu · NTU** | 🔥 156 | arXiv · 2 天前</sub>
-
-- **[OR-License: Evaluating LLM Agents as Real-World Operations Research Practitioners](https://arxiv.org/abs/2610.24087)**
-  Can large language model (LLM) agents deliver expert-level operations research (OR) solutions directly from original client materials, without prior expert reformulation? Existing…
-  <sub>🔥 291 | HF Papers · 6 天前</sub>
-
-- **[LEV: Thinking Fast and Deep with Looped Decision Models](https://arxiv.org/abs/2610.20951)**
-  Decision models answer typed questions about an input with one probability per option, computed in a single forward pass without generating text. Like the fast System 1 of dual-pr…
-  <sub>🔥 602 | HF Papers · 8 天前</sub>
+10. **[Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation](https://arxiv.org/abs/2610.29989)**
+   Autoregressive video diffusion models generate videos chunk by chunk, yet producing plausible continuations does not guarantee that they capture how scenes evolve. Under teacher f…
+   <sub>🔥 118 | HF Papers · 2 天前</sub>
 
 
 ---
@@ -78,192 +53,157 @@
 
 ## 🧠 大模型 / LLM
 
-- **[Understanding the Inner Workings of a State-Space Foundation Model for Limit Order Books](https://arxiv.org/abs/2610.28753)**
-  Autoregressive foundation models offer state-of-the-art capabilities to simulate the market by generating the message flow of limit order books (LOBs). Yet, without understanding…
-  <sub>👤 **Jakob Foerster · Oxford** | arXiv · 昨天</sub>
+- **[ULME: Predictive Coupling for Mutually Reinforcing Embedding and Language Modeling](https://arxiv.org/abs/2610.30705)**
+  Text embedding and text generation are two of the most useful capabilities of modern large language models, yet they are typically provided by separate specialized models (an embe…
+  <sub>💡 we argue | arXiv · 今天</sub>
 
-- **[PremiseCheck: Efficient Fact-Checking of Human and AI Peer Reviews](https://arxiv.org/abs/2610.21046)**
-  Peer review is under strain from the growth of submissions, and review comments written by humans or AI can misstate what a paper says. We introduce ReviewFact, a benchmark that l…
-  <sub>🔥 727 | HF Papers · 7 天前</sub>
-
-- **[Think Visually Across Space and Time: Grounded Reasoning for Video Segmentation](https://arxiv.org/abs/2610.25090)**
-  Video Reasoning Segmentation (VRS) requires a model to identify an implicitly described target and predict its pixel-level mask trajectory, while resolving the spatial relations a…
-  <sub>🔥 19 | HF Papers · 4 天前</sub>
-
-- **[AdaExploreBench: Benchmarking LLM Agents for Proactive Exploration and Test-time Adaptation in Evolving Environments](https://arxiv.org/abs/2610.25950)**
-  Large Language Model (LLM) agents are increasingly deployed in unfamiliar and evolving environments, requiring them to proactively explore, understand, and adapt to environmental…
-  <sub>🔥 28 | HF Papers · 3 天前</sub>
-
-- **[PAR: Progress-Aligned Recurrence for Length Generalization in State Tracking](https://arxiv.org/abs/2610.27628)**
-  Looped language models can run more iterations at test time, but additional iterations need not help them solve longer problems. For sequential state tracking, final-answer superv…
-  <sub>🔥 147 | HF Papers · 2 天前</sub>
-
-- **[How we built ChatGPT’s novel ad stack for user trust and relevance](https://openai.com/index/building-chatgpt-ad-stack)**
-  Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.
-  <sub>🏛 OpenAI | 💡 想法型 | Blog · 今天</sub>
+- **[Answering in the User's Variety: Calibrated Accommodation Pairs for Post-Training](https://arxiv.org/abs/2610.28474)**
+  People adapt how they talk to the person in front of them. However, chat models tend to respond in Standard English regardless of the dialect used by the user. A uniform answer ca…
+  <sub>🔥 8 | HF Papers · 3 天前</sub>
 
 
 ## 🤖 智能体 / Agent
 
-- **[S-Agent 2.0: Spatial Reasoning with a General Coding Agent](https://arxiv.org/abs/2610.28354)**
-  Spatial reasoning asks a model to work out where objects are in 3D space, how they relate to one another, and how they move. Agentic VLMs have recently brought large improvements…
-  <sub>👤 **Ziwei Liu · NTU** | 🔥 93 | arXiv · 昨天</sub>
+- **[Evolving with Open Worlds: Towards Recursive Self-Improvement for Future Forecasting](https://arxiv.org/abs/2610.29784)**
+  Most contemporary artificial intelligence (AI) systems are released with frozen parameters and improve through external updates, whereas an ideal system would keep improving from…
+  <sub>👤 **Jia Deng · Princeton** | 🔥 11 | HF Papers · 2 天前</sub>
 
-- **[OR-License: Evaluating LLM Agents as Real-World Operations Research Practitioners](https://arxiv.org/abs/2610.24087)**
-  Can large language model (LLM) agents deliver expert-level operations research (OR) solutions directly from original client materials, without prior expert reformulation? Existing…
-  <sub>🔥 291 | HF Papers · 6 天前</sub>
+- **[Can AI Co-Design Structures? An AI Agent for Early-Stage Structural Design](https://arxiv.org/abs/2610.31113)**
+  Recent advances in large language models and agentic workflows offer a new paradigm to early-stage structural design translating design intent into structural models. Although tex…
+  <sub>💡 a new paradigm | arXiv · 今天</sub>
 
-- **[Evolving Agent Interfaces](https://arxiv.org/abs/2610.28601)**
-  Computer-use agents are limited by the interfaces humans give them. An agent may type a spreadsheet cell by cell when a single line of code would do, or print all two thousand lin…
-  <sub>🔥 18 | 💡 we argue | HF Papers · 2 天前</sub>
+- **[Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828)**
+  Agent learning is shifting from learning from human data toward learning through interaction with the world. However, scaling such learning directly in real-world computer systems…
+  <sub>🔥 64 | HF Papers · 4 天前</sub>
 
-- **[Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds](https://arxiv.org/abs/2610.27999)**
-  Moving from controllable videos to genuinely playable worlds requires persistent world state, executable game rules, and low-latency interaction. We outline a roadmap for the next…
-  <sub>🔥 181 | HF Papers · 2 天前</sub>
+- **[Right Screen, Wrong Transition: World Models as Verifiers for GUI Agents](https://arxiv.org/abs/2610.11942)**
+  A login screen that appears after a tap on Sign in is expected; the same screen after a tap on View order is an attack. For GUI agents, safety is therefore a property of the trans…
+  <sub>🔥 96 | 💡 we argue | HF Papers · 15 天前</sub>
 
-- **[Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition](https://arxiv.org/abs/2610.28578)**
-  In this report, we introduce Sage-A1.5, a 35B Mixture-of-Experts agentic model that builds on A1 to advance long-horizon problem solving through adaptive capability composition. C…
-  <sub>🔥 63 | arXiv · 昨天</sub>
+- **[AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](https://arxiv.org/abs/2610.28589)**
+  Agentic robotics systems combine planners with robot harnesses to perform complex manipulation tasks. Recent work improves these systems through better harnesses and external memo…
+  <sub>🔥 21 | HF Papers · 3 天前</sub>
 
-- **[Muse Glimmer 30B: An On-Device Agentic Model](https://arxiv.org/abs/2610.24628)**
-  We introduce Muse Glimmer, an open-source 30B parameter causal language model with perception encoder, purpose-built for autonomous agentic tasks on consumer hardware. Muse Glimme…
-  <sub>🔥 5 | arXiv · 4 天前</sub>
+- **[Donating Agent Skills to the Agentic AI Foundation](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)**
+  <sub>🏛 Anthropic | 页面更新 · 新发现</sub>
 
-- **[Focused Omni-Modal GUI Agents](https://arxiv.org/abs/2610.26203)**
-  Graphical User Interface (GUI) agents increasingly act over streaming omni-modal observations spanning screenshots, audio, video, interaction history, and device states. However,…
-  <sub>🔥 224 | HF Papers · 3 天前</sub>
+- **[DeLoop: Repeated Actions as Self-Supervision for Long-Horizon Agents](https://arxiv.org/abs/2610.19376)**
+  Language-model agents that run long tasks often redo work they have already done: they re-issue a tool call they made earlier and get back exactly the same observation, a step tha…
+  <sub>🏛 Qwen / Alibaba | 🔥 17 | HF Papers · 9 天前</sub>
 
-- **[RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents](https://arxiv.org/abs/2610.27295)**
-  Existing steering benchmarks are built around simplified, isolated generation tasks and evaluate a single behavioral attribute under controlled settings that do not reflect the di…
-  <sub>arXiv · 2 天前</sub>
+- **[Memory-Centric Continual Learning for AI Agents](https://arxiv.org/abs/2610.29357)**
+  Autonomous agents powered by foundation models can reason, plan, and use tools, but their fixed weights and context limits hinder sustained learning from experience over long-term…
+  <sub>🔥 19 | HF Papers · 2 天前</sub>
 
 
 ## 🧰 Harness / 基建与评测
 
-- **[Holi-World: Building Holistic World Intelligence from Human-Ego Experience](https://arxiv.org/abs/2610.26549)**
-  Human egocentric experience offers a rich foundation for learning how the world is organized and how it changes through interaction. Realizing this potential at scale requires tur…
-  <sub>👤 **Ziwei Liu · NTU** | 🔥 156 | arXiv · 2 天前</sub>
+- **[Cache Engineering for Agents](https://arxiv.org/abs/2610.28577)**
+  Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache…
+  <sub>🔥 113 | HF Papers · 3 天前</sub>
 
-- **[MindView: Benchmarking Generative Multi-View Spatial Intelligence](https://arxiv.org/abs/2610.28622)**
-  Spatial intelligence has recently been assessed through generative tasks such as spatially grounded image editing, yet language-guided generation of spatially consistent views fro…
-  <sub>👤 **Yu Qiao · Shanghai AI Lab** | arXiv · 昨天</sub>
-
-- **[Compressing Onboard Language Models for Space Robots under a Behavioral-Fidelity Requirement](https://arxiv.org/abs/2610.29302)**
-  Language models are being explored as the interface through which space robots interpret operator commands and select among verified skills. Running them onboard calls for low-bit…
+- **[AstroBench: Benchmarking Free-Floating Capture and Space Robotic Manipulation](https://arxiv.org/abs/2610.31064)**
+  Capturing a loose object inside a spacecraft requires a robot to approach a target that can translate and rotate, and whose motion changes when contact is made. These conditions m…
   <sub>👤 **Jia Deng · Princeton** | arXiv · 今天</sub>
 
-- **[LEV: Thinking Fast and Deep with Looped Decision Models](https://arxiv.org/abs/2610.20951)**
-  Decision models answer typed questions about an input with one probability per option, computed in a single forward pass without generating text. Like the fast System 1 of dual-pr…
-  <sub>🔥 602 | HF Papers · 8 天前</sub>
+- **[Retrieval Augmented Generation Compositionality](https://arxiv.org/abs/2610.29722)**
+  Retrieval Augmented Generation (RAG) grounds large language models in external knowledge. Modern pipelines combine embedding, chunking, retrieval, reranking, query augmentation, c…
+  <sub>🔥 27 | HF Papers · 2 天前</sub>
 
-- **[Specter: Fast MoE Inference via Quantization-Enabled Multi-Step Speculative Offloading](https://arxiv.org/abs/2511.14102)**
-  Mixture-of-experts (MoE) models often exceed a single accelerator's memory capacity. Offloading experts to host memory creates a severe PCIe I/O bottleneck because data-dependent…
-  <sub>🔥 19 | HF Papers · 2 天前</sub>
+- **[Donating Agent Skills to the Agentic AI Foundation](https://simonwillison.net/2026/Oct/22/donating-agent-skills/)**
+  Donating Agent Skills to the Agentic AI Foundation News today from Anthropic: We’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are don…
+  <sub>🏛 — / OpenAI | Blog · 今天</sub>
 
-- **[Harness Self-Evolution for Long-Horizon Terminal Agents](https://arxiv.org/abs/2610.27435)**
-  Long-horizon terminal agents may solve a task in one run yet fail across repeated runs. Stochastic errors can propagate through actions and context, creating a gap between capabil…
-  <sub>🔥 10 | HF Papers · 2 天前</sub>
+- **[CoEvo-RSI: When Harnesses Evolve, Which Models Should Follow?](https://arxiv.org/abs/2610.25078)**
+  Model--harness co-evolution has emerged as a prominent paradigm for recursive self-improving (RSI) agents, jointly evolving their execution scaffolds and intrinsic capabilities. W…
+  <sub>🔥 116 | HF Papers · 5 天前</sub>
+
+- **[DiffResearch: Accelerating Deep Research with Diffusion Language Models](https://arxiv.org/abs/2610.28909)**
+  Deep research systems iteratively plan, gather evidence, synthesize, and revise, making end-to-end latency a key bottleneck for interactive use. Almost all production systems are…
+  <sub>🔥 6 | HF Papers · 3 天前</sub>
 
 
 ## 👁️ 计算机视觉 / CV
 
-- **[EgoXperience: Learning World-Grounded Egocentric Representations from Human Experience](https://arxiv.org/abs/2610.26625)**
-  Reconstructing human activity from egocentric video requires more than recovering individual 3D components: the observer's motion, surrounding geometry, and hand-object interactio…
-  <sub>👤 **Ziwei Liu · NTU** | 🔥 170 | arXiv · 2 天前</sub>
+- **[DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models](https://arxiv.org/abs/2610.30781)**
+  Before acting on an object, a robot needs to anticipate how its hand motion will change the physical world and what the resulting scene will look like. Existing approaches typical…
+  <sub>👤 **Ziwei Liu · NTU** | arXiv · 今天</sub>
 
-- **[Learning the 4D World through Point Trajectory Forecasting](https://arxiv.org/abs/2610.28594)**
-  Reliable multi-view forecasting requires videos from different cameras to describe the same evolving 3D scene. To this end, we introduce Video-Point Model (VPM), a world model tha…
-  <sub>👤 **Saining Xie · NYU** | 🔥 41 | arXiv · 昨天</sub>
+- **[UniFlowWAM: A Unified World-Action Model with Visual Semantics and 4D Geometry](https://arxiv.org/abs/2610.30991)**
+  Robot demonstrations record what the robot saw and what it did. They do not specify how the 3D world changed in between. Scene-level 3D flow describes it by tracking 3D scene poin…
+  <sub>👤 **Cewu Lu · SJTU** | arXiv · 今天</sub>
 
-- **[T-DIG: Text-Conditioned Diversity for Image Generation](https://arxiv.org/abs/2610.29003)**
-  Text-to-image (T2I) platforms typically return several images per prompt so users can explore different visual interpretations and choose one that matches their intent. However, T…
-  <sub>👤 **Graham Neubig · CMU / All Hands AI** | arXiv · 昨天</sub>
+- **[Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation](https://arxiv.org/abs/2610.29989)**
+  Autoregressive video diffusion models generate videos chunk by chunk, yet producing plausible continuations does not guarantee that they capture how scenes evolve. Under teacher f…
+  <sub>🔥 118 | HF Papers · 2 天前</sub>
 
-- **[JUICE: Unified Multimodal Modeling in Pretrained Representation Spaces](https://arxiv.org/abs/2610.28801)**
-  Most unified multimodal models treat images and text asymmetrically: a pretrained language model generates text, an attached diffusion head generates images, and outputs that cont…
-  <sub>👤 **Sherry Yang · NYU / Google** | arXiv · 昨天</sub>
+- **[StreamEval: Evaluating Interactive Streaming Video Generation Models](https://arxiv.org/abs/2610.28402)**
+  As streaming video generation advances, enabling real-time interaction with generated video is becoming increasingly important. We introduce StreamEval, a unified benchmark for in…
+  <sub>🔥 360 | HF Papers · 3 天前</sub>
 
-- **[MoDDiT: Simple Token Routing in Diffusion Transformers](https://arxiv.org/abs/2610.28086)**
-  Real-time video generation, interactive world models, and on-device image synthesis are almost a reality. Diffusion Transformers (DiT) achieve excellent sample quality, shifting t…
-  <sub>👤 **Jakob Foerster · Oxford** | arXiv · 昨天</sub>
+- **[ALPS: Visual State Encoders for World Models](https://arxiv.org/abs/2610.30120)**
+  World models turn visual representations into predictions and actions. We argue that their visual foundation should combine physical-state information, native language alignment,…
+  <sub>🔥 18 | 💡 we argue | HF Papers · 2 天前</sub>
 
-- **[MTEdit: Packed Trajectories Beat Rollouts for Multi-Turn Image Editing](https://arxiv.org/abs/2610.23751)**
-  Multi-turn image editing aims to modify an image according to a sequence of instructions, making it better aligned with human-AI collaborative creation than single-turn editing. H…
-  <sub>👤 **Dahua Lin · CUHK / Shanghai AI Lab** | 🔥 33 | arXiv · 5 天前</sub>
+- **[PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements](https://arxiv.org/abs/2610.26711)**
+  Recent video generation models produce visually compelling outputs, yet their physical plausibility remains poorly measured. Physical plausibility asks whether generated objects o…
+  <sub>🔥 7 | HF Papers · 4 天前</sub>
 
-- **[T-WLA: Bridging Slow Vision and Fast Touch](https://arxiv.org/abs/2610.28814)**
-  In contact-rich manipulation, contact conditions can change before a visual policy updates its action plan. Recomputing the plan through the visual policy adds latency, while tact…
-  <sub>👤 **Antonio Torralba · MIT** | arXiv · 昨天</sub>
+- **[FineSplat: Fine Patches, Local Groups, Detailed Splats](https://arxiv.org/abs/2610.25011)**
+  Feed-forward 3D Gaussian Splatting (3DGS) promises instant scene reconstruction with high-quality novel-view synthesis. Yet, fine-grained geometry and appearance remain difficult…
+  <sub>🔥 29 | HF Papers · 5 天前</sub>
 
-- **[Conditional Flow Models Convert Epistemic Uncertainty into Apparent Aleatoric Variance](https://arxiv.org/abs/2610.29172)**
-  Conditional Flow Models (CFMs) are increasingly being used in place of deterministic predictors across machine learning, including for tasks that were classically formulated as re…
-  <sub>👤 **Pulkit Agrawal · MIT** | arXiv · 今天</sub>
 
-- **[Painting Change Map as guidance for generating painting processes](https://arxiv.org/abs/2610.25369)**
-  Digital art generation has undergone a massive paradigm shift, moving from static image synthesis to dynamic video generation that can mimic the human painting process. While exis…
-  <sub>🔥 16 | HF Papers · 4 天前</sub>
+## 🎨 多模态 / VLM
+
+- **[DONIC: Generalist Dexterous Bimanual Tracking Control from Human Demonstrations](https://arxiv.org/abs/2610.29997)**
+  Despite recent progress in dexterous reference tracking, existing models focus primarily on single-hand manipulation and a limited range of interactions, leaving the bimanual dext…
+  <sub>👤 **Ziwei Liu · NTU** | 🔥 129 | HF Papers · 2 天前</sub>
+
+- **[SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?](https://arxiv.org/abs/2610.26659)**
+  Spatial intelligence requires agents to actively acquire visual evidence and integrate observations into a coherent representation of the three-dimensional world. Yet spatial ques…
+  <sub>🔥 129 | HF Papers · 4 天前</sub>
+
+- **[Qwen-Audio-3.1-ASR Technical Report](https://arxiv.org/abs/2610.28711)**
+  We present Qwen-Audio-3.1-ASR, a family of audio-language models that builds upon its predecesor Qwen-Audio-3.0-ASR with improved speech recognition and expanded capabilities in s…
+  <sub>🏛 Qwen / Alibaba | 🔥 12 | HF Papers · 3 天前</sub>
 
 
 ## 🦾 VLA / 视觉-语言-动作
 
-- **[Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience](https://arxiv.org/abs/2610.26855)**
-  World models enable embodied agents to anticipate action consequences, yet jointly modeling locomotion and manipulation across diverse embodiments remains challenging due to heter…
-  <sub>👤 **Ziwei Liu · NTU** | 🔥 178 | arXiv · 2 天前</sub>
+- **[Agentic World Action Models](https://arxiv.org/abs/2610.30136)**
+  Recent world action models provide visual foresight and future prediction for robot manipulation, but lack explicit mechanisms for compositional skill reuse. Agentic robotics comb…
+  <sub>👤 **Yuke Zhu · UT Austin / NVIDIA / Linxi Fan · NVIDIA GEAR / Ken Goldberg · UC Berkeley +1** | 🔥 11 | HF Papers · 2 天前</sub>
 
-- **[VLA-Rolling: Fewer Denoising Steps, Better Control via Adaptive Action Reuse](https://arxiv.org/abs/2610.25043)**
-  Flow-matching vision-language-action (VLA) models generate an action chunk by iteratively denoising Gaussian noise, but typically execute only a short prefix before replanning wit…
-  <sub>🔥 59 | HF Papers · 4 天前</sub>
+- **[From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation](https://arxiv.org/abs/2610.29560)**
+  Vision-language-action (VLA) models achieve strong performance across embodied manipulation tasks by unifying visual understanding, language conditioning, and action generation. H…
+  <sub>🔥 10 | HF Papers · 2 天前</sub>
+
+- **[SmolVLA-MoE: Sparse Mixture-of-Experts for Efficient Multi-Task Robotic Manipulation](https://arxiv.org/abs/2610.30732)**
+  Vision-Language-Action (VLA) models have shown promising results in multi-task robotic manipulation by leveraging visual and language understanding for action generation. However,…
+  <sub>arXiv · 今天</sub>
 
 
 ## 🚶 具身智能 / 机器人
 
-- **[COWBOY: A Scalable Sim-to-Real Framework for Learning Contextual Whole-Body Manipulation](https://arxiv.org/abs/2610.28948)**
-  Mobile manipulators must adapt not only to objects, but also to the spatial context in which they appear: where to position the base, how to manipulate, and where to look while na…
-  <sub>👤 **Deepak Pathak · CMU / Skild AI / Ruslan Salakhutdinov · CMU** | arXiv · 昨天</sub>
-
-- **[SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model](https://arxiv.org/abs/2610.28480)**
-  Tracking large human-motion datasets has become the dominant route to general, expressive humanoid whole-body control, but scaling across many motions is expensive. Current pipeli…
-  <sub>👤 **Pieter Abbeel · UC Berkeley** | arXiv · 昨天</sub>
-
-- **[PRISM: Learning Realistic Depth via Physics-Grounded Noise Disentanglement with Semantic-Geometric Collaboration](https://arxiv.org/abs/2610.29432)**
-  Real-world physical sensing exhibits complex, heterogeneous noise patterns that deviate significantly from idealized simulation, posing a fundamental bottleneck for sim-to-real tr…
-  <sub>👤 **Cewu Lu · SJTU** | arXiv · 今天</sub>
-
-
-## 🌍 世界模型 / World Models
-
-- **[DepState-JEPA: Learning Depth-Grounded State Representation for Visual Perception and Manipulation](https://arxiv.org/abs/2610.29246)**
-  Predictive representations for robot manipulation should connect scene geometry with the state changes induced by actions. Our intuition is that understanding what an action will…
-  <sub>👤 **Cewu Lu · SJTU** | arXiv · 今天</sub>
+- **[LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation](https://arxiv.org/abs/2610.30876)**
+  Humanoid robots must coordinate locomotion and manipulation in everyday environments, yet progress is difficult to assess across differing policies, controllers, and task settings…
+  <sub>👤 **Ping Luo · HKU** | arXiv · 今天</sub>
 
 
 ## 🎯 强化学习 / 持续学习
 
-- **[One Policy, Many Styles: Where to Aggregate Preferences for Steerable Humanoid Control?](https://arxiv.org/abs/2610.28925)**
-  Modern robotic agents are increasingly expected to support steerable control, where a single policy can adjust its behavioral style at runtime under changing user preferences. Pre…
-  <sub>👤 **Animesh Garg · Georgia Tech** | arXiv · 昨天</sub>
+- **[Language Models Learn to Improve Language Models](https://arxiv.org/abs/2610.23344)**
+  Large language models (LLMs) are increasingly used to automate AI research, including language-model (LM) development, offering a potential path toward recursive self-improvement.…
+  <sub>🔥 5 | HF Papers · 7 天前</sub>
 
-- **[Training the Whole Agent, Not Just the Model](https://arxiv.org/abs/2610.28069)**
-  Training coding agents typically updates the policy while keeping the harness fixed. During training, trajectories reveal flawed repair strategies and interaction problems that va…
-  <sub>🔥 4 | HF Papers · 2 天前</sub>
+- **[DRILL: Training World Models to Improve Policies, Not Predict Pixels](https://arxiv.org/abs/2610.30814)**
+  World models are increasingly used to reduce environment interaction when post-training vision-language-action (VLA) policies with reinforcement learning. Yet they are typically t…
+  <sub>arXiv · 今天</sub>
 
-
-## 💡 理论 / 新范式
-
-- **[How AT&T is rethinking in-house legal work with OpenAI](https://openai.com/index/att-legal)**
-  AT&amp;T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.
-  <sub>🏛 OpenAI | 💡 想法型 | Blog · 今天</sub>
-
-- **[Dusting the Phantom: Gaussian Allocation for Fading Dynamic Content](https://arxiv.org/abs/2610.21302)**
-  Dynamic Gaussian representations have made high-quality, real-time volumetric video increasingly practical, yet challenging motion can still break their reconstruction: small fast…
-  <sub>🔥 16 | 💡 we argue | HF Papers · 7 天前</sub>
-
-
-## 🛡️ 安全 / 对齐 / 可解释
-
-- **[Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics](https://arxiv.org/abs/2610.29225)**
-  Current LLM safety benchmarks predominantly rely on binary safe or unsafe labels, lacking explanatory depth and suffering from low consistency across automated judges. To address…
-  <sub>🏛 Tencent Hunyuan | 💡 想法型 | arXiv · 今天</sub>
+- **[EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents](https://arxiv.org/abs/2610.16523)**
+  Training LLM agents to interact with users over multiple turns is challenging because the learning signal depends not only on the agent, but also on the user simulator and environ…
+  <sub>🔥 17 | HF Papers · 11 天前</sub>
 
 
 ---
@@ -272,16 +212,17 @@
 <summary>📡 源状态与运行信息</summary>
 
 
-**入选来源分布**：arXiv 23, HF Papers 15, Blog 2
+**入选来源分布**：HF Papers 23, arXiv 8, 页面更新 1, Blog 1
 
 
 **本轮出问题的源**（不影响其他源）：
 
+- RSS Stanford AI Lab: 抓取失败 (https://ai.stanford.edu/blog/feed.xml)
 - RSS MIT News - AI: 抓取失败 (https://news.mit.edu/rss/topic/artificial-intelligence2)
 - RSS Import AI: 抓取失败 (https://importai.substack.com/feed)
 
 
-**积压 6 条**（超出本期容量，未标记为已推送，会出现在后续几期）。
+**积压 3 条**（超出本期容量，未标记为已推送，会出现在后续几期）。
 
 
 **模式**：daily　**LLM 摘要**：off（未检测到 ANTHROPIC_API_KEY，已降级为纯摘要截断）

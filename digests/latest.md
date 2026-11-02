@@ -1,25 +1,36 @@
-# AI 前沿雷达 · 2026-11-01
+# AI 前沿雷达 · 2026-11-02
 
-> 扫描 **1527** 条 → 入选 **1** 条 ｜ 关注名单命中 **0** 位研究者 ｜ 生成于 2026-11-01 02:01 UTC
+> 扫描 **1508** 条 → 入选 **2** 条 ｜ 关注名单命中 **0** 位研究者 ｜ 生成于 2026-11-02 02:12 UTC
 
-**今日分布**：🧠 大模型 / LLM (1)
+**今日分布**：🤖 智能体 / Agent (1) ｜ 🎨 多模态 / VLM (1)
 
 
 ## ⭐ 今日必读
 
-1. **[LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data](https://arxiv.org/abs/2610.30132)**
-   Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challe…
-   <sub>🔥 8 | HF Papers · 11 天前</sub>
+1. **[CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](https://arxiv.org/abs/2610.40799)**
+   Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn…
+   <sub>arXiv · 3 天前</sub>
+
+2. **[IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation](https://arxiv.org/abs/2610.38425)**
+   Humans routinely consume multimodal content, where textual and visual information is naturally interleaved. Although Unified Multimodal Models (UMMs) can jointly generate text and…
+   <sub>🔥 16 | HF Papers · 5 天前</sub>
 
 
 ---
 
 
-## 🧠 大模型 / LLM
+## 🤖 智能体 / Agent
 
-- **[LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data](https://arxiv.org/abs/2610.30132)**
-  Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challe…
-  <sub>🔥 8 | HF Papers · 11 天前</sub>
+- **[CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](https://arxiv.org/abs/2610.40799)**
+  Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn…
+  <sub>arXiv · 3 天前</sub>
+
+
+## 🎨 多模态 / VLM
+
+- **[IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation](https://arxiv.org/abs/2610.38425)**
+  Humans routinely consume multimodal content, where textual and visual information is naturally interleaved. Although Unified Multimodal Models (UMMs) can jointly generate text and…
+  <sub>🔥 16 | HF Papers · 5 天前</sub>
 
 
 ---
@@ -28,7 +39,7 @@
 <summary>📡 源状态与运行信息</summary>
 
 
-**入选来源分布**：HF Papers 1
+**入选来源分布**：arXiv 1, HF Papers 1
 
 
 **本轮出问题的源**（不影响其他源）：

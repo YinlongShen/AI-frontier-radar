@@ -1,51 +1,51 @@
-# AI 前沿雷达 · 2026-11-05
+# AI 前沿雷达 · 2026-11-06
 
-> 扫描 **1851** 条 → 入选 **36** 条 ｜ 关注名单命中 **16** 位研究者 ｜ 生成于 2026-11-05 03:21 UTC
+> 扫描 **1859** 条 → 入选 **30** 条 ｜ 关注名单命中 **12** 位研究者 ｜ 生成于 2026-11-06 03:19 UTC
 
-**今日分布**：🧠 大模型 / LLM (6) ｜ 🤖 智能体 / Agent (8) ｜ 👁️ 计算机视觉 / CV (5) ｜ 🎨 多模态 / VLM (4) ｜ 🦾 VLA / 视觉-语言-动作 (2) ｜ 🚶 具身智能 / 机器人 (1) ｜ 🌍 世界模型 / World Models (1) ｜ 🎯 强化学习 / 持续学习 (8) ｜ 📌 其他值得一看 (1)
+**今日分布**：🧠 大模型 / LLM (6) ｜ 🤖 智能体 / Agent (8) ｜ 🧰 Harness / 基建与评测 (2) ｜ 👁️ 计算机视觉 / CV (2) ｜ 🎨 多模态 / VLM (1) ｜ 🦾 VLA / 视觉-语言-动作 (2) ｜ 🌍 世界模型 / World Models (1) ｜ 🎯 强化学习 / 持续学习 (6) ｜ 📌 其他值得一看 (2)
 
 
 ## ⭐ 今日必读
 
-1. **[Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning](https://arxiv.org/abs/2611.05266)**
-   Naive on-policy RL is often bottlenecked by the capabilities of the base model --- insufficient coverage can result in an inability to learn from certain rewards. At the same time…
-   <sub>👤 **Sergey Levine · UC Berkeley / Physical Intelligence / Pieter Abbeel · UC Berkeley / Alexander M. Rush · Cornell / Cursor** | arXiv · 昨天</sub>
+1. **[VABAR: A Variational Automation Benchmark for Agentic Robotics](https://arxiv.org/abs/2611.06881)**
+   For robots to operate reliably in commercial and industrial applications, they must persistently perform specific tasks with known variations in object shape and pose. We call thi…
+   <sub>👤 **Linxi Fan · NVIDIA GEAR / Yuke Zhu · UT Austin / NVIDIA / Ken Goldberg · UC Berkeley** | arXiv · 昨天</sub>
 
-2. **[GSBR: Geometric Support Behavior Regularization for Online RL](https://arxiv.org/abs/2611.05295)**
-   Regularizing online reinforcement learning (RL) toward a pretrained base policy can improve sample efficiency and learning stability, but regularization that is too restrictive li…
+2. **[From Pixels to Actions - Towards Native Vision-Language-Action Policies](https://arxiv.org/abs/2611.06918)**
+   Vision-language-action models are typically built on a simple premise: perception is first compressed by visual encoders, and action reasoning begins only afterwards. Yet manipula…
+   <sub>👤 **Dahua Lin · CUHK / Shanghai AI Lab / Ziwei Liu · NTU** | 🔥 56 | arXiv · 昨天</sub>
+
+3. **[MAC-v2: Long-horizon model-based value expansion from pixels](https://arxiv.org/abs/2611.07245)**
+   We study whether \emph{long-horizon model-based value expansion} can serve as an effective framework in pixel-based offline reinforcement learning (RL). Long-horizon model-based v…
    <sub>👤 **Sergey Levine · UC Berkeley / Physical Intelligence** | arXiv · 昨天</sub>
 
-3. **[Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation](https://arxiv.org/abs/2611.04492)**
-   Predicting how the world evolves in response to robot actions is central to policy learning, evaluation, and planning. However, many action-conditioned world models predict future…
-   <sub>👤 **Tao Yu · HKU** | arXiv · 昨天</sub>
+4. **[Turns Matter: Advancing Streaming Video RL via Turn-Level Credit](https://arxiv.org/abs/2611.06728)**
+   Streaming video understanding requires models to repeatedly decide whether to respond or continue observing. Recently, Group Relative Policy Optimization (GRPO) has been applied t…
+   <sub>👤 **Yu Qiao · Shanghai AI Lab** | 🔥 83 | arXiv · 昨天</sub>
 
-4. **[Suppressing Misaligned Behaviors in Language Models, Durably](https://arxiv.org/abs/2611.05358)**
-   Undesired model behaviors can emerge or re-emerge at any stage of training. Once observed, how effectively can we suppress them? To study this question, we first construct two mod…
-   <sub>👤 **Danqi Chen · Princeton** | arXiv · 昨天</sub>
+5. **[LifeVal: Evaluating AI Model Performance on Personalized Agentic Consumer Tasks](https://arxiv.org/abs/2611.06687)**
+   We introduce LifeVal, a benchmark evaluating AI model performance on personalized agentic consumer tasks. LifeVal covers the most valuable life tasks that a personalized digital s…
+   <sub>👤 **Noam Brown · OpenAI** | 💡 想法型 | arXiv · 昨天</sub>
 
-5. **[Rubric Curriculum RL: Exploiting the Generation-Verification Gap in Non-Verifiable Domains](https://arxiv.org/abs/2611.06244)**
-   Reinforcement learning with verifiable rewards (RLVR) has led to significant gains in math and code generation. Extending these gains to open-ended domains remains challenging: gr…
-   <sub>👤 **Jakob Foerster · Oxford** | arXiv · 今天</sub>
+6. **[Permanent and Transient Representations for Continual Reinforcement Learning](https://arxiv.org/abs/2611.07327)**
+   Continual Reinforcement Learning (CRL) agents struggle to adapt to new situations while retaining prior knowledge, leading to a stability-plasticity trade-off. One approach to sol…
+   <sub>👤 **Doina Precup · McGill / Mila / DeepMind** | arXiv · 昨天</sub>
 
-6. **[PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations](https://arxiv.org/abs/2611.04870)**
-   A robot world model that serves as a simulator must do more than generate plausible videos: it must faithfully follow commanded actions, maintain consistency across camera views,…
-   <sub>👤 **Hao Dong · Peking University** | 🔥 9 | arXiv · 昨天</sub>
+7. **[ServerBench: How can your coding agents design specialized LLM serving systems?](https://arxiv.org/abs/2611.06841)**
+   Large language model (LLM) coding agents develop software through experimentation, offering an opportunity to design the serving systems supporting their own operation. Effective…
+   <sub>👤 **Beidi Chen · CMU** | arXiv · 昨天</sub>
 
-7. **[OneTrans-GSR: A Generative Slate Ranking Paradigm Unifying Reranking and Mix-Ranking with One Autoregressive Transformer](https://arxiv.org/abs/2611.04720)**
-   Industrial recommender systems allocate substantial computation to pointwise candidate scoring, yet separate reranking and mix-ranking stages still assemble the final exposure sla…
-   <sub>👤 **Ziwei Liu · NTU** | arXiv · 昨天</sub>
+8. **[CompressionBench: How can your coding agents compress LLMs?](https://arxiv.org/abs/2611.06858)**
+   Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain…
+   <sub>👤 **Beidi Chen · CMU** | arXiv · 昨天</sub>
 
-8. **[$τ$-Rec-Books: A Disclosure-Controlled Benchmark for Requirement Elicitation in Agentic Recommender Systems](https://arxiv.org/abs/2611.04459)**
-   While conversational recommendation systems provide a more natural user interface, they face the challenge of progressively discovering a user's needs before they can recommend an…
-   <sub>👤 **Karthik Narasimhan · Princeton / Sierra** | arXiv · 昨天</sub>
+9. **[Same Answer, Different Future: Matched Predictions Do Not Imply Matched Belief Updating in Language Models](https://arxiv.org/abs/2611.07913)**
+   Language models can produce similar probabilistic predictions after observing outcomes, reading summaries, receiving instructions, or undergoing activation interventions. Whether…
+   <sub>👤 **Xinlei Chen · Meta FAIR** | arXiv · 今天</sub>
 
-9. **[FloMo: 3D Scene Flow as a World Action Model Intermediate for Learning from Human Video](https://arxiv.org/abs/2611.05062)**
-   Pretrained video generation models distill internet-scale motion priors into robot policies, but full video is a redundant signal for action prediction. We argue that dense 3D mot…
-   <sub>👤 **Animesh Garg · Georgia Tech** | 💡 we argue | arXiv · 昨天</sub>
-
-10. **[ReflexArc: Bottom-Up Integration of Instantaneous Tactile Reflexes into Whole-Body Humanoid Control](https://arxiv.org/abs/2611.04424)**
-   Humanoid robots operating in cluttered environments must react to unexpected contacts before the first impact peak, which arrives within tens of milliseconds. Learned whole-body p…
-   <sub>👤 **He Wang · Peking University** | arXiv · 昨天</sub>
+10. **[Procedural Adversarial Learning](https://arxiv.org/abs/2611.06890)**
+   For many computer vision tasks, neural networks can be trained to produce a low average error, yet they still fail on seemingly simple scenes. Reducing these failures requires fir…
+   <sub>👤 **Jia Deng · Princeton** | arXiv · 昨天</sub>
 
 
 ---
@@ -53,173 +53,148 @@
 
 ## 🧠 大模型 / LLM
 
-- **[Large Language Model-Assisted Adaptive Heuristic Search for Agile Earth Observation Satellite Scheduling](https://arxiv.org/abs/2611.04458)**
-  Agile Earth observation satellites must coordinate imaging tasks within limited observation windows, while accounting for attitude maneuvering and onboard energy constraints. Comp…
-  <sub>👤 **He Wang · Peking University** | arXiv · 昨天</sub>
+- **[Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854)**
+  Autoregressive approaches with large language models, such as long chain-of-thought reasoning, have become the default for new AI applications because they reach higher accuracy o…
+  <sub>🔥 2 | 💡 towards | arXiv · 今天</sub>
 
-- **[MESA: An Evaluation Framework for Compositional, Semantic, and Spatial Generalization in Robotics](https://arxiv.org/abs/2611.05567)**
-  Despite growing interest in foundation models for robotic manipulation, systematic evaluation of their capabilities remains elusive. Existing benchmarks are either narrow and satu…
-  <sub>👤 **Animesh Garg · Georgia Tech** | arXiv · 昨天</sub>
+- **[SAVeR$^2$: Reasoning-based Safety Alignment for Large Reasoning Models via Verifiable Rewards](https://arxiv.org/abs/2611.07482)**
+  Large Reasoning Models (LRMs) have achieved impressive performance via explicit Chain-of-Thought (CoT) reasoning, yet this process introduces critical safety risks. We formalize L…
+  <sub>💡 we argue | arXiv · 今天</sub>
 
-- **[Axion 1.0: Open Agent Foundation Models, Simplified](https://arxiv.org/abs/2611.03233)**
-  We introduce Axion 1.0, a fully open agent foundation model that combines strong and broad agentic capabilities with a remarkably simple training recipe. Axion 1.0 is trained in o…
-  <sub>🔥 40 | HF Papers · 3 天前</sub>
+- **[How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates](https://arxiv.org/abs/2610.40516)**
+  Safety alignment for Large Language Models is heavily focused on English with limited multilingual representation, particularly damaging low-resource language performance. Related…
+  <sub>🔥 7 | 💡 想法型 | HF Papers · 8 天前</sub>
 
-- **[Think Less, Locally: Local Preference Learning for Reasoning Compression](https://arxiv.org/abs/2611.04814)**
-  Large reasoning models achieve strong performance on challenging tasks, but their long chain-of-thought often incurs substantial inference costs by continuing to deliberate after…
-  <sub>🔥 65 | HF Papers · 2 天前</sub>
+- **[LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers](https://arxiv.org/abs/2611.05304)**
+  Looped transformers are a parameter-efficient alternative to standard transformers for language modeling. By reapplying the same layers across multiple loop steps, recent looped l…
+  <sub>🔥 8 | HF Papers · 2 天前</sub>
 
-- **[Dory1.0-4B: A Looped Normalized-GPT](https://arxiv.org/abs/2611.03998)**
-  We introduce Dory1.0-4B, a 4-billion-parameter looped (latent-recurrent) language model with elastic depth: a single checkpoint serves different inference compute budgets. Dory1.0…
-  <sub>🔥 6 | HF Papers · 3 天前</sub>
+- **[Generate-then-Rank: Learning Symbolic Goal Interpretation for Embodied Agents](https://arxiv.org/abs/2611.07825)**
+  Goal interpretation is to translate a natural language instruction into a formal symbolic goal that a planner can execute. It is critical for embodied agents because any error her…
+  <sub>arXiv · 今天</sub>
 
-- **[Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation](https://arxiv.org/abs/2610.40574)**
-  On-policy Self-distillation (OPSD) has proven effective for post-training large language models by constructing a teacher conditioned on privileged references. However, existing a…
-  <sub>🔥 10 | 💡 we argue | HF Papers · 7 天前</sub>
+- **[DeFT-RAG: Decomposing Multi-Hop Questions into Self-Contained Sub-Questions with Reusable Answers](https://arxiv.org/abs/2610.37826)**
+  Retrieval-augmented generation (RAG) lets a large language model (LLM) answer questions by retrieving relevant passages from a large corpus. However, RAG struggles with multi-hop…
+  <sub>🔥 13 | HF Papers · 7 天前</sub>
 
 
 ## 🤖 智能体 / Agent
 
-- **[$τ$-Rec-Books: A Disclosure-Controlled Benchmark for Requirement Elicitation in Agentic Recommender Systems](https://arxiv.org/abs/2611.04459)**
-  While conversational recommendation systems provide a more natural user interface, they face the challenge of progressively discovering a user's needs before they can recommend an…
-  <sub>👤 **Karthik Narasimhan · Princeton / Sierra** | arXiv · 昨天</sub>
+- **[VABAR: A Variational Automation Benchmark for Agentic Robotics](https://arxiv.org/abs/2611.06881)**
+  For robots to operate reliably in commercial and industrial applications, they must persistently perform specific tasks with known variations in object shape and pose. We call thi…
+  <sub>👤 **Linxi Fan · NVIDIA GEAR / Yuke Zhu · UT Austin / NVIDIA / Ken Goldberg · UC Berkeley** | arXiv · 昨天</sub>
 
-- **[Zero-Shot Coordination among LLM Agents](https://arxiv.org/abs/2611.06409)**
-  We study zero-shot coordination (ZSC), where independently developed agents must coordinate at test time. While ZSC has been well studied in the RL literature, far less is known a…
-  <sub>👤 **Jakob Foerster · Oxford** | arXiv · 今天</sub>
+- **[LifeVal: Evaluating AI Model Performance on Personalized Agentic Consumer Tasks](https://arxiv.org/abs/2611.06687)**
+  We introduce LifeVal, a benchmark evaluating AI model performance on personalized agentic consumer tasks. LifeVal covers the most valuable life tasks that a personalized digital s…
+  <sub>👤 **Noam Brown · OpenAI** | 💡 想法型 | arXiv · 昨天</sub>
 
-- **[A Definition of Catastrophic Performance](https://arxiv.org/abs/2611.06219)**
-  A central challenge in AI is specifying objectives that align with human preferences. While existing theoretical results elucidate how misspecification impacts performance, they t…
-  <sub>👤 **Benjamin Van Roy · Stanford** | arXiv · 今天</sub>
+- **[ServerBench: How can your coding agents design specialized LLM serving systems?](https://arxiv.org/abs/2611.06841)**
+  Large language model (LLM) coding agents develop software through experimentation, offering an opportunity to design the serving systems supporting their own operation. Effective…
+  <sub>👤 **Beidi Chen · CMU** | arXiv · 昨天</sub>
 
-- **[WebHarbor: Docking Real Websites for Evolving GUI Agent Environments](https://arxiv.org/abs/2611.03634)**
-  GUI web agents require realistic and interactive environments that remain stable during both evaluation and training. Live website evaluation suffers from changing content, access…
-  <sub>🔥 19 | arXiv · 2 天前</sub>
+- **[CompressionBench: How can your coding agents compress LLMs?](https://arxiv.org/abs/2611.06858)**
+  Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain…
+  <sub>👤 **Beidi Chen · CMU** | arXiv · 昨天</sub>
 
-- **[Adversarial Speculative Reasoning Improves Long Horizon Agents](https://arxiv.org/abs/2611.05345)**
-  Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growi…
-  <sub>🔥 6 | 💡 we argue | HF Papers · 2 天前</sub>
+- **[Formally verifying agent-written full-stack web apps with PDD Kit](https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/)**
+  At a glance Formal methods for everyday software. PDD Kit helps you turn your intent into a formal spec, then proves the code your agent writes for every input and uses tests wher…
+  <sub>🏛 Microsoft Research | Blog · 今天</sub>
 
-- **[ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents](https://arxiv.org/abs/2611.05036)**
-  Large language models are deployed as long-horizon agents that compose diverse tools across MCP services into executable workflows. Existing MCP environment-scaling methods are da…
-  <sub>🔥 34 | HF Papers · 2 天前</sub>
+- **[Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents](https://arxiv.org/abs/2610.41432)**
+  Computer-use agents increasingly tackle tasks ranging from everyday desktop activities to long-horizon professional workflows. Yet interfaces centered on screenshots and mouse-and…
+  <sub>🔥 10 | 💡 we argue | arXiv · 6 天前</sub>
 
-- **[What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?](https://arxiv.org/abs/2611.06483)**
-  While multi-turn agentic reinforcement learning (RL) excels on long-horizon tasks, its performance gains remain highly sensitive to interaction constraints. Evaluating across samp…
-  <sub>💡 想法型 | arXiv · 今天</sub>
+- **[TAC-CoT: Tool-Empowered Implicit Chain-of-Thought via Interleaving Explicit Tokens](https://arxiv.org/abs/2611.01926)**
+  LLM-based agentic systems are increasingly combined with CoT reasoning to solve tasks that require accurate reasoning, external knowledge, and multi-step deliberation. Yet, explic…
+  <sub>🔥 14 | HF Papers · 4 天前</sub>
 
-- **[HarnessFlow: MCTS-Guided Harness Optimization for LLM Agents](https://arxiv.org/abs/2611.06254)**
-  The performance of large language model (LLM) agents depends on both the underlying model and the harness that governs interaction with tools and the environment. Yet harness desi…
-  <sub>arXiv · 今天</sub>
+- **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)**
+  Teleoperation remains the default way to collect robot demonstrations, but every episode costs robot and operator time, and every new task starts from scratch. We ask whether a co…
+  <sub>🔥 23 | HF Papers · 2 天前</sub>
+
+
+## 🧰 Harness / 基建与评测
+
+- **[CacheGraft: Enhancing Retrieval-Augmented Generation via Latent-Space Document Enrichment](https://arxiv.org/abs/2611.07393)**
+  Recent work in machine learning has demonstrated that transformer-based language model agents can communicate state not only through text, but also directly in latent space via ke…
+  <sub>💡 we argue | arXiv · 今天</sub>
+
+- **[SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding](https://arxiv.org/abs/2611.02846)**
+  Speculative decoding (SD) accelerates large language model inference by reducing the sequential cost of token-by-token generation. Advanced SD methods reduce proposal cost with pa…
+  <sub>🔥 13 | HF Papers · 4 天前</sub>
 
 
 ## 👁️ 计算机视觉 / CV
 
-- **[FloMo: 3D Scene Flow as a World Action Model Intermediate for Learning from Human Video](https://arxiv.org/abs/2611.05062)**
-  Pretrained video generation models distill internet-scale motion priors into robot policies, but full video is a redundant signal for action prediction. We argue that dense 3D mot…
-  <sub>👤 **Animesh Garg · Georgia Tech** | 💡 we argue | arXiv · 昨天</sub>
+- **[Procedural Adversarial Learning](https://arxiv.org/abs/2611.06890)**
+  For many computer vision tasks, neural networks can be trained to produce a low average error, yet they still fail on seemingly simple scenes. Reducing these failures requires fir…
+  <sub>👤 **Jia Deng · Princeton** | arXiv · 昨天</sub>
 
-- **[Coordinating Humanoid Loco-Manipulation through Action-Conditioned Latent Foresight](https://arxiv.org/abs/2611.04839)**
-  Humanoid loco-manipulation requires coordinated body motion and hand interaction over time, and a plausible-looking command sequence can still drop a held object or leave an inter…
-  <sub>👤 **Ping Luo · HKU** | arXiv · 昨天</sub>
-
-- **[Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems](https://arxiv.org/abs/2611.05275)**
-  Artificial general intelligence (AGI) requires a method that can understand, generate, reason, and act across diverse domains and modalities. Rather than relying on a single model…
-  <sub>🔥 86 | HF Papers · 2 天前</sub>
-
-- **[DreamX: Video Diffusion Model is a Universal Latent Action Learner](https://arxiv.org/abs/2611.05377)**
-  Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invariant to changes in emb…
-  <sub>🔥 51 | HF Papers · 2 天前</sub>
-
-- **[Feature Puzzles: Single-Image Supervision for Multi-View 3D-Aware Segmentation](https://arxiv.org/abs/2611.05874)**
-  Humans can easily recognize the same objects across different viewpoints of a 3D scene, whereas teaching models such multi-view-consistent perception typically requires videos or…
-  <sub>arXiv · 昨天</sub>
+- **[VA-TDM: A Unified View for Improving Few-Step Diffusion Models by Velocity Adversarial Distillation](https://arxiv.org/abs/2611.06796)**
+  Few-step distillation offers efficient generation with diffusion and flow models, but preserving quality with only a few sampling steps remains challenging. Distribution-matching…
+  <sub>🔥 12 | HF Papers · 2 天前</sub>
 
 
 ## 🎨 多模态 / VLM
 
-- **[Clips2Story: Training-Free Video Storyboarding and Editing Using Multimodal Retrieval-Embedded Generation](https://arxiv.org/abs/2611.05992)**
-  Video editors often work with large collections of fragmented footage and must select and organize relevant clips into a coherent story. However, many existing video editing and s…
-  <sub>👤 **Hao Dong · Peking University** | arXiv · 今天</sub>
-
-- **[Entropogram-guided Visual Realignment Decoding: Capturing the Rhythm of Multimodal Reasoning](https://arxiv.org/abs/2611.06415)**
-  Multimodal large language models (MLLMs) have demonstrated remarkable progress on cross-modal reasoning tasks, yet they continue to suffer from hallucinations in long-chain reason…
-  <sub>💡 we argue | arXiv · 今天</sub>
-
-- **[Factorized MLLM Embeddings for Composed Image Retrieval](https://arxiv.org/abs/2611.05193)**
-  Composed Image Retrieval (CIR) aims to retrieve a target image given a reference image and a modification text. Although recent approaches leveraging Multimodal Large Language Mod…
-  <sub>🔥 44 | 💡 we argue | HF Papers · 2 天前</sub>
-
-- **[YANAMI: A Large-Scale Multimodal Dataset and Benchmark for Multiturn Stateful Interaction](https://arxiv.org/abs/2611.05280)**
-  Unified Multimodal Models (UMMs) integrate visual understanding, generation, and editing within a single unified framework. However, existing unified multimodal datasets and bench…
-  <sub>🔥 28 | arXiv · 昨天</sub>
+- **[Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena](https://arxiv.org/abs/2610.00854)**
+  A robot generalist must interpret a scene, act on it, and satisfy every condition of a task. How far do frontier vision-language models (VLMs) meet these demands? We introduce Emb…
+  <sub>🔥 84 | HF Papers · 14 天前</sub>
 
 
 ## 🦾 VLA / 视觉-语言-动作
 
-- **[PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations](https://arxiv.org/abs/2611.04870)**
-  A robot world model that serves as a simulator must do more than generate plausible videos: it must faithfully follow commanded actions, maintain consistency across camera views,…
-  <sub>👤 **Hao Dong · Peking University** | 🔥 9 | arXiv · 昨天</sub>
+- **[From Pixels to Actions - Towards Native Vision-Language-Action Policies](https://arxiv.org/abs/2611.06918)**
+  Vision-language-action models are typically built on a simple premise: perception is first compressed by visual encoders, and action reasoning begins only afterwards. Yet manipula…
+  <sub>👤 **Dahua Lin · CUHK / Shanghai AI Lab / Ziwei Liu · NTU** | 🔥 56 | arXiv · 昨天</sub>
 
-- **[DexHOT: Learning Hand-Object Configuration Transfer for Dexterous Manipulation](https://arxiv.org/abs/2611.05119)**
-  Dexterous manipulation involves not only moving objects, but also arranging the hand around them to maintain useful contacts and enable subsequent actions. Yet many learning-based…
-  <sub>👤 **Hao Dong · Peking University** | arXiv · 昨天</sub>
-
-
-## 🚶 具身智能 / 机器人
-
-- **[ReflexArc: Bottom-Up Integration of Instantaneous Tactile Reflexes into Whole-Body Humanoid Control](https://arxiv.org/abs/2611.04424)**
-  Humanoid robots operating in cluttered environments must react to unexpected contacts before the first impact peak, which arrives within tens of milliseconds. Learned whole-body p…
-  <sub>👤 **He Wang · Peking University** | arXiv · 昨天</sub>
+- **[Concertina: Embodying Manipulation and Cognition in One Diffusion Vision-Language Model](https://arxiv.org/abs/2611.07513)**
+  Most vision-language-action (VLA) policies decouple manipulation from cognition by bolting an external action mechanism onto a vision-language model (VLM)--either quantizing actio…
+  <sub>💡 we argue | arXiv · 今天</sub>
 
 
 ## 🌍 世界模型 / World Models
 
-- **[Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation](https://arxiv.org/abs/2611.04492)**
-  Predicting how the world evolves in response to robot actions is central to policy learning, evaluation, and planning. However, many action-conditioned world models predict future…
-  <sub>👤 **Tao Yu · HKU** | arXiv · 昨天</sub>
+- **[MAC-v2: Long-horizon model-based value expansion from pixels](https://arxiv.org/abs/2611.07245)**
+  We study whether \emph{long-horizon model-based value expansion} can serve as an effective framework in pixel-based offline reinforcement learning (RL). Long-horizon model-based v…
+  <sub>👤 **Sergey Levine · UC Berkeley / Physical Intelligence** | arXiv · 昨天</sub>
 
 
 ## 🎯 强化学习 / 持续学习
 
-- **[Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning](https://arxiv.org/abs/2611.05266)**
-  Naive on-policy RL is often bottlenecked by the capabilities of the base model --- insufficient coverage can result in an inability to learn from certain rewards. At the same time…
-  <sub>👤 **Sergey Levine · UC Berkeley / Physical Intelligence / Pieter Abbeel · UC Berkeley / Alexander M. Rush · Cornell / Cursor** | arXiv · 昨天</sub>
+- **[Turns Matter: Advancing Streaming Video RL via Turn-Level Credit](https://arxiv.org/abs/2611.06728)**
+  Streaming video understanding requires models to repeatedly decide whether to respond or continue observing. Recently, Group Relative Policy Optimization (GRPO) has been applied t…
+  <sub>👤 **Yu Qiao · Shanghai AI Lab** | 🔥 83 | arXiv · 昨天</sub>
 
-- **[GSBR: Geometric Support Behavior Regularization for Online RL](https://arxiv.org/abs/2611.05295)**
-  Regularizing online reinforcement learning (RL) toward a pretrained base policy can improve sample efficiency and learning stability, but regularization that is too restrictive li…
-  <sub>👤 **Sergey Levine · UC Berkeley / Physical Intelligence** | arXiv · 昨天</sub>
+- **[Permanent and Transient Representations for Continual Reinforcement Learning](https://arxiv.org/abs/2611.07327)**
+  Continual Reinforcement Learning (CRL) agents struggle to adapt to new situations while retaining prior knowledge, leading to a stability-plasticity trade-off. One approach to sol…
+  <sub>👤 **Doina Precup · McGill / Mila / DeepMind** | arXiv · 昨天</sub>
 
-- **[Suppressing Misaligned Behaviors in Language Models, Durably](https://arxiv.org/abs/2611.05358)**
-  Undesired model behaviors can emerge or re-emerge at any stage of training. Once observed, how effectively can we suppress them? To study this question, we first construct two mod…
-  <sub>👤 **Danqi Chen · Princeton** | arXiv · 昨天</sub>
+- **[EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL](https://arxiv.org/abs/2611.06518)**
+  Group Relative Policy Optimization (GRPO) has advanced generative model post-training in verifiable domains such as code and mathematics, but evaluating video quality, especially…
+  <sub>🔥 22 | HF Papers · 2 天前</sub>
 
-- **[Rubric Curriculum RL: Exploiting the Generation-Verification Gap in Non-Verifiable Domains](https://arxiv.org/abs/2611.06244)**
-  Reinforcement learning with verifiable rewards (RLVR) has led to significant gains in math and code generation. Extending these gains to open-ended domains remains challenging: gr…
-  <sub>👤 **Jakob Foerster · Oxford** | arXiv · 今天</sub>
+- **[On the Generalization Limitation of On-Policy Distillation for Post-RL Consolidation](https://arxiv.org/abs/2611.05609)**
+  Multi-teacher on-policy distillation (MOPD) extends on-policy distillation (OPD) to consolidate capabilities from multiple teachers. Although prior work reports near-perfect in-di…
+  <sub>🔥 16 | 💡 想法型 | HF Papers · 3 天前</sub>
 
-- **[OneTrans-GSR: A Generative Slate Ranking Paradigm Unifying Reranking and Mix-Ranking with One Autoregressive Transformer](https://arxiv.org/abs/2611.04720)**
-  Industrial recommender systems allocate substantial computation to pointwise candidate scoring, yet separate reranking and mix-ranking stages still assemble the final exposure sla…
-  <sub>👤 **Ziwei Liu · NTU** | arXiv · 昨天</sub>
+- **[Provable Zeroth-Order Safe Exploration for Reinforcement Learning from Human Feedback](https://arxiv.org/abs/2611.07561)**
+  Safe reinforcement learning from human feedback (Safe-RLHF) seeks to improve helpfulness while satisfying harmlessness constraints. Existing primal-dual approaches can converge to…
+  <sub>arXiv · 今天</sub>
 
-- **[On Convergence of Gradient Temporal-Difference Learning with Regularized Corrections and Eligibility Traces](https://arxiv.org/abs/2611.05869)**
-  Temporal-difference (TD) learning underlies many prediction and control algorithms, but can diverge when combined with off-policy learning, bootstrapping, and function approximati…
-  <sub>👤 **Martha White · U Alberta / Amii** | arXiv · 昨天</sub>
-
-- **[Behind Video Generation: Observations and Insights on Multimodal Understanding from Kling](https://arxiv.org/abs/2611.04916)**
-  Video generation has progressed from isolated clips to coherent short-form audiovisual sequences, and the bottleneck is shifting from rendering to semantic control. This report su…
-  <sub>🔥 52 | 💡 we argue | HF Papers · 2 天前</sub>
-
-- **[Mass Producing Training Data with Surprising Side Effects](https://arxiv.org/abs/2611.06324)**
-  Training data can have unexpected side effects on language model behavior outside the training domain: insecure code data can induce broad misalignment, and outdated bird names ca…
-  <sub>👤 **Jacob Steinhardt · UC Berkeley / Transluce** | arXiv · 今天</sub>
+- **[AttnSR: Attention Step Reward for Long-Horizon Agentic RL](https://arxiv.org/abs/2611.07932)**
+  Long-horizon LLM agents make multi-step decisions, yet outcome-reward-only reinforcement learning provides little direct supervision for individual steps. We introduce AttnSR, a s…
+  <sub>arXiv · 今天</sub>
 
 
 ## 📌 其他值得一看
 
-- **[Reconciling Privacy with Provenance for Language Model Watermarks](https://arxiv.org/abs/2611.06100)**
-  Watermarking has great potential for regulating the use of language models (LMs), but its deployment has been marred by controversy, as many users argue that fine-grained tracking…
-  <sub>👤 **Tatsunori Hashimoto · Stanford** | arXiv · 今天</sub>
+- **[Same Answer, Different Future: Matched Predictions Do Not Imply Matched Belief Updating in Language Models](https://arxiv.org/abs/2611.07913)**
+  Language models can produce similar probabilistic predictions after observing outcomes, reading summaries, receiving instructions, or undergoing activation interventions. Whether…
+  <sub>👤 **Xinlei Chen · Meta FAIR** | arXiv · 今天</sub>
+
+- **[how researchers use claude](https://www.anthropic.com/research/how-researchers-use-claude)**
+  <sub>🏛 Anthropic | 💡 想法型 | 页面更新 · 新发现</sub>
 
 
 ---
@@ -228,7 +203,7 @@
 <summary>📡 源状态与运行信息</summary>
 
 
-**入选来源分布**：arXiv 26, HF Papers 10
+**入选来源分布**：arXiv 18, HF Papers 10, 页面更新 1, Blog 1
 
 
 **本轮出问题的源**（不影响其他源）：
@@ -238,7 +213,7 @@
 - RSS Import AI: 抓取失败 (https://importai.substack.com/feed)
 
 
-**积压 3 条**（超出本期容量，未标记为已推送，会出现在后续几期）。
+**积压 2 条**（超出本期容量，未标记为已推送，会出现在后续几期）。
 
 
 **模式**：daily　**LLM 摘要**：off（未检测到 ANTHROPIC_API_KEY，已降级为纯摘要截断）

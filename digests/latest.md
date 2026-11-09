@@ -1,34 +1,36 @@
-# AI 前沿雷达 · 2026-11-08
+# AI 前沿雷达 · 2026-11-09
 
-> 扫描 **1558** 条 → 入选 **1** 条 ｜ 关注名单命中 **0** 位研究者 ｜ 生成于 2026-11-08 02:09 UTC
+> 扫描 **1513** 条 → 入选 **2** 条 ｜ 关注名单命中 **2** 位研究者 ｜ 生成于 2026-11-09 02:30 UTC
 
-**今日分布**：💡 理论 / 新范式 (1)
+**今日分布**：🤖 智能体 / Agent (1) ｜ 🦾 VLA / 视觉-语言-动作 (1)
 
 
 ## ⭐ 今日必读
 
-1. **[From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence](https://arxiv.org/abs/2611.05376)**
-   For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and pe…
-   <sub>🔥 86 | 💡 we argue | HF Papers · 4 天前</sub>
+1. **[s$^3$: Simple Scaling of Swarms via Cooperative Multi-agent RL](https://arxiv.org/abs/2611.08615)**
+   Groups can achieve more than individuals in the same amount of time, but only if their members coordinate: they must decide who works on what and what to share. However, this orga…
+   <sub>👤 **Noah A. Smith · UW / AI2** | arXiv · 3 天前</sub>
 
-
-## 🕰️ 迟到的热度
-
-*旧内容，但最近热度明显上涨 —— 之前可能被你错过。*
-
-- **[From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence](https://arxiv.org/abs/2611.05376)**
-  For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and pe…
-  <sub>🔥 86 | 💡 we argue | HF Papers · 4 天前</sub>
+2. **[DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy](https://arxiv.org/abs/2606.23431)**
+   Fine-grained, bimanual dexterous manipulation remains a foundational challenge in robotics. Embodiment gaps hinder accurate kinematic mapping, and visual tracking alone does not r…
+   <sub>👤 **Ziwei Liu · NTU** | arXiv · 06-22（139 天前）</sub>
 
 
 ---
 
 
-## 💡 理论 / 新范式
+## 🤖 智能体 / Agent
 
-- **[From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence](https://arxiv.org/abs/2611.05376)**
-  For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and pe…
-  <sub>🔥 86 | 💡 we argue | HF Papers · 4 天前</sub>
+- **[s$^3$: Simple Scaling of Swarms via Cooperative Multi-agent RL](https://arxiv.org/abs/2611.08615)**
+  Groups can achieve more than individuals in the same amount of time, but only if their members coordinate: they must decide who works on what and what to share. However, this orga…
+  <sub>👤 **Noah A. Smith · UW / AI2** | arXiv · 3 天前</sub>
+
+
+## 🦾 VLA / 视觉-语言-动作
+
+- **[DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy](https://arxiv.org/abs/2606.23431)**
+  Fine-grained, bimanual dexterous manipulation remains a foundational challenge in robotics. Embodiment gaps hinder accurate kinematic mapping, and visual tracking alone does not r…
+  <sub>👤 **Ziwei Liu · NTU** | arXiv · 06-22（139 天前）</sub>
 
 
 ---
@@ -37,7 +39,7 @@
 <summary>📡 源状态与运行信息</summary>
 
 
-**入选来源分布**：HF Papers 1
+**入选来源分布**：arXiv 2
 
 
 **本轮出问题的源**（不影响其他源）：

@@ -1,51 +1,51 @@
-# AI 前沿雷达 · 2026-11-10
+# AI 前沿雷达 · 2026-11-11
 
-> 扫描 **1650** 条 → 入选 **23** 条 ｜ 关注名单命中 **17** 位研究者 ｜ 生成于 2026-11-10 04:33 UTC
+> 扫描 **1788** 条 → 入选 **33** 条 ｜ 关注名单命中 **14** 位研究者 ｜ 生成于 2026-11-11 02:39 UTC
 
-**今日分布**：🧠 大模型 / LLM (4) ｜ 🤖 智能体 / Agent (6) ｜ 🧰 Harness / 基建与评测 (2) ｜ 👁️ 计算机视觉 / CV (2) ｜ 🦾 VLA / 视觉-语言-动作 (3) ｜ 🚶 具身智能 / 机器人 (1) ｜ 🎯 强化学习 / 持续学习 (3) ｜ 💡 理论 / 新范式 (1) ｜ 📌 其他值得一看 (1)
+**今日分布**：🧠 大模型 / LLM (4) ｜ 🤖 智能体 / Agent (8) ｜ 🧰 Harness / 基建与评测 (2) ｜ 👁️ 计算机视觉 / CV (3) ｜ 🎨 多模态 / VLM (4) ｜ 🦾 VLA / 视觉-语言-动作 (2) ｜ 🎯 强化学习 / 持续学习 (8) ｜ 💡 理论 / 新范式 (1) ｜ 🛡️ 安全 / 对齐 / 可解释 (1)
 
 
 ## ⭐ 今日必读
 
-1. **[Explicitly capturing demonstrator multi-modality for distillation into diffusion policies](https://arxiv.org/abs/2611.10949)**
-   The diversity of a distilled diffusion policy's outputs matters beyond how it impacts the policy's success rate. In particular, downstream applications like test-time search and p…
-   <sub>👤 **Russ Tedrake · MIT / TRI / Leslie Pack Kaelbling · MIT** | arXiv · 2 天前</sub>
+1. **[Embodied First Exam](https://arxiv.org/abs/2611.12177)**
+   Early successes on agentic robotics point to a potential paradigm shift toward using coding agents to control robots. Existing robotics benchmarks are built around visuomotor poli…
+   <sub>👤 **Pieter Abbeel · UC Berkeley / Fei-Fei Li · Stanford / World Labs / Yuke Zhu · UT Austin / NVIDIA** | arXiv · 昨天</sub>
 
-2. **[Sampling Is Not Curiosity: Why LLM Agents Should Investigate](https://arxiv.org/abs/2611.10501)**
-   LLM agents are increasingly used for open-ended tasks, very common in research scenarios where they are required to explore, investigate, or act curiously. At inference time, an L…
-   <sub>👤 **Jurgen Schmidhuber · KAUST / IDSIA** | 💡 we argue | arXiv · 2 天前</sub>
+2. **[Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization](https://arxiv.org/abs/2611.11995)**
+   In this work, we study whether frontier agent can continually improve real-world AI infrastructure over long horizons. We introduce Infrathon, a benchmark of diverse, long-horizon…
+   <sub>👤 **Hannaneh Hajishirzi · UW / AI2 / Noah A. Smith · UW / AI2** | 🔥 3 | arXiv · 昨天</sub>
 
-3. **[Self-Supervised Collapse Prevention with Score-Based Entropy Maximization](https://arxiv.org/abs/2611.11379)**
-   Diffusion models have demonstrated the effectiveness of score-based objectives for generative modeling, yet their potential for self-supervised representation learning remains und…
-   <sub>👤 **Yann LeCun · NYU** | arXiv · 昨天</sub>
+3. **[Flip Anything with Agentic Robotics Self-Learning](https://arxiv.org/abs/2611.11941)**
+   Flipping is a fundamental robotic manipulation skill that requires reorienting a target object in a stable pose on a planar support surface by rotating it 180$^\circ$ about an axi…
+   <sub>👤 **Ken Goldberg · UC Berkeley** | arXiv · 昨天</sub>
 
-4. **[Video-Coder: Reinforcing Agentic Coding for Video Generation](https://arxiv.org/abs/2611.09894)**
-   Recent years have witnessed remarkable progress in video generation in terms of visual quality and temporal consistency. However, generating videos with precise spatial structure,…
-   <sub>👤 **Yong Jae Lee · UW-Madison** | 🔥 16 | arXiv · 3 天前</sub>
+4. **[Compass 1: Towards Open-World and Persistent Embodied Navigation from Monocular RGB Videos](https://arxiv.org/abs/2611.12087)**
+   Embodied navigation requires agents to achieve persistent spatial awareness and long-horizon execution stability in open-world environments. However, existing navigation architect…
+   <sub>👤 **Yu Qiao · Shanghai AI Lab** | arXiv · 昨天</sub>
 
-5. **[ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use](https://arxiv.org/abs/2611.09036)**
-   Creative tool use is a fundamental human capability and an important step toward general-purpose embodied intelligence. It requires agents to reason about object affordances, phys…
-   <sub>👤 **Fei-Fei Li · Stanford / World Labs** | arXiv · 3 天前</sub>
+5. **[Creative Priming: Decoupling Process from Product to Escape the Creative Paradox](https://arxiv.org/abs/2611.11740)**
+   Many of the most consequential advances promised by AI, from curing diseases and inventing new technologies to formulating new scientific theories, are fundamentally creative acts…
+   <sub>👤 **Kenneth O. Stanley** | 🔥 2 | arXiv · 2 天前</sub>
 
-6. **[Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL](https://arxiv.org/abs/2611.09828)**
-   Reinforcement learning (RL) rewards are notoriously difficult to design and control, often leading to the model learning unintended behaviors such as reward hacking. One potential…
-   <sub>👤 **Neel Nanda · Google DeepMind** | arXiv · 3 天前</sub>
+6. **[SLIC: Reinforcement Fine-Tuning Small LMs for Multi-Turn Analog Circuit Optimization](https://arxiv.org/abs/2611.13452)**
+   Analog integrated circuit (IC) design is a multi-turn, simulator-grounded engineering task that demands iterative reasoning over coupled performance tradeoffs, yet proprietary pro…
+   <sub>👤 **Tao Yu · HKU** | arXiv · 昨天</sub>
 
-7. **[BATCH: Behavior Alignment for Cross-Embodiment Learning from Humans](https://arxiv.org/abs/2611.10148)**
-   Human demonstrations provide a scalable source of diverse manipulation data, but leveraging them for robot learning remains challenging due to differences in embodiment, viewpoint…
-   <sub>👤 **Shuran Song · Stanford** | arXiv · 3 天前</sub>
+7. **[Are UFOs Real? Introducing Unified Factored Organizers](https://arxiv.org/abs/2611.11862)**
+   Implicit in much research in deep learning is the assumption that if a network achieves low loss, then it must have learned a good representation of its training data. Recent work…
+   <sub>👤 **Kenneth O. Stanley** | arXiv · 昨天</sub>
 
-8. **[Meta-Reinforcement Learning with Zero-Shot Reinforcement Learning](https://arxiv.org/abs/2611.10553)**
-   Meta-reinforcement learning (meta-RL) trains agents to adapt to novel tasks from test-time experience, but requires diverse training environments and reward functions. While envir…
-   <sub>👤 **Yuke Zhu · UT Austin / NVIDIA** | arXiv · 2 天前</sub>
+8. **[System Optimizations for Cost-Efficient Agent Harnesses](https://arxiv.org/abs/2611.12122)**
+   AI agent harnesses play the critical role of providing LLMs with an interface to a computing environment. Recent studies show that AI agents' task-execution accuracy depends mostl…
+   <sub>👤 **Ion Stoica · UC Berkeley** | arXiv · 昨天</sub>
 
-9. **[A Controlled Study of Models, Skills, Feedback, and Curriculum in Agentic Robotics](https://arxiv.org/abs/2611.09030)**
-   Agentic robotics asks coding agents to implement and iteratively improve robot policies from simulated and real-world physical interactions. We study the self-learning loop of age…
-   <sub>👤 **Ken Goldberg · UC Berkeley** | arXiv · 3 天前</sub>
-
-10. **[Unified Factored Representations Resist Catastrophic Forgetting](https://arxiv.org/abs/2611.11020)**
-   This paper explores an unexpected connection between the quality of a neural network's (NN's) internal representation and its vulnerability to catastrophic forgetting. The represe…
+9. **[The Value of Not Knowing: How Fresh Eyes through Naive LLMs Fuel Creativity](https://arxiv.org/abs/2611.11725)**
+   Many major scientific advances come from approaching a problem with a new or novel perspective. While large language models (LLMs) with internet-scale knowledge seem poised to tak…
    <sub>👤 **Kenneth O. Stanley** | arXiv · 2 天前</sub>
+
+10. **[SWAM: Scaling World Action Models with Cross-Modal Alignment](https://arxiv.org/abs/2611.12870)**
+   World action models jointly predict video and actions conditioned on language. Existing studies focus primarily on architectures and training mechanisms, typically treating langua…
+   <sub>👤 **Cewu Lu · SJTU** | 🔥 2 | arXiv · 昨天</sub>
 
 
 ---
@@ -53,121 +53,161 @@
 
 ## 🧠 大模型 / LLM
 
-- **[MoTo: Mixture of Tokenizers Towards Fair Multilingual Language Modeling](https://arxiv.org/abs/2611.11027)**
-  Large language models rely on a single tokenizer that is chosen at training time and fixed thereafter. Most tokenizers are trained on English-dominant corpora, making them under-s…
-  <sub>👤 **Colin Raffel · U Toronto / Vector** | arXiv · 2 天前</sub>
+- **[SLIC: Reinforcement Fine-Tuning Small LMs for Multi-Turn Analog Circuit Optimization](https://arxiv.org/abs/2611.13452)**
+  Analog integrated circuit (IC) design is a multi-turn, simulator-grounded engineering task that demands iterative reasoning over coupled performance tradeoffs, yet proprietary pro…
+  <sub>👤 **Tao Yu · HKU** | arXiv · 昨天</sub>
 
-- **[Multi-GPU MoE Inference with Adaptive Expert Offloading](https://arxiv.org/abs/2611.10219)**
-  Modern Mixture-of-Experts (MoE) inference is constrained by GPU memory. This constraint is mitigated by expert offloading, which stores part of the model's weight in host memory a…
-  <sub>👤 **Ion Stoica · UC Berkeley** | arXiv · 3 天前</sub>
+- **[The Value of Not Knowing: How Fresh Eyes through Naive LLMs Fuel Creativity](https://arxiv.org/abs/2611.11725)**
+  Many major scientific advances come from approaching a problem with a new or novel perspective. While large language models (LLMs) with internet-scale knowledge seem poised to tak…
+  <sub>👤 **Kenneth O. Stanley** | arXiv · 2 天前</sub>
 
-- **[Micro-Randomized Trial of an AI-Simulated Practice Tool for Therapeutic Skills](https://arxiv.org/abs/2611.09912)**
-  Though LLM-simulated practice may support psychotherapy education, open questions remain about which system features provide the most educational value. We developed an AI-simulat…
-  <sub>👤 **Emma Brunskill · Stanford** | arXiv · 08-25（76 天前）</sub>
+- **[InfraRSI: Harnessing Recursive Self-Improvement for Training Infrastructure](https://arxiv.org/abs/2611.11558)**
+  While Recursive Self-Improvement (RSI) accelerates isolated algorithm and kernel synthesis, distributed LLM training depends on tightly coupled launch settings, operator kernels,…
+  <sub>🔥 17 | HF Papers · 2 天前</sub>
 
-- **[TLRS-DPO: Token-Level Risk Scoring for Better Direct Preference Optimization](https://arxiv.org/abs/2611.11232)**
-  Direct Preference Optimization (DPO) is a simple and widely used alternative to RLHF for aligning large language models (LLMs), but its sequence-level objective cannot precisely l…
+- **[Large Language Models as a Universal Searcher for Open-World Automated Machine Learning](https://arxiv.org/abs/2611.12791)**
+  Developing effective machine learning models requires complex manual tuning, while current Automated Machine Learning (AutoML) frameworks remain domain-specific and isolate model…
   <sub>arXiv · 昨天</sub>
 
 
 ## 🤖 智能体 / Agent
 
-- **[Video-Coder: Reinforcing Agentic Coding for Video Generation](https://arxiv.org/abs/2611.09894)**
-  Recent years have witnessed remarkable progress in video generation in terms of visual quality and temporal consistency. However, generating videos with precise spatial structure,…
-  <sub>👤 **Yong Jae Lee · UW-Madison** | 🔥 16 | arXiv · 3 天前</sub>
+- **[Embodied First Exam](https://arxiv.org/abs/2611.12177)**
+  Early successes on agentic robotics point to a potential paradigm shift toward using coding agents to control robots. Existing robotics benchmarks are built around visuomotor poli…
+  <sub>👤 **Pieter Abbeel · UC Berkeley / Fei-Fei Li · Stanford / World Labs / Yuke Zhu · UT Austin / NVIDIA** | arXiv · 昨天</sub>
 
-- **[ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use](https://arxiv.org/abs/2611.09036)**
-  Creative tool use is a fundamental human capability and an important step toward general-purpose embodied intelligence. It requires agents to reason about object affordances, phys…
-  <sub>👤 **Fei-Fei Li · Stanford / World Labs** | arXiv · 3 天前</sub>
+- **[Flip Anything with Agentic Robotics Self-Learning](https://arxiv.org/abs/2611.11941)**
+  Flipping is a fundamental robotic manipulation skill that requires reorienting a target object in a stable pose on a planar support surface by rotating it 180$^\circ$ about an axi…
+  <sub>👤 **Ken Goldberg · UC Berkeley** | arXiv · 昨天</sub>
 
-- **[A Controlled Study of Models, Skills, Feedback, and Curriculum in Agentic Robotics](https://arxiv.org/abs/2611.09030)**
-  Agentic robotics asks coding agents to implement and iteratively improve robot policies from simulated and real-world physical interactions. We study the self-learning loop of age…
-  <sub>👤 **Ken Goldberg · UC Berkeley** | arXiv · 3 天前</sub>
+- **[System Optimizations for Cost-Efficient Agent Harnesses](https://arxiv.org/abs/2611.12122)**
+  AI agent harnesses play the critical role of providing LLMs with an interface to a computing environment. Recent studies show that AI agents' task-execution accuracy depends mostl…
+  <sub>👤 **Ion Stoica · UC Berkeley** | arXiv · 昨天</sub>
 
-- **[Toward the Era of Agentic Embodied Intelligence](https://arxiv.org/abs/2611.09124)**
-  Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework…
-  <sub>🔥 26 | HF Papers · 4 天前</sub>
+- **[Deep Personalization: Continuous Context Observation for Local Proactive Agents](https://arxiv.org/abs/2611.13457)**
+  As AI agents become increasingly capable, users must still recognize when and how to ask for help, leaving many opportunities for useful support unrealized. Proactive agents hold…
+  <sub>👤 **Song Han · MIT / NVIDIA** | arXiv · 昨天</sub>
 
-- **[Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use](https://arxiv.org/abs/2611.09113)**
-  LLM agents can exceed their authorization boundaries while pursuing user goals without an adversary. We formalize this phenomenon as authorization drift across data, tool, scope,…
-  <sub>🔥 6 | HF Papers · 3 天前</sub>
+- **[ForgeSystem: An Architecture for Demand-Specific Artefact Production with AI Agents](https://arxiv.org/abs/2611.12288)**
+  General-purpose software serves many different demands, but this flexibility costs performance and efficiency on any specific demand. Software tailored to a specific demand avoids…
+  <sub>👤 **Zhiyuan Liu · Tsinghua** | arXiv · 昨天</sub>
 
-- **[How to "train" a surgeon? Benchmarking generalist agents in surgical scene understanding](https://arxiv.org/abs/2611.11437)**
-  Evaluating general-purpose multimodal large language models (MLLMs) for surgical scene understanding remains limited due to scarce surgical data and fragmented evaluation protocol…
-  <sub>💡 想法型 | arXiv · 昨天</sub>
+- **[Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents](https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/)**
+  Microsoft researchers have discovered &#8220;Lazarus,&#8221; a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execut…
+  <sub>🏛 Microsoft Research | Blog · 今天</sub>
+
+- **[ReproBridge: Building Reproducibility into ML Research Artifacts](https://arxiv.org/abs/2611.08452)**
+  Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, r…
+  <sub>🔥 30 | HF Papers · 5 天前</sub>
+
+- **[From Process Models to Composable Agentic Workflows: Combining BPMN, Agents and Enterprise Knowledge](https://arxiv.org/abs/2611.13196)**
+  LLM-based agents can reason, use tools and collaborate. However, coordinating increasingly complex agentic applications becomes difficult to understand, monitor and improve. Decis…
+  <sub>arXiv · 昨天</sub>
 
 
 ## 🧰 Harness / 基建与评测
 
-- **[LEF-JEPA: Denoising-Trained Latent Energy Fields for Spatial Representation Learning](https://arxiv.org/abs/2611.08989)**
-  A joint-embedding predictive architecture (JEPA) that applies prediction supervision only at masked positions struggles to clearly capture object shapes and boundaries in its late…
-  <sub>👤 **Zhiyuan Liu · Tsinghua** | arXiv · 3 天前</sub>
+- **[Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization](https://arxiv.org/abs/2611.11995)**
+  In this work, we study whether frontier agent can continually improve real-world AI infrastructure over long horizons. We introduce Infrathon, a benchmark of diverse, long-horizon…
+  <sub>👤 **Hannaneh Hajishirzi · UW / AI2 / Noah A. Smith · UW / AI2** | 🔥 3 | arXiv · 昨天</sub>
 
-- **[LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis](https://arxiv.org/abs/2611.06856)**
-  We introduce LongBanana, to our knowledge the first expert-designed and expert-verified benchmark for long-context multi-reference image synthesis in the age of agent-driven image…
-  <sub>🔥 29 | arXiv · 5 天前</sub>
+- **[Flide: Accelerating Decision Inference with Exact State Forking](https://arxiv.org/abs/2610.42148)**
+  Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapid System One execut…
+  <sub>🔥 32 | HF Papers · 11 天前</sub>
 
 
 ## 👁️ 计算机视觉 / CV
 
-- **[Self-Supervised Collapse Prevention with Score-Based Entropy Maximization](https://arxiv.org/abs/2611.11379)**
-  Diffusion models have demonstrated the effectiveness of score-based objectives for generative modeling, yet their potential for self-supervised representation learning remains und…
-  <sub>👤 **Yann LeCun · NYU** | arXiv · 昨天</sub>
+- **[Compass 1: Towards Open-World and Persistent Embodied Navigation from Monocular RGB Videos](https://arxiv.org/abs/2611.12087)**
+  Embodied navigation requires agents to achieve persistent spatial awareness and long-horizon execution stability in open-world environments. However, existing navigation architect…
+  <sub>👤 **Yu Qiao · Shanghai AI Lab** | arXiv · 昨天</sub>
 
-- **[GenRM-Flow: Generators are Process-aware Reward Models in Flow Matching](https://arxiv.org/abs/2611.11421)**
-  Aligning video generation models with human preference depends critically on the quality of the reward model that scores generated videos. Current video reward models, however, so…
-  <sub>💡 we argue | arXiv · 昨天</sub>
+- **[Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality](https://arxiv.org/abs/2611.11962)**
+  Synthetic data can scale visual pretraining, but current selection criteria only partially explain which datasets train strong representations. We propose using the energy profile…
+  <sub>👤 **Antonio Torralba · MIT** | arXiv · 昨天</sub>
+
+- **[Plant Orbiter: 3D Plant Reconstruction and Generation with Video Diffusion Orbit Cameras and 3D Gaussian Splatting](https://arxiv.org/abs/2611.12739)**
+  Modern digital phenotyping pipelines require the precise measurement of a range of 3D morphological plant traits. The accurate, high throughput acquisition of these traits helps b…
+  <sub>💡 a new approach to | arXiv · 昨天</sub>
+
+
+## 🎨 多模态 / VLM
+
+- **[SWAM: Scaling World Action Models with Cross-Modal Alignment](https://arxiv.org/abs/2611.12870)**
+  World action models jointly predict video and actions conditioned on language. Existing studies focus primarily on architectures and training mechanisms, typically treating langua…
+  <sub>👤 **Cewu Lu · SJTU** | 🔥 2 | arXiv · 昨天</sub>
+
+- **[OptiCover: A Scalable and Multi-Surface Framework for Cold-Start Visual Optimization under Semantic Constraints](https://arxiv.org/abs/2611.12727)**
+  Selecting an effective cover photo is a critical yet understudied problem in visual merchandising for e-commerce marketplaces. On Airbnb, hosts upload many photos depicting differ…
+  <sub>arXiv · 昨天</sub>
+
+- **[Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs](https://arxiv.org/abs/2611.12883)**
+  Multimodal large language models (MLLMs) integrate information across modalities, but become unreliable when those modalities disagree. Under conflicting inputs, MLLMs may favor m…
+  <sub>💡 想法型 | arXiv · 昨天</sub>
+
+- **[Multimodal Road Closure Mapping via Cross-Modal Graph Attention](https://arxiv.org/abs/2611.13192)**
+  Accurate and timely identification of road closures is critical for large-scale navigation and logistics systems, yet remains challenging due to the need to jointly reason over vi…
+  <sub>arXiv · 昨天</sub>
 
 
 ## 🦾 VLA / 视觉-语言-动作
 
-- **[Explicitly capturing demonstrator multi-modality for distillation into diffusion policies](https://arxiv.org/abs/2611.10949)**
-  The diversity of a distilled diffusion policy's outputs matters beyond how it impacts the policy's success rate. In particular, downstream applications like test-time search and p…
-  <sub>👤 **Russ Tedrake · MIT / TRI / Leslie Pack Kaelbling · MIT** | arXiv · 2 天前</sub>
+- **[Learning Heterogeneous Tactile Representation for General Dexterous Manipulation](https://arxiv.org/abs/2611.12806)**
+  Tactile sensing is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commerci…
+  <sub>🔥 92 | arXiv · 昨天</sub>
 
-- **[BATCH: Behavior Alignment for Cross-Embodiment Learning from Humans](https://arxiv.org/abs/2611.10148)**
-  Human demonstrations provide a scalable source of diverse manipulation data, but leveraging them for robot learning remains challenging due to differences in embodiment, viewpoint…
-  <sub>👤 **Shuran Song · Stanford** | arXiv · 3 天前</sub>
-
-- **[ODE Policy: Robot Learning via Action Dynamics, Not Actions](https://arxiv.org/abs/2611.01729)**
-  Most robot policies, whether trained by imitation learning (IL) or reinforcement learning (RL), map observations to action values at discrete control steps and leave the continuit…
-  <sub>HF Papers · 8 天前</sub>
-
-
-## 🚶 具身智能 / 机器人
-
-- **[SUGARv2: Learning Diverse Visual Humanoid Loco-Manipulation Skills from Synthesized Interaction References](https://arxiv.org/abs/2611.09266)**
-  Scaling up visual humanoid loco-manipulation skill acquisition requires reducing the human effort needed as tasks and spatial configurations expand, particularly in demonstration…
-  <sub>👤 **Hao Dong · Peking University** | arXiv · 3 天前</sub>
+- **[VLA Adaptation with Real and Simulated Data: A Case Study on Robotic Chess](https://arxiv.org/abs/2611.12676)**
+  Vision-language-action (VLA) models are trained as general-purpose foundation models for robot learning, and require fine-tuning for each downstream task and robot. This raises pr…
+  <sub>arXiv · 昨天</sub>
 
 
 ## 🎯 强化学习 / 持续学习
 
-- **[Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL](https://arxiv.org/abs/2611.09828)**
-  Reinforcement learning (RL) rewards are notoriously difficult to design and control, often leading to the model learning unintended behaviors such as reward hacking. One potential…
-  <sub>👤 **Neel Nanda · Google DeepMind** | arXiv · 3 天前</sub>
+- **[Creative Priming: Decoupling Process from Product to Escape the Creative Paradox](https://arxiv.org/abs/2611.11740)**
+  Many of the most consequential advances promised by AI, from curing diseases and inventing new technologies to formulating new scientific theories, are fundamentally creative acts…
+  <sub>👤 **Kenneth O. Stanley** | 🔥 2 | arXiv · 2 天前</sub>
 
-- **[Meta-Reinforcement Learning with Zero-Shot Reinforcement Learning](https://arxiv.org/abs/2611.10553)**
-  Meta-reinforcement learning (meta-RL) trains agents to adapt to novel tasks from test-time experience, but requires diverse training environments and reward functions. While envir…
-  <sub>👤 **Yuke Zhu · UT Austin / NVIDIA** | arXiv · 2 天前</sub>
+- **[Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning](https://arxiv.org/abs/2611.12886)**
+  Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two…
+  <sub>🔥 38 | arXiv · 昨天</sub>
 
-- **[Unified Factored Representations Resist Catastrophic Forgetting](https://arxiv.org/abs/2611.11020)**
-  This paper explores an unexpected connection between the quality of a neural network's (NN's) internal representation and its vulnerability to catastrophic forgetting. The represe…
-  <sub>👤 **Kenneth O. Stanley** | arXiv · 2 天前</sub>
+- **[How Much Training-Inference Mismatch Can On-Policy Distillation Tolerate?](https://arxiv.org/abs/2611.11450)**
+  On-policy distillation (OPD) trains a student language model on its own responses, guided by a fixed teacher. Generating these responses is expensive, so systems use quantized inf…
+  <sub>🔥 11 | 💡 想法型 | HF Papers · 3 天前</sub>
+
+- **[Steerable Multi-Objective Group-Relative Preference Optimization with Jointly Trained Low-Rank Adapters](https://arxiv.org/abs/2611.09634)**
+  Language model deployment often requires different trade-offs between competing objectives as user preferences change, yet standard post-training methods typically produce a singl…
+  <sub>🔥 11 | HF Papers · 5 天前</sub>
+
+- **[Coding or Cheating? An Investigation of Frontier Coding LLMs](https://arxiv.org/abs/2611.10404)**
+  Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the r…
+  <sub>🔥 5 | HF Papers · 4 天前</sub>
+
+- **[DeRep: Learning Depth Representations for End-to-End Navigation in Cluttered Environments](https://arxiv.org/abs/2611.13499)**
+  End-to-end navigation in cluttered environments relies on compact visual representations to support collision avoidance and goal-directed motion. Existing methods typically learn…
+  <sub>arXiv · 今天</sub>
+
+- **[Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks](https://arxiv.org/abs/2611.12799)**
+  Reinforcement learning is now the mainstream paradigm for training LLMs on agentic tasks, yet standard practice keeps only the best-validation checkpoint and discards the rest. We…
+  <sub>arXiv · 昨天</sub>
+
+- **[FewStepRL: Fine-tuning Few-step Diffusion Models with Reinforcement Learning](https://arxiv.org/abs/2611.08240)**
+  Reinforcement learning (RL) has become a standard post-training method for diffusion models, but most RL objectives roll out the current policy at every iteration, and with a many…
+  <sub>🔥 8 | HF Papers · 5 天前</sub>
 
 
 ## 💡 理论 / 新范式
 
-- **[Sampling Is Not Curiosity: Why LLM Agents Should Investigate](https://arxiv.org/abs/2611.10501)**
-  LLM agents are increasingly used for open-ended tasks, very common in research scenarios where they are required to explore, investigate, or act curiously. At inference time, an L…
-  <sub>👤 **Jurgen Schmidhuber · KAUST / IDSIA** | 💡 we argue | arXiv · 2 天前</sub>
+- **[Are UFOs Real? Introducing Unified Factored Organizers](https://arxiv.org/abs/2611.11862)**
+  Implicit in much research in deep learning is the assumption that if a network achieves low loss, then it must have learned a good representation of its training data. Recent work…
+  <sub>👤 **Kenneth O. Stanley** | arXiv · 昨天</sub>
 
 
-## 📌 其他值得一看
+## 🛡️ 安全 / 对齐 / 可解释
 
-- **[An Adaptive, Context-Aware, and Stacked Attention Network-Based Recommendation System to Capture Users' Temporal Preference](https://arxiv.org/abs/2611.11278)**
-  Recommendation systems have become more important since the widespread use of the Internet. The large amount of information means that it is difficult for users to discover they r…
-  <sub>👤 **Chi Wang · Google DeepMind** | arXiv · 昨天</sub>
+- **[Living constitutions: Participatory alignment for sovereign foundation models](https://arxiv.org/abs/2611.13402)**
+  In Constitutional AI, a plain-text "constitution" encodes values and gets incorporated into a model via post-training. However, the procedure for creating such a constitution pose…
+  <sub>💡 we argue | arXiv · 昨天</sub>
 
 
 ---
@@ -176,7 +216,7 @@
 <summary>📡 源状态与运行信息</summary>
 
 
-**入选来源分布**：arXiv 20, HF Papers 3
+**入选来源分布**：arXiv 25, HF Papers 7, Blog 1
 
 
 **本轮出问题的源**（不影响其他源）：

@@ -1,51 +1,51 @@
-# AI 前沿雷达 · 2026-11-12
+# AI 前沿雷达 · 2026-11-13
 
-> 扫描 **1817** 条 → 入选 **16** 条 ｜ 关注名单命中 **1** 位研究者 ｜ 生成于 2026-11-12 03:42 UTC
+> 扫描 **1773** 条 → 入选 **17** 条 ｜ 关注名单命中 **8** 位研究者 ｜ 生成于 2026-11-13 03:18 UTC
 
-**今日分布**：🧠 大模型 / LLM (6) ｜ 🤖 智能体 / Agent (2) ｜ 🧰 Harness / 基建与评测 (1) ｜ 👁️ 计算机视觉 / CV (2) ｜ 🦾 VLA / 视觉-语言-动作 (1) ｜ 🚶 具身智能 / 机器人 (1) ｜ 🌍 世界模型 / World Models (1) ｜ 🎯 强化学习 / 持续学习 (2)
+**今日分布**：🧠 大模型 / LLM (4) ｜ 🤖 智能体 / Agent (4) ｜ 🧰 Harness / 基建与评测 (1) ｜ 🦾 VLA / 视觉-语言-动作 (4) ｜ 🎯 强化学习 / 持续学习 (3) ｜ 🛡️ 安全 / 对齐 / 可解释 (1)
 
 
 ## ⭐ 今日必读
 
-1. **[LM-SimBench: A Unified Framework, Dataset, and Benchmark for Large Language Model Training Simulation](https://arxiv.org/abs/2611.14285)**
-   Evaluating candidate parallelization strategies through distributed training runs makes strategy selection prohibitively expensive at scale. Performance simulation offers a lower…
-   <sub>👤 **Zhiyuan Liu · Tsinghua** | arXiv · 昨天</sub>
+1. **[Evolving Infra: Agent-Adaptive LLM Serving at Scale](https://arxiv.org/abs/2611.12304)**
+   Agentic workloads are a major source of LLM inference demand. Existing prefill--decode (PD) disaggregated serving systems offer limited flexibility for runtime adaptation of compu…
+   <sub>👤 **Ion Stoica · UC Berkeley / Song Han · MIT / NVIDIA** | 🔥 10 | HF Papers · 4 天前</sub>
 
-2. **[World In-Context Learning for Agentic Robot Manipulation](https://arxiv.org/abs/2611.12885)**
-   Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling…
-   <sub>🔥 65 | HF Papers · 3 天前</sub>
+2. **[Learning Low-Latency Action Verification for Frozen Vision-Language-Action Models](https://arxiv.org/abs/2611.14834)**
+   Vision-language-action (VLA) models have made significant progress in general-purpose robotic manipulation. However, sampled action sequences can be ineffective, while evaluating…
+   <sub>👤 **Trevor Darrell · UC Berkeley** | arXiv · 2 天前</sub>
 
-3. **[Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents](https://arxiv.org/abs/2611.14320)**
-   External memory enables LLM agents to improve from experience by distilling trajectories of past tasks into concise lessons for new tasks. However, memory can also lead to memory-…
-   <sub>🔥 53 | arXiv · 昨天</sub>
+3. **[ActionCodec2: A Streaming Action Tokenizer](https://arxiv.org/abs/2611.15490)**
+   Most action tokenizers for autoregressive vision language action (VLA) models compress motion into chunks that must be decoded in full before their actions become executable. We i…
+   <sub>👤 **Hang Zhao · Tsinghua** | arXiv · 昨天</sub>
 
-4. **[One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge](https://arxiv.org/abs/2611.14432)**
-   We describe our solution for the 2026 BEHAVIOR Challenge: 100 long-horizon household tasks in the OmniGibson simulator. We placed 9th on the final leaderboard, the only independen…
-   <sub>arXiv · 昨天</sub>
+4. **[Generalized Inverse Kinematics via Conditional Flow](https://arxiv.org/abs/2611.15565)**
+   Inverse kinematics (IK) is a foundational primitive in robotics, mapping the task-space objectives expressed by higher-level planners to robot configurations that realize them. Tr…
+   <sub>👤 **Leslie Pack Kaelbling · MIT** | arXiv · 昨天</sub>
 
-5. **[dNaViT: Discrete Codes are General-Purpose Visual Representations](https://arxiv.org/abs/2611.12426)**
-   Discrete autoregressive modeling, notably through next-token prediction, has become a cornerstone of modern language models. Extending this paradigm to vision allows visual and la…
-   <sub>🔥 33 | HF Papers · 3 天前</sub>
+5. **[When Is Proof-Step Verification Worth Its Cost? Operating Requirements of Certify-or-Decline Verification for Open-Weight Mathematical Reasoning](https://arxiv.org/abs/2611.14794)**
+   Proof-step verification rewrites a solver's answer into typed steps and uses LLM judges to certify or decline. We evaluate this pipeline on open-weight models across GPQA, AIME-20…
+   <sub>👤 **Abhinav Gupta · CMU** | arXiv · 2 天前</sub>
 
-6. **[Few-Step Streaming Video Generation via Condition Shifting](https://arxiv.org/abs/2611.14033)**
-   Few-step sampling reduces the cost of streaming video generation. Distribution Matching Distillation (DMD) supervises few-step generators with a separate fake-score network, which…
-   <sub>🔥 67 | arXiv · 昨天</sub>
+6. **[Observations Drift, Structures Remain: Structural Pretraining with Time Alignment for Electromagnetic Signals](https://arxiv.org/abs/2611.15566)**
+   Electromagnetic signal modeling is increasingly moving toward self-supervised pretraining on heterogeneous I/Q observations. However, an observed waveform is jointly shaped by sig…
+   <sub>👤 **Maosong Sun · Tsinghua** | arXiv · 昨天</sub>
 
-7. **[MMDM: Measuring Massive Multitask Decision Making](https://arxiv.org/abs/2611.14309)**
-   System-1 Decision Models directly make structured probabilistic decisions over query-specified options given a state in a single forward pass, without autoregressively generating…
-   <sub>🔥 26 | arXiv · 昨天</sub>
+7. **[Expanding the Decision Space of Pretrained Models through Structured Re-Decoding](https://arxiv.org/abs/2611.15109)**
+   Native decoders limit how pretrained models combine local predictions under new structural constraints. We introduce Structured Re-Decoding (SRD), a training-free framework that c…
+   <sub>👤 **Chi Wang · Google DeepMind** | arXiv · 昨天</sub>
 
-8. **[The Surprising Effectiveness of Deleting Weights in LLM Post-Training](https://arxiv.org/abs/2611.10866)**
-   How little of a pretrained large language model (LLM) has to change for it to acquire new capabilities? We find that zeroing fewer than 0.05% of its weights, with no other modific…
-   <sub>🔥 10 | HF Papers · 5 天前</sub>
+8. **[Towards Robust Vision-Language Reasoning: A Multi-Stage Optimization Pipeline with Masked Diffusion Model](https://arxiv.org/abs/2611.15238)**
+   Discrete diffusion generation is emerging as a competitive alternative to autoregressive generation by denoising the entire token sequence through iterative refinement. Its global…
+   <sub>💡 towards | arXiv · 昨天</sub>
 
-9. **[Tree-Ising: Repairing Language Models with Bit-Level Ising Edits](https://arxiv.org/abs/2611.14210)**
-   Weight-space programming, introduced in recent MIT work by Takehi et al., enables a frontier LLM agent to read a network's weights and write a repair. Their GPT-6 Astra agent corr…
-   <sub>🔥 77 | arXiv · 昨天</sub>
+9. **[What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation](https://arxiv.org/abs/2611.15491)**
+   Vision-language-action (VLA) models predict chunks of future actions, and when objects move, those chunks go stale before they are executed. We study what makes a pretrained VLA r…
+   <sub>💡 想法型 | arXiv · 昨天</sub>
 
-10. **[LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115)**
-   Foundation models such as GPT and Claude have shown strong capabilities in spatial understanding and embodied intelligence. These advances make agentic robotics a promising path t…
-   <sub>🔥 5 | arXiv · 昨天</sub>
+10. **[How Amplitude ships product improvements in 1–2 days with OpenAI](https://openai.com/business/customer-stories/amplitude)**
+   Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.
+   <sub>🏛 OpenAI | 💡 想法型 | Blog · 今天</sub>
 
 
 ---
@@ -53,90 +53,88 @@
 
 ## 🧠 大模型 / LLM
 
-- **[LM-SimBench: A Unified Framework, Dataset, and Benchmark for Large Language Model Training Simulation](https://arxiv.org/abs/2611.14285)**
-  Evaluating candidate parallelization strategies through distributed training runs makes strategy selection prohibitively expensive at scale. Performance simulation offers a lower…
-  <sub>👤 **Zhiyuan Liu · Tsinghua** | arXiv · 昨天</sub>
+- **[When Is Proof-Step Verification Worth Its Cost? Operating Requirements of Certify-or-Decline Verification for Open-Weight Mathematical Reasoning](https://arxiv.org/abs/2611.14794)**
+  Proof-step verification rewrites a solver's answer into typed steps and uses LLM judges to certify or decline. We evaluate this pipeline on open-weight models across GPQA, AIME-20…
+  <sub>👤 **Abhinav Gupta · CMU** | arXiv · 2 天前</sub>
 
-- **[World In-Context Learning for Agentic Robot Manipulation](https://arxiv.org/abs/2611.12885)**
-  Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling…
-  <sub>🔥 65 | HF Papers · 3 天前</sub>
+- **[Towards Robust Vision-Language Reasoning: A Multi-Stage Optimization Pipeline with Masked Diffusion Model](https://arxiv.org/abs/2611.15238)**
+  Discrete diffusion generation is emerging as a competitive alternative to autoregressive generation by denoising the entire token sequence through iterative refinement. Its global…
+  <sub>💡 towards | arXiv · 昨天</sub>
 
-- **[dNaViT: Discrete Codes are General-Purpose Visual Representations](https://arxiv.org/abs/2611.12426)**
-  Discrete autoregressive modeling, notably through next-token prediction, has become a cornerstone of modern language models. Extending this paradigm to vision allows visual and la…
-  <sub>🔥 33 | HF Papers · 3 天前</sub>
+- **[Incentivizing Self-Learning in Large Language Models via Reinforcement Learning](https://arxiv.org/abs/2610.39671)**
+  Large language models (LLMs) draw on parametric knowledge and retrieval-augmented generation (RAG) to solve knowledge-intensive tasks. Yet problem solving in unfamiliar domains ca…
+  <sub>🔥 28 | HF Papers · 15 天前</sub>
 
-- **[MMDM: Measuring Massive Multitask Decision Making](https://arxiv.org/abs/2611.14309)**
-  System-1 Decision Models directly make structured probabilistic decisions over query-specified options given a state in a single forward pass, without autoregressively generating…
-  <sub>🔥 26 | arXiv · 昨天</sub>
-
-- **[From Counterfactual Edits to Human Narratives: LLM-Driven Interpretations for Recommender System Explanations](https://arxiv.org/abs/2611.13914)**
-  Recommender systems increasingly influence what users discover and consume online, yet the decision logic behind their outputs often remains opaque. Counterfactual explanation (CF…
+- **[Incentive-Responsive Agents: A Principal-Agent Framework, Metric Suite, and Runtime Architecture for Long-Lived Personal AI Agents](https://arxiv.org/abs/2611.15515)**
+  Personal AI agents now persist: they hold accounts, mailboxes, long-term memory, and open-ended task streams, yet the dominant way to improve them remains capability-side: prompt…
   <sub>💡 we argue | arXiv · 昨天</sub>
-
-- **[AI-assisted learning platform helps robots reason beyond literal commands](https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109)**
-  Humans are intuitive by nature. We can sense meaning beyond the literal words that we encounter. Now, a new artificial intelligence-assisted learning platform developed by MIT eng…
-  <sub>🏛 MIT | Blog · 2 天前</sub>
 
 
 ## 🤖 智能体 / Agent
 
-- **[Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents](https://arxiv.org/abs/2611.14320)**
-  External memory enables LLM agents to improve from experience by distilling trajectories of past tasks into concise lessons for new tasks. However, memory can also lead to memory-…
-  <sub>🔥 53 | arXiv · 昨天</sub>
+- **[How Amplitude ships product improvements in 1–2 days with OpenAI](https://openai.com/business/customer-stories/amplitude)**
+  Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.
+  <sub>🏛 OpenAI | 💡 想法型 | Blog · 今天</sub>
 
-- **[Tree-Ising: Repairing Language Models with Bit-Level Ising Edits](https://arxiv.org/abs/2611.14210)**
-  Weight-space programming, introduced in recent MIT work by Takehi et al., enables a frontier LLM agent to read a network's weights and write a repair. Their GPT-6 Astra agent corr…
-  <sub>🔥 77 | arXiv · 昨天</sub>
+- **[DecArena: Evaluating Large-Scale Decentralized Multi-Agent Collaboration](https://arxiv.org/abs/2611.15521)**
+  Emerging personal AI agents raise fundamental scalability and privacy concerns for centralized multi-agent systems (MASs), which rely on a global orchestrator with broad access to…
+  <sub>arXiv · 昨天</sub>
+
+- **[Microsoft Research Focus – Edition #98](https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/)**
+  What&#8217;s new in research? &nbsp; In this edition of Microsoft Research Focus , based on the Research Focus newsletter (opens in new tab) , host Anson Ho shares some of the lat…
+  <sub>🏛 Microsoft Research | Blog · 今天</sub>
+
+- **[SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering](https://arxiv.org/abs/2611.13410)**
+  Low-bit quantization reduces the inference cost of LLM agents but can compromise task success. Examining failed rollouts, we find that quantized agents overlook task requirements…
+  <sub>🔥 32 | HF Papers · 3 天前</sub>
 
 
 ## 🧰 Harness / 基建与评测
 
-- **[Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation](https://arxiv.org/abs/2611.01112)**
-  Vision-language models can interpret instructions and plan manipulation tasks, yet struggle when acting directly as robot policies. On RoboDojo, a large planning-execution gap sep…
-  <sub>🔥 7 | HF Papers · 12 天前</sub>
-
-
-## 👁️ 计算机视觉 / CV
-
-- **[Few-Step Streaming Video Generation via Condition Shifting](https://arxiv.org/abs/2611.14033)**
-  Few-step sampling reduces the cost of streaming video generation. Distribution Matching Distillation (DMD) supervises few-step generators with a separate fake-score network, which…
-  <sub>🔥 67 | arXiv · 昨天</sub>
-
-- **[Obscured Wildfire Flame Detection by Spatio-temporal Analysis of Smoke Patterns Using Frame-wise Transformers](https://arxiv.org/abs/2611.14074)**
-  In this paper, we propose a new paradigm in wildfire management for detecting both visible and obscured fire using Deep Learning (DL). The essence of our method is the joint spati…
-  <sub>💡 a new paradigm | arXiv · 昨天</sub>
+- **[Evolving Infra: Agent-Adaptive LLM Serving at Scale](https://arxiv.org/abs/2611.12304)**
+  Agentic workloads are a major source of LLM inference demand. Existing prefill--decode (PD) disaggregated serving systems offer limited flexibility for runtime adaptation of compu…
+  <sub>👤 **Ion Stoica · UC Berkeley / Song Han · MIT / NVIDIA** | 🔥 10 | HF Papers · 4 天前</sub>
 
 
 ## 🦾 VLA / 视觉-语言-动作
 
-- **[One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge](https://arxiv.org/abs/2611.14432)**
-  We describe our solution for the 2026 BEHAVIOR Challenge: 100 long-horizon household tasks in the OmniGibson simulator. We placed 9th on the final leaderboard, the only independen…
-  <sub>arXiv · 昨天</sub>
+- **[Learning Low-Latency Action Verification for Frozen Vision-Language-Action Models](https://arxiv.org/abs/2611.14834)**
+  Vision-language-action (VLA) models have made significant progress in general-purpose robotic manipulation. However, sampled action sequences can be ineffective, while evaluating…
+  <sub>👤 **Trevor Darrell · UC Berkeley** | arXiv · 2 天前</sub>
 
+- **[ActionCodec2: A Streaming Action Tokenizer](https://arxiv.org/abs/2611.15490)**
+  Most action tokenizers for autoregressive vision language action (VLA) models compress motion into chunks that must be decoded in full before their actions become executable. We i…
+  <sub>👤 **Hang Zhao · Tsinghua** | arXiv · 昨天</sub>
 
-## 🚶 具身智能 / 机器人
+- **[Generalized Inverse Kinematics via Conditional Flow](https://arxiv.org/abs/2611.15565)**
+  Inverse kinematics (IK) is a foundational primitive in robotics, mapping the task-space objectives expressed by higher-level planners to robot configurations that realize them. Tr…
+  <sub>👤 **Leslie Pack Kaelbling · MIT** | arXiv · 昨天</sub>
 
-- **[LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115)**
-  Foundation models such as GPT and Claude have shown strong capabilities in spatial understanding and embodied intelligence. These advances make agentic robotics a promising path t…
-  <sub>🔥 5 | arXiv · 昨天</sub>
-
-
-## 🌍 世界模型 / World Models
-
-- **[How Many Exposures Does a World Model Need? Learning Unseen Game Mechanics at Test Time](https://arxiv.org/abs/2611.12324)**
-  World models enable agents to plan and learn from imagined experience, but in an unfamiliar environment they must learn its mechanics from limited interaction. A mechanic is a rul…
-  <sub>🔥 15 | 💡 想法型 | HF Papers · 3 天前</sub>
+- **[What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation](https://arxiv.org/abs/2611.15491)**
+  Vision-language-action (VLA) models predict chunks of future actions, and when objects move, those chunks go stale before they are executed. We study what makes a pretrained VLA r…
+  <sub>💡 想法型 | arXiv · 昨天</sub>
 
 
 ## 🎯 强化学习 / 持续学习
 
-- **[The Surprising Effectiveness of Deleting Weights in LLM Post-Training](https://arxiv.org/abs/2611.10866)**
-  How little of a pretrained large language model (LLM) has to change for it to acquire new capabilities? We find that zeroing fewer than 0.05% of its weights, with no other modific…
-  <sub>🔥 10 | HF Papers · 5 天前</sub>
+- **[Expanding the Decision Space of Pretrained Models through Structured Re-Decoding](https://arxiv.org/abs/2611.15109)**
+  Native decoders limit how pretrained models combine local predictions under new structural constraints. We introduce Structured Re-Decoding (SRD), a training-free framework that c…
+  <sub>👤 **Chi Wang · Google DeepMind** | arXiv · 昨天</sub>
 
-- **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)**
-  While modern video generative models achieve remarkable visual fidelity, they remain noticeably brittle when generating physically plausible dynamics and complex interactions. Tar…
-  <sub>🔥 8 | HF Papers · 3 天前</sub>
+- **[SimRec: Learning to Search, Ask, and Recommend from Simulated Interaction](https://arxiv.org/abs/2611.15426)**
+  LLM-based recommendation agents can search catalogs, inspect products, ask users, and revise rejected recommendations. However, these behaviors are often governed by hand-designed…
+  <sub>arXiv · 昨天</sub>
+
+- **[Knowledge in the Harness, Reliability in the Weights: Teacher-Free Co-Evolution of an LLM Agent](https://arxiv.org/abs/2611.15268)**
+  Small open models suit private customer-service deployments but trail frontier models in two ways: they miss what the written policy requires in a given situation, and they act in…
+  <sub>arXiv · 昨天</sub>
+
+
+## 🛡️ 安全 / 对齐 / 可解释
+
+- **[Observations Drift, Structures Remain: Structural Pretraining with Time Alignment for Electromagnetic Signals](https://arxiv.org/abs/2611.15566)**
+  Electromagnetic signal modeling is increasingly moving toward self-supervised pretraining on heterogeneous I/Q observations. However, an observed waveform is jointly shaped by sig…
+  <sub>👤 **Maosong Sun · Tsinghua** | arXiv · 昨天</sub>
 
 
 ---
@@ -145,7 +143,7 @@
 <summary>📡 源状态与运行信息</summary>
 
 
-**入选来源分布**：arXiv 9, HF Papers 6, Blog 1
+**入选来源分布**：arXiv 12, HF Papers 3, Blog 2
 
 
 **本轮出问题的源**（不影响其他源）：

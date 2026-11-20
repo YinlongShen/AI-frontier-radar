@@ -1,51 +1,51 @@
-# AI 前沿雷达 · 2026-11-19
+# AI 前沿雷达 · 2026-11-20
 
-> 扫描 **1856** 条 → 入选 **27** 条 ｜ 关注名单命中 **12** 位研究者 ｜ 生成于 2026-11-19 04:03 UTC
+> 扫描 **1870** 条 → 入选 **29** 条 ｜ 关注名单命中 **9** 位研究者 ｜ 生成于 2026-11-20 03:55 UTC
 
-**今日分布**：🧠 大模型 / LLM (6) ｜ 🤖 智能体 / Agent (2) ｜ 🧰 Harness / 基建与评测 (3) ｜ 👁️ 计算机视觉 / CV (6) ｜ 🎨 多模态 / VLM (2) ｜ 🦾 VLA / 视觉-语言-动作 (5) ｜ 🌍 世界模型 / World Models (1) ｜ 🎯 强化学习 / 持续学习 (2)
+**今日分布**：🧠 大模型 / LLM (5) ｜ 🤖 智能体 / Agent (6) ｜ 🧰 Harness / 基建与评测 (1) ｜ 👁️ 计算机视觉 / CV (5) ｜ 🎨 多模态 / VLM (4) ｜ 🦾 VLA / 视觉-语言-动作 (4) ｜ 🎯 强化学习 / 持续学习 (3) ｜ 🛡️ 安全 / 对齐 / 可解释 (1)
 
 
 ## ⭐ 今日必读
 
-1. **[Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation](https://arxiv.org/abs/2611.24926)**
-   Robot reward modeling faces two challenges: generalizing across tasks and accurately tracking progress in long-horizon manipulation. General-purpose reward models demonstrate broa…
-   <sub>👤 **Linxi Fan · NVIDIA GEAR / Yuke Zhu · UT Austin / NVIDIA** | arXiv · 今天</sub>
+1. **[Infer3D: Inverse Generative Modeling Enables Robust 3D Reconstruction](https://arxiv.org/abs/2611.25061)**
+   Humans can understand the 3D structure of scenes even from highly unfamiliar or extreme viewpoints. Cognitive science suggests this generalization stems from a top-down generative…
+   <sub>👤 **William T. Freeman · MIT / Vincent Sitzmann · MIT** | arXiv · 昨天</sub>
 
-2. **[RoboMorpher: Scaling Robot Morphology Representations for Cross-Embodiment Action Prediction](https://arxiv.org/abs/2611.24816)**
-   Learning shared action representations is central to cross-embodiment manipulation. However, identical joint values can produce different spatial configurations across robots, lim…
-   <sub>👤 **Ping Luo · HKU** | 💡 想法型 | arXiv · 今天</sub>
+2. **[Counterfactual World Models: JEPAs That Reason About "What If"](https://arxiv.org/abs/2611.24778)**
+   World models operate in a world they cannot fully observe. When a hidden disturbance, such as a current pushing a boat, changes the outcome of an action, a counterfactual question…
+   <sub>👤 **Yann LeCun · NYU** | arXiv · 昨天</sub>
 
-3. **[QDA: Closed-Loop LLM Quantization Design with Agents](https://arxiv.org/abs/2611.23388)**
-   Post-training quantization is the standard way to serve large language models at low cost. However, the best quantization recipe differs across models and precisions. As a result,…
-   <sub>👤 **Song Han · MIT / NVIDIA** | 🔥 3 | arXiv · 昨天</sub>
+3. **[SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data](https://arxiv.org/abs/2611.24585)**
+   Egocentric human recordings are far cheaper than dexterous robot demonstrations, promising stronger pretraining and direct skill learning without task-specific robot data. Yet hum…
+   <sub>👤 **Dahua Lin · CUHK / Shanghai AI Lab** | arXiv · 昨天</sub>
 
-4. **[$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling](https://arxiv.org/abs/2611.24940)**
-   We introduce $Z$-sight, a unified robot foundation model that couples vision-language-action (VLA) and generative latent world modeling. Video-based world action models (WAMs) sho…
-   <sub>👤 **Hao Dong · Peking University** | arXiv · 今天</sub>
+4. **[Erasing the Wrong Thing: Conditional Attribute Leakage and Concept Erasure in Shared Foundation-Model Embeddings](https://arxiv.org/abs/2611.25640)**
+   Medical-image embeddings are increasingly shared in place of raw images for authorized downstream tasks, yet they may reveal sensitive attributes. Standard concept-erasure methods…
+   <sub>👤 **Fei-Fei Li · Stanford / World Labs** | arXiv · 今天</sub>
 
-5. **[Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration](https://arxiv.org/abs/2611.22275)**
-   Collaboration promises to extend humanoid capabilities beyond what individual robots can achieve. However, realizing this potential requires coordinated whole-body interactions, c…
-   <sub>👤 **Ting Chen · Google DeepMind** | 🔥 21 | HF Papers · 2 天前</sub>
+5. **[MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation](https://arxiv.org/abs/2611.25105)**
+   Every move in a robot team changes the world in which its teammates must act. Coordinated manipulation therefore calls for predicting the team's actions together with the physical…
+   <sub>👤 **Linxi Fan · NVIDIA GEAR** | arXiv · 昨天</sub>
 
-6. **[Neural Circuit Architectural Priors for Rat Locomotion](https://arxiv.org/abs/2611.23364)**
-   Animals generate behavior through continuous interactions between their neural circuits, bodies, and environment. Embodied simulations study these interactions by testing neural c…
-   <sub>👤 **Lerrel Pinto · NYU** | arXiv · 昨天</sub>
+6. **[LG-FiLM: Local-Global Mixture-of-Experts Modulation for RAW-to-RGB Reconstruction](https://arxiv.org/abs/2611.25639)**
+   An image signal processor does more than reconstruct an image. It also has to decide how strongly to denoise, how to balance color, and which tone curve maps the scene onto the di…
+   <sub>👤 **Fei-Fei Li · Stanford / World Labs** | arXiv · 今天</sub>
 
-7. **[SpiderMark: Hybrid Watermarking for Generative AI via Algorithmic Injection and Learning-Based Verification](https://arxiv.org/abs/2611.24200)**
-   The proliferation of diffusion-based generative models has intensified the need for reliable methods to trace and verify the provenance of AI-generated images. Existing watermarki…
-   <sub>👤 **Yang Song** | arXiv · 今天</sub>
+7. **[RefreshGrad: An Online Adaptive Data-sampling Method for Diffusion-based Visuomotor Learning](https://arxiv.org/abs/2611.25398)**
+   Training vision-language-action (VLA) policies from demonstrations typically samples trajectory segments uniformly or relies on static offline data curation before training. Howev…
+   <sub>👤 **Jie Tang · Tsinghua / Zhipu** | arXiv · 昨天</sub>
 
-8. **[Cardiac MRI-informed electrocardiography enables biologically grounded cardiomyopathy detection](https://arxiv.org/abs/2611.23925)**
-   Precise myocardial phenotyping at population scale is limited by the cost and accessibility of cardiac magnetic resonance (CMR), whereas electrocardiography (ECG) is widely availa…
-   <sub>👤 **Ting Chen · Google DeepMind** | arXiv · 今天</sub>
+8. **[Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem](https://arxiv.org/abs/2611.24927)**
+   AI systems are built across many organizations that contribute models, data, compute, capital, talent, and other assets. While the layers of the AI stack are relatively well under…
+   <sub>👤 **Percy Liang · Stanford** | arXiv · 昨天</sub>
 
-9. **[Multi-Band Galaxy Novel-View Synthesis with Radiative Gaussian Fields](https://arxiv.org/abs/2611.24723)**
-   We propose a novel view synthesis tool for galaxies based on Gaussian Splatting (GS). Unlike RGB data, where GS has achieved success, galaxy observations consist of multi-band sig…
-   <sub>👤 **He Wang · Peking University** | arXiv · 今天</sub>
+9. **[VR-SparseQuant: Accurate FP4 Quantization with 2:4 Sparsity on Vera Rubin](https://arxiv.org/abs/2611.25717)**
+   In recent years, GPUs have incorporated increasingly specialized support for low-precision computation, from Hopper's FP8 to Blackwell's FP4 Tensor Cores. Precision formats have e…
+   <sub>👤 **Song Han · MIT / NVIDIA** | arXiv · 今天</sub>
 
-10. **[On Evaluating User Simulators for Interactive Agents](https://arxiv.org/abs/2611.24892)**
-   User simulators offer a scalable way to evaluate interactive agents, but how to assess their quality remains underexplored. In particular, it is unclear whether existing user simu…
-   <sub>👤 **Ion Stoica · UC Berkeley** | arXiv · 今天</sub>
+10. **[HINT-WAM: Hindsight-Informed Training for World Action Models](https://arxiv.org/abs/2611.24789)**
+   World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics.…
+   <sub>🔥 22 | HF Papers · 2 天前</sub>
 
 
 ---
@@ -53,133 +53,142 @@
 
 ## 🧠 大模型 / LLM
 
-- **[QDA: Closed-Loop LLM Quantization Design with Agents](https://arxiv.org/abs/2611.23388)**
-  Post-training quantization is the standard way to serve large language models at low cost. However, the best quantization recipe differs across models and precisions. As a result,…
-  <sub>👤 **Song Han · MIT / NVIDIA** | 🔥 3 | arXiv · 昨天</sub>
+- **[Erasing the Wrong Thing: Conditional Attribute Leakage and Concept Erasure in Shared Foundation-Model Embeddings](https://arxiv.org/abs/2611.25640)**
+  Medical-image embeddings are increasingly shared in place of raw images for authorized downstream tasks, yet they may reveal sensitive attributes. Standard concept-erasure methods…
+  <sub>👤 **Fei-Fei Li · Stanford / World Labs** | arXiv · 今天</sub>
 
-- **[Cardiac MRI-informed electrocardiography enables biologically grounded cardiomyopathy detection](https://arxiv.org/abs/2611.23925)**
-  Precise myocardial phenotyping at population scale is limited by the cost and accessibility of cardiac magnetic resonance (CMR), whereas electrocardiography (ECG) is widely availa…
-  <sub>👤 **Ting Chen · Google DeepMind** | arXiv · 今天</sub>
+- **[LG-FiLM: Local-Global Mixture-of-Experts Modulation for RAW-to-RGB Reconstruction](https://arxiv.org/abs/2611.25639)**
+  An image signal processor does more than reconstruct an image. It also has to decide how strongly to denoise, how to balance color, and which tone curve maps the scene onto the di…
+  <sub>👤 **Fei-Fei Li · Stanford / World Labs** | arXiv · 今天</sub>
 
-- **[AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs](https://arxiv.org/abs/2611.17621)**
-  Kernel optimization is essential for efficient large language model (LLM) training and inference on Ascend NPUs. Existing Ascend kernel benchmarks primarily focus on kernel genera…
-  <sub>🔥 91 | HF Papers · 6 天前</sub>
+- **[VR-SparseQuant: Accurate FP4 Quantization with 2:4 Sparsity on Vera Rubin](https://arxiv.org/abs/2611.25717)**
+  In recent years, GPUs have incorporated increasingly specialized support for low-precision computation, from Hopper's FP8 to Blackwell's FP4 Tensor Cores. Precision formats have e…
+  <sub>👤 **Song Han · MIT / NVIDIA** | arXiv · 今天</sub>
 
-- **[Beyond Answering: Learning to Speak First and Act in Streaming Video](https://arxiv.org/abs/2611.17048)**
-  Most AI assistants respond only when prompted, remaining silent even when events in the video stream offer meaningful opportunities for conversation. To move beyond purely user-dr…
-  <sub>🔥 10 | 💡 想法型 | HF Papers · 4 天前</sub>
+- **[Towards Autoregressive Neural Network Parameter Generation](https://arxiv.org/abs/2611.25538)**
+  Large Language Models (LLMs) have recently established a new paradigm in machine learning, demonstrating exceptional zero-shot generalization and complex reasoning capabilities. C…
+  <sub>💡 towards | arXiv · 今天</sub>
 
-- **[Weight-Space Programming Doesn't Need Transformers](https://arxiv.org/abs/2611.22055)**
-  Standard neural architectures such as the Transformer were chosen because they train well with gradient descent and run fast on GPUs. In weight-space programming, a large language…
-  <sub>🔥 51 | HF Papers · 2 天前</sub>
-
-- **[Why your fine-tuning job takes longer than the FLOPs say](https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time)**
-  <sub>🏛 HuggingFace | 💡 想法型 | Blog · 今天</sub>
+- **[Tideway: Phase-Aware Tiered Memory Management for MoE Inference on Consumer Devices](https://arxiv.org/abs/2611.14848)**
+  Large language model (LLM) agents are rapidly becoming a dominant paradigm for AI applications. Recently, there is a growing demand to deploy large-scale Mixture-of-Experts (MoE)…
+  <sub>🔥 8 | HF Papers · 10 天前</sub>
 
 
 ## 🤖 智能体 / Agent
 
-- **[Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration](https://arxiv.org/abs/2611.22275)**
-  Collaboration promises to extend humanoid capabilities beyond what individual robots can achieve. However, realizing this potential requires coordinated whole-body interactions, c…
-  <sub>👤 **Ting Chen · Google DeepMind** | 🔥 21 | HF Papers · 2 天前</sub>
+- **[Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and Neuro-Symbolic Grounding](https://arxiv.org/abs/2611.25898)**
+  Clinical large language models are usually judged by whether the final answer is right. Yet a model can reach a fluent, plausible output through invalid reasoning that static benc…
+  <sub>💡 review of | arXiv · 今天</sub>
 
-- **[Regularized Score Centering](https://arxiv.org/abs/2611.21791)**
-  Asynchronous reinforcement learning increases training throughput, but data from stale policies and numerical mismatch between training and inference can destabilize learning. To…
-  <sub>🔥 4 | HF Papers · 3 天前</sub>
+- **[StatePortal: Agentic Checkpoint Synthesis for Testing Deep States in Interactive Software](https://arxiv.org/abs/2611.23257)**
+  Large language models have reduced the effort to generate code for interactive software with graphical user interfaces (GUIs). For such software, a key testing bottleneck is reach…
+  <sub>🔥 9 | HF Papers · 09-29（52 天前）</sub>
+
+- **[RoughCut-Bench: A Benchmark for Automatic Video Rough-Cut with Large Vision-Language Models](https://arxiv.org/abs/2611.24098)**
+  Video rough-cut is a core stage in media production workflows, organizing raw media materials into an initial video cut. Despite recent advances in large vision-language models (L…
+  <sub>🔥 9 | arXiv · 昨天</sub>
+
+- **[WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection](https://arxiv.org/abs/2611.21373)**
+  Recent advances in video generation call for reliable detection grounded in explicit forensic evidence. However, current methods primarily depend on single-pass chain-of-thought r…
+  <sub>🔥 2 | HF Papers · 4 天前</sub>
+
+- **[Thinking Fast, Anywhere: One System-1 for the Decision Points of Any Agent Workflow](https://arxiv.org/abs/2611.23751)**
+  Autonomous LLM agents incur substantial cost and latency by invoking a large model (System-2) at every step, even when many intermediate actions choose among a small set of known…
+  <sub>🔥 11 | HF Papers · 2 天前</sub>
+
+- **[A$^2$-VLA: Adapting Vision-Language-Action Policies to New Tools through Agentic Affordance Discovery](https://arxiv.org/abs/2611.25656)**
+  Tools with different shapes can have similar functions, but transferring manipulation skills across tools requires understanding how tool geometry relates to the specific task and…
+  <sub>arXiv · 今天</sub>
 
 
 ## 🧰 Harness / 基建与评测
 
-- **[Neural Circuit Architectural Priors for Rat Locomotion](https://arxiv.org/abs/2611.23364)**
-  Animals generate behavior through continuous interactions between their neural circuits, bodies, and environment. Embodied simulations study these interactions by testing neural c…
-  <sub>👤 **Lerrel Pinto · NYU** | arXiv · 昨天</sub>
-
-- **[On Evaluating User Simulators for Interactive Agents](https://arxiv.org/abs/2611.24892)**
-  User simulators offer a scalable way to evaluate interactive agents, but how to assess their quality remains underexplored. In particular, it is unclear whether existing user simu…
-  <sub>👤 **Ion Stoica · UC Berkeley** | arXiv · 今天</sub>
-
-- **[TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks](https://arxiv.org/abs/2611.22115)**
-  We present Xing 4, a series of large language models that extends the TeleChat lineage through coordinated advances in model architecture and training infrastructure on Ascend. Th…
-  <sub>🔥 151 | arXiv · 2 天前</sub>
+- **[Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem](https://arxiv.org/abs/2611.24927)**
+  AI systems are built across many organizations that contribute models, data, compute, capital, talent, and other assets. While the layers of the AI stack are relatively well under…
+  <sub>👤 **Percy Liang · Stanford** | arXiv · 昨天</sub>
 
 
 ## 👁️ 计算机视觉 / CV
 
-- **[SpiderMark: Hybrid Watermarking for Generative AI via Algorithmic Injection and Learning-Based Verification](https://arxiv.org/abs/2611.24200)**
-  The proliferation of diffusion-based generative models has intensified the need for reliable methods to trace and verify the provenance of AI-generated images. Existing watermarki…
-  <sub>👤 **Yang Song** | arXiv · 今天</sub>
+- **[Infer3D: Inverse Generative Modeling Enables Robust 3D Reconstruction](https://arxiv.org/abs/2611.25061)**
+  Humans can understand the 3D structure of scenes even from highly unfamiliar or extreme viewpoints. Cognitive science suggests this generalization stems from a top-down generative…
+  <sub>👤 **William T. Freeman · MIT / Vincent Sitzmann · MIT** | arXiv · 昨天</sub>
 
-- **[Multi-Band Galaxy Novel-View Synthesis with Radiative Gaussian Fields](https://arxiv.org/abs/2611.24723)**
-  We propose a novel view synthesis tool for galaxies based on Gaussian Splatting (GS). Unlike RGB data, where GS has achieved success, galaxy observations consist of multi-band sig…
-  <sub>👤 **He Wang · Peking University** | arXiv · 今天</sub>
+- **[Jeveration: System One Models Now Generate](https://arxiv.org/abs/2611.24738)**
+  System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate…
+  <sub>🔥 116 | HF Papers · 2 天前</sub>
 
-- **[GramStatTexNet: Efficient, Interpretable, and Neuro-Inspired Texture Analysis-by-Synthesis](https://arxiv.org/abs/2611.23755)**
-  Deep networks achieve high realism in texture synthesis but often rely on opaque, over-parameterized representations that have limited direct connection to biological vision. Neur…
-  <sub>👤 **William T. Freeman · MIT** | arXiv · 昨天</sub>
+- **[WHU-Road3D: A dataset and benchmark towards fine-grained road surface mapping](https://arxiv.org/abs/2611.25873)**
+  Accurately extracting and mapping road surface elements is crucial for applications such as high-definition maps, road asset management, and intelligent transportation systems. Th…
+  <sub>💡 we argue | arXiv · 今天</sub>
 
-- **[CONCORD-Rec: Catalog-Conditioned Modality Utility for Semantic-ID Diffusion Recommendation](https://arxiv.org/abs/2611.23710)**
-  Multimodal generative recommendation with discrete semantic identifiers (SIDs) requires distinguishing historical modalities that merely alter token predictions from those that ge…
-  <sub>👤 **Tao Yu · HKU** | arXiv · 昨天</sub>
+- **[Streaming-AAA: Streaming AAA Game Video Generation at High Resolution, High Frame Rate, and Low Latency](https://arxiv.org/abs/2611.26040)**
+  Controllable streaming video generation offers a promising route toward interactive game simulation, yet existing methods remain far from practical gameplay. They often fail to jo…
+  <sub>💡 a new paradigm | arXiv · 今天</sub>
 
-- **[FastFrames: Video Generation at Interactive Latency](https://arxiv.org/abs/2611.23226)**
-  Autoregressive video diffusion models generate frames based on new observations and inputs, making them a promising medium for interactive visual experiences. However, existing mo…
-  <sub>🔥 24 | HF Papers · 2 天前</sub>
-
-- **[Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers](https://arxiv.org/abs/2611.22287)**
-  Latent diffusion models rely on a decoder to map denoised latents to pixels, adding complexity and inference cost. We introduce Decoding Without a Decoder (DWD), which lets a fine…
-  <sub>🔥 3 | HF Papers · 2 天前</sub>
+- **[Code World Model 2.0: Towards Infinite Controllable Video Generation](https://arxiv.org/abs/2611.22925)**
+  Visual proxies decouple explicit world-state simulation from photorealistic video synthesis, offering a controllable interface for both offline clip creation and real-time interac…
+  <sub>🔥 17 | HF Papers · 3 天前</sub>
 
 
 ## 🎨 多模态 / VLM
 
-- **[CURVTON-205K: A Mask-Free Difficulty-Stratified Synthetic Dataset for Robust and Scalable Virtual Try-On](https://arxiv.org/abs/2611.24042)**
-  Recent advances in 2D virtual try-on (VTON) have largely focused on architectural innovation, yet robust performance in diverse real-world conditions remains challenging. We argue…
-  <sub>💡 we argue | arXiv · 今天</sub>
+- **[Counterfactual World Models: JEPAs That Reason About "What If"](https://arxiv.org/abs/2611.24778)**
+  World models operate in a world they cannot fully observe. When a hidden disturbance, such as a current pushing a boat, changes the outcome of an action, a counterfactual question…
+  <sub>👤 **Yann LeCun · NYU** | arXiv · 昨天</sub>
 
-- **[Rethinking Contrastive Targets in Radiology Language-Image Pretraining](https://arxiv.org/abs/2611.24016)**
-  CLIP-style contrastive image-text pretraining is widely used in radiology data, where each image is paired with one report and every other report in the batch is treated as a nega…
-  <sub>💡 rethinking | arXiv · 今天</sub>
+- **[Keel: A Frontier Model Teaches a Vision-Language Model by Rewriting Its Weights](https://arxiv.org/abs/2611.25257)**
+  Can a frontier model repair a vision-language model (VLM) by rewriting its weights? Small reasoning VLMs such as Qwen3.5 need such a repair: in thinking mode they fall into loops…
+  <sub>arXiv · 昨天</sub>
+
+- **[Beyond Entity Recognition: Vision-Centric Knowledge Visual Question Answering](https://arxiv.org/abs/2611.25680)**
+  We propose VC-VQA, a large-scale benchmark for vision-centric knowledge reasoning, aiming to systematically evaluate the capabilities of Multimodal Large Language Models (MLLMs) i…
+  <sub>💡 想法型 | arXiv · 今天</sub>
+
+- **[EgoWitness: Benchmarking Instance-Level Spatial Memory and Reasoning in Egocentric Video Streams](https://arxiv.org/abs/2611.25849)**
+  Recalling where and when an object was last seen and who saw it requires recognizing it across days and people. Existing long-video benchmarks focus on events, object categories,…
+  <sub>arXiv · 今天</sub>
 
 
 ## 🦾 VLA / 视觉-语言-动作
 
-- **[RoboMorpher: Scaling Robot Morphology Representations for Cross-Embodiment Action Prediction](https://arxiv.org/abs/2611.24816)**
-  Learning shared action representations is central to cross-embodiment manipulation. However, identical joint values can produce different spatial configurations across robots, lim…
-  <sub>👤 **Ping Luo · HKU** | 💡 想法型 | arXiv · 今天</sub>
+- **[SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data](https://arxiv.org/abs/2611.24585)**
+  Egocentric human recordings are far cheaper than dexterous robot demonstrations, promising stronger pretraining and direct skill learning without task-specific robot data. Yet hum…
+  <sub>👤 **Dahua Lin · CUHK / Shanghai AI Lab** | arXiv · 昨天</sub>
 
-- **[$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling](https://arxiv.org/abs/2611.24940)**
-  We introduce $Z$-sight, a unified robot foundation model that couples vision-language-action (VLA) and generative latent world modeling. Video-based world action models (WAMs) sho…
-  <sub>👤 **Hao Dong · Peking University** | arXiv · 今天</sub>
+- **[MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation](https://arxiv.org/abs/2611.25105)**
+  Every move in a robot team changes the world in which its teammates must act. Coordinated manipulation therefore calls for predicting the team's actions together with the physical…
+  <sub>👤 **Linxi Fan · NVIDIA GEAR** | arXiv · 昨天</sub>
 
-- **[Towards Pose-Robust Few-Shot Vision-Language-Action Models](https://arxiv.org/abs/2611.24360)**
-  Fine-tuning a vision-language-action (VLA) model on a few dozen demonstrations is the standard way to put a manipulation policy on a robot, yet the resulting policy silently assum…
-  <sub>💡 towards | arXiv · 今天</sub>
+- **[RefreshGrad: An Online Adaptive Data-sampling Method for Diffusion-based Visuomotor Learning](https://arxiv.org/abs/2611.25398)**
+  Training vision-language-action (VLA) policies from demonstrations typically samples trajectory segments uniformly or relies on static offline data curation before training. Howev…
+  <sub>👤 **Jie Tang · Tsinghua / Zhipu** | arXiv · 昨天</sub>
 
-- **[TCP4D: A Unified Tool-Center-Point Tracking and Generation Model for Robot Manipulation](https://arxiv.org/abs/2611.23143)**
-  Robot manipulation videos provide a rich visual experience, yet recovering robot action and gripper-state annotations from RGB observations still remains challenging. Using the em…
-  <sub>🔥 23 | arXiv · 昨天</sub>
-
-- **[Ego2X: Contact-aware Transfer from Egocentric Human Data to Any Robot](https://arxiv.org/abs/2611.24138)**
-  Embodied models depend on real interaction data, yet collecting it on physical robots is slow and labor-intensive. Recent ego-to-robot pipelines retarget first-person view human v…
-  <sub>💡 we argue | arXiv · 今天</sub>
-
-
-## 🌍 世界模型 / World Models
-
-- **[LynnReal-Hand: Unlocking World Interaction with Hand Control](https://arxiv.org/abs/2611.21479)**
-  Interactive video world models enable exploration through text and camera controls, yet direct object interaction requires finer control. Hands provide a natural interface, but tr…
-  <sub>🔥 21 | HF Papers · 3 天前</sub>
+- **[BiCAT: Bimanual Coordination Action Tokenization](https://arxiv.org/abs/2611.23499)**
+  Autoregressive vision-language-action (VLA) models predict discrete action tokens with the next-token objective of their vision-language backbone, so the action tokenizer defines…
+  <sub>🔥 3 | HF Papers · 3 天前</sub>
 
 
 ## 🎯 强化学习 / 持续学习
 
-- **[Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation](https://arxiv.org/abs/2611.24926)**
-  Robot reward modeling faces two challenges: generalizing across tasks and accurately tracking progress in long-horizon manipulation. General-purpose reward models demonstrate broa…
-  <sub>👤 **Linxi Fan · NVIDIA GEAR / Yuke Zhu · UT Austin / NVIDIA** | arXiv · 今天</sub>
+- **[HINT-WAM: Hindsight-Informed Training for World Action Models](https://arxiv.org/abs/2611.24789)**
+  World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics.…
+  <sub>🔥 22 | HF Papers · 2 天前</sub>
 
-- **[Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts](https://arxiv.org/abs/2611.24059)**
-  Frontier post-training follows a common recipe: train one expert per domain with reinforcement learning (RL), then consolidate the experts into one model via multi-teacher on-poli…
-  <sub>💡 we argue | arXiv · 今天</sub>
+- **[PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents](https://arxiv.org/abs/2611.24362)**
+  Large language model (LLM) agents routinely interact with untrusted external data, exposing them to indirect prompt injection (IPI) attacks that hijack agents into executing attac…
+  <sub>🔥 6 | HF Papers · 2 天前</sub>
+
+- **[Evidence-Based Credit Assignment for Search-Augmented Language Models](https://arxiv.org/abs/2611.23824)**
+  Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning and retrieval without step-level annotations, yet outcome supe…
+  <sub>🔥 4 | arXiv · 昨天</sub>
+
+
+## 🛡️ 安全 / 对齐 / 可解释
+
+- **[Towards a Science of Capable Autonomous Agents & Provable Safety — Part II](https://blog.ml.cmu.edu/2026/11/19/towards-a-science-of-capable-autonomous-agents-provable-safety-part-ii/)**
+  Part II: Provable Safety In Part I , I talked about what agents must contain as they become increasingly capable. Here, I talk about having provable guarantees on their safety, in…
+  <sub>🏛 CMU | 💡 towards | Blog · 今天</sub>
 
 
 ---
@@ -188,7 +197,7 @@
 <summary>📡 源状态与运行信息</summary>
 
 
-**入选来源分布**：arXiv 18, HF Papers 8, Blog 1
+**入选来源分布**：arXiv 19, HF Papers 9, Blog 1
 
 
 **本轮出问题的源**（不影响其他源）：
